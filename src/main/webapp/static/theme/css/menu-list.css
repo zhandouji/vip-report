@@ -1,0 +1,195 @@
+.clear:after{
+	content:'';
+	display:block;
+	clear:both;
+	height:0;
+	visibility:hidden;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑",arial;
+	font-size: 29px;
+	color: #333;
+}
+
+html,body{
+	width: 100%;
+	height: 100%;
+	max-height: 999999999px;
+}
+
+ul{
+	list-style: none;
+}
+
+/*a标签样式*/
+
+a,
+a:link,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+	text-decoration: none;
+	background: transparent;
+	outline: 0;
+	cursor: pointer;
+}
+
+button,
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+textarea,
+select{
+	outline: none;
+	border: 1px solid #bababa;
+	padding: 0 5px;
+	box-sizing: border-box;
+	background: transparent;
+}
+
+
+/*外层盒子大小*/
+.box{
+	width: 100%;
+	height: 100%;
+	background: #efeff5;
+}
+
+.list-content-box{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	overflow-y: auto;
+	background: #efeff5;
+}
+
+.menu-ul{
+	background: #fff;
+}
+
+.menu-ul li{
+    border-bottom: 2px solid #d4d4d4;
+    padding: 0 25px;
+    height: 110px;
+    display: block;
+    overflow: hidden;
+    line-height: 110px;
+}
+
+.menu-ul li:last-child{
+	border: 0;
+}
+
+.menu-ul li .list-title{
+	display: inline-block;
+	width: 450px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	/*vertical-align: bottom;*/
+}
+
+.menu-ul img{
+	display: block;
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin: 25px 10px 0 0;
+}
+
+.right-more{
+	display: block;
+	float: right;
+	color: #aaa;
+}
+.right-more i{
+	color: #d4d4d5;
+	font-size: 50px;
+}
+
+/*分类标题*/
+.part-title{
+	padding: 12px 20px;
+	background: #efeff4;
+}
+/*内容模块*/
+.detail{
+	width: 100%;
+	box-sizing: border-box;
+	overflow: auto;
+	background: #fff;
+}
+
+/*功能查询列表样式*/
+.demand-list li{
+	height: 110px;
+	line-height: 110px;
+	border-bottom: 1px solid #D4D4D4;
+	padding: 0 20px;
+}
+
+.demand-list li:last-child{
+	border: 0;
+}
+
+.demand-list li img{
+	display: block;
+	float: left;
+	height: 50px;
+	width: 50px;
+	margin-top: 30px;
+	margin-right: 10px;
+}
+
+.demand-list li a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 110px;
+}
+
+.demand-list li a i{
+	float: right;
+	margin-top: 40px;
+	font-size: 35px;
+	color: #ccc;
+}
+
+/**************************重名查询样式**************************/
+/*.the-same-name-box{
+	margin-top: 200px;
+}*/
+
+.same-name-box{
+	height: 100%;
+}
+
+.the-same-name-box li{
+	padding: 30px 20px;
+}
+
+.the-same-name-box li input[type='text']{
+	width: 540px;
+	height: 70px;
+	padding: 0 10px;
+	margin-right: 10px;
+}
+
+.same-name-submit{
+	background: #217ede;
+	width: 120px;
+	height: 70px;
+	color: #fff;
+	border-radius: 8px;
+}
+
+.layui-m-layercont{
+	line-height: 80px;
+}
+
+
+

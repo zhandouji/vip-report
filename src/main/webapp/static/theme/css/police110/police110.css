@@ -1,0 +1,382 @@
+/*页面最外层盒子样式*/
+
+.max-box {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow-y: visible;
+	background-color: #fff;
+}
+
+
+/*页面主要内容内层盒子样式*/
+
+.main-inner-box {
+	width: 100%;
+	min-height: 100%;
+	/*overflow-y: auto;*/
+}
+
+
+/*发起报警背景*/
+
+.start-alarm-bg {
+	background-image: url(/theme/img/police110/police110-bg.png);
+	background-size: 100% 100%;
+	text-align: center;
+	padding-top: 2.05rem;
+}
+
+
+/*发起报警页面的logo图片*/
+
+.police-logo-img {
+	display: inline-block;
+	width: 1.54rem;
+}
+
+
+/*发起报警页面的标题图片*/
+
+.police-title-img {
+	display: inline-block;
+	width: 5.92rem;
+	margin-top: 0.68rem;
+	margin-bottom: 2.4rem;
+}
+
+
+/*发布单位*/
+
+.public-company {
+	margin-top: 1.2rem;
+}
+
+
+/******************************绑定账号页面样式开始************************************/
+
+.binding-top-box {
+	position: relative;
+	background-image: url(/theme/img/police110/binding-bg.png);
+	height: 3.8rem;
+	width: 100%;
+	background-size: 100% 100%;
+	padding: 2rem 0.3rem 0 0.3rem;
+	margin-bottom: 2.4rem;
+}
+
+.binding-top-box>p {
+	font-size: 0.6rem;
+}
+
+.binding-input-box {
+	position: absolute;
+	top: 3.3rem;
+	right: 0.3rem;
+	left: 0.3rem;
+	border-radius: 0.1rem;
+	background-color: #fff;
+	padding: 0 0.3rem;
+}
+
+.binding-input-box>li {
+	border-bottom: 1px solid #ededed;
+	padding: 0.3rem 0;
+	line-height: 0.66rem;
+}
+
+.binding-title {
+	display: inline-block;
+	width: 1.4rem;
+}
+
+
+/*输入手机号码*/
+
+.input-tel-number {
+	width: 3.8rem;
+	height: 0.66rem;
+	font-size: 0.3rem;
+	color: #999;
+}
+
+
+/*清空电话号码按钮*/
+
+.empty-input {
+	display: inline-block;
+	height: 0.4rem;
+	width: 0.4rem;
+	vertical-align: middle;
+	background-image: url(/theme/img/police110/empty-input-bg.png);
+	background-size: 100% 100%;
+}
+
+
+/*输入验证码*/
+
+.input-verification-code {
+	width: 2.5rem;
+	font-size: 0.3rem;
+	color: #999;
+	border-right: 1px solid #ededed !important;
+	height: 0.66rem;
+	margin-right: 0.25rem;
+}
+
+
+/*报警页面样式和地图页面样式*/
+
+.alarm-video-box {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 3.45rem;
+	left: 0;
+	background-color: #000;
+	z-index: 1;
+}
+
+
+/*报警视频内层盒子样式*/
+
+.alarm-video-inner-box {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+
+/*报警视频样式*/
+
+.alarm-video-inner-box>video {
+	width: 100%;
+}
+
+
+/*警察视频盒子*/
+
+.police-video-box {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #41AEEE;
+	width: 2.79rem;
+	height: 3.6rem;
+	z-index: 2;
+}
+
+
+/*警察视频*/
+
+.police-video-box>video {
+	height: 100%;
+}
+
+
+/*聊天记录外层盒子样式*/
+
+.chatting-history-box {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 1.8rem;
+	left: 0;
+	overflow-y: scroll;
+	z-index: 2;
+	padding: 0.3rem;
+}
+
+.chatting-time {
+	text-align: center;
+	color: #FFF;
+	padding: 0.2rem 0;
+}
+
+.chatting-left {
+	float: left;
+	color: #fff602;
+	line-height: 0.5rem;
+	max-width: 50%;
+	background-color: rgba(0, 0, 0, 0.49);
+	border-radius: 0.05rem;
+	padding: 0.1rem;
+}
+
+.chatting-right {
+	float: right;
+	color: #fff;
+	line-height: 0.5rem;
+	max-width: 50%;
+	background-color: rgba(0, 0, 0, 0.49);
+	border-radius: 0.05rem;
+	padding: 0.1rem;
+}
+
+
+/*视频相关操作按钮外层盒子*/
+
+.control-btn-box {
+	position: absolute;
+	bottom: 0.35rem;
+	width: 100%;
+	height: 1.2rem;
+	text-align: center;
+	z-index: 2;
+}
+
+
+/*挂断按钮*/
+
+.hand-up-btn {
+	float: right;
+	height: 1.2rem;
+	width: 1.2rem;
+	background-image: url('/theme/img/police110/end-alarm.png');
+	background-size: 100% 100%;
+	margin-right: 0.49rem;
+	vertical-align: bottom;
+}
+
+.open-police-video-btn {
+	float: right;
+	height: 0.88rem;
+	width: 0.88rem;
+	background-image: url('/theme/img/police110/btn_switch.png');
+	background-size: 100% 100%;
+	margin-right: 0.43rem;
+	vertical-align: bottom;
+	margin-top: 0.32rem;
+}
+
+.exchange-camera-btn {
+	float: right;
+	height: 0.88rem;
+	width: 0.88rem;
+	background-image: url('/theme/img/police110/btn_camera.png');
+	background-size: 100% 100%;
+	margin-right: 0.2rem;
+	vertical-align: bottom;
+	margin-top: 0.32rem;
+}
+
+
+/*地图外层盒子*/
+
+.map-box {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 3.45rem;
+	left: 0;
+	background-color: #fff;
+	z-index: 3;
+	display: none;
+}
+
+
+/*相关消息外层盒子*/
+
+.send-message-box {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	height: 3.45rem;
+	z-index: 2;
+}
+
+.input-message-box {
+	width: 100%;
+	height: 1rem;
+	background-color: #eee;
+	padding: 0.17rem 0.2rem;
+}
+
+.upload-img-btn {
+	display: inline-block;
+	width: 0.6rem;
+	height: 0.6rem;
+	background-image: url('/theme/img/police110/btn_add.png');
+	background-size: 100% 100%;
+	margin-top: 0.03rem;
+	margin-right: 0.16rem;
+	vertical-align: middle;
+}
+
+.message-input-box {
+	width: 4.9rem;
+	height: 0.66rem;
+	background-color: #fff;
+	border-radius: 0.1rem;
+	line-height: 0.66rem;
+	resize: none;
+	vertical-align: middle;
+}
+
+.send-message-btn {
+	background-color: #4823cf;
+	color: #fff;
+	width: 0.9rem;
+	height: 0.66rem;
+	border-radius: 0.1rem;
+	vertical-align: middle;
+}
+
+.alarm-type-box {
+	height: 1rem;
+	width: 100%;
+	background-color: #fff;
+	border-bottom: 1px solid #dfdfdf;
+	line-height: 1rem;
+	padding: 0 0.2rem;
+	background-image: url('/theme/img/police110/back.png');
+	background-position: 6.83rem;
+	background-repeat: no-repeat;
+	background-size: 0.17rem 0.28rem;
+}
+
+.alarm-type {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	font-size: 0.3rem;
+	color: #999;
+	margin-left: 0.56rem;
+	width: 4.6rem;
+	height: 0.66rem;
+}
+
+.address-input{
+	width: 3.74rem;
+	border: 0;
+	color: #999;
+	vertical-align: middle;
+	font-size: 0.28rem;
+	height: 1.2rem;
+	margin-left: 0.5rem;
+	border-bottom: 1px solid #dfdfdf;
+}
+
+.alarm-address-icon{
+	display: inline-block;
+	background-image: url('/theme/img/police110/alarm-addrees.png');
+	width: 0.9rem;
+	height: 0.66rem;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 0.45rem 0.5rem;
+	margin-left: 0.2rem;
+}
+
+.alarm-address-box{
+	padding: 0 0.2rem;
+	line-height: 1.36rem;
+}
+
+.address-send-btn{
+	display: none;
+}

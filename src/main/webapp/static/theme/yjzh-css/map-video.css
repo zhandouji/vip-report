@@ -1,0 +1,54 @@
+.video-outer-box {
+  background-color: #333333;
+  width: 300px;
+  height: 300px;
+}
+
+.video-outer-box-videoCall {
+  background: url(/theme/yjzh-img/map/video/video_invitation.png) no-repeat center;
+  background-position-y: 100px;
+  height: 100%;
+  width: 100%;
+  float: inherit;
+}
+
+.video-outer-box-videoCall-div {
+  text-align: center;
+  padding-top: 160px;
+  margin: 0 auto;
+  width: 150px;
+}
+
+.video-outer-box-videoCall-div div {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  padding: 3px 0;
+}
+
+.video-outer-box-videoCancel {
+  background: url(/theme/yjzh-img/map/video/video_invitation.gif) no-repeat center;
+  background-position-y: 100px;
+  height: 100%;
+  width: 100%;
+  float: inherit;
+  display: none
+}
+
+.video-outer-box-videoCancel-div {
+  text-align: center;
+  padding-top: 160px;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.video-call-cancel {
+  color: #fff;
+  margin: 10px auto;
+  width: 60px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  text-align: center;
+  padding: 2px 0;
+}

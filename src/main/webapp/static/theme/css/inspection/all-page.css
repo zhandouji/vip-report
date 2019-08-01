@@ -1,0 +1,1632 @@
+/**********************现场视频页面样式开始**************************/
+
+.video-max-box {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+
+/*tab标签列表*/
+
+.tab-list {
+	padding-left: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+
+/*tab标签列*/
+
+.tab-list li {
+	position: relative;
+	float: left;
+	width: 160px;
+	height: 36px;
+	background: url(/theme/img/index/tab-bg.png) no-repeat;
+	background-size: 100% 100%;
+	line-height: 36px;
+	text-align: center;
+	margin-left: -10px;
+	margin-bottom: -1px;
+}
+
+
+/*选中的tab标签*/
+
+.tab-list .checked-tab {
+	background-image: url(/theme/img/index/tab-checked.png);
+	color: #2b399e;
+}
+
+.tab-list abbr{
+	text-decoration: none;
+}
+
+.part-title-box {
+	background: #fff;
+	padding: 10px 20px;
+}
+
+.part-title {
+	display: inline-block;
+	background-color: #fff;
+	border-left: 4px solid #f65959;
+	color: #f65959;
+	font-size: 18px;
+	padding-left: 12px;
+	box-sizing: border-box;
+	font-weight: 600;
+}
+
+.more-screen-box {
+	float: right;
+}
+
+.more-screen-box>li {
+	float: right;
+	padding: 0 20px;
+}
+
+.tab-content-box {
+	position: absolute;
+	top: 80px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+}
+
+.tab-content-inner-box {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+}
+
+.tab-num-box {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0px 8px 8px 8px;
+	display: none;
+}
+
+.tab-num-box:first-child {
+	display: block;
+}
+
+.video-box {
+	float: left;
+	width: 285px;
+	height: 340px;
+	background: #000;
+	margin: 8px;
+	border: 1px solid #ddd;
+}
+
+.local-video-box {
+	width: 590px;
+}
+
+.video-title {
+	background: #fff;
+	height: 40px;
+	font-size: 16px;
+	line-height: 40px;
+	padding: 0 10px;
+}
+
+.video-title span {
+	display: inline-block;
+	width: 160px;
+	height: 30px;
+	color: #fff;
+	background: #3b87cd;
+	text-align: center;
+	line-height: 30px;
+	font-size: 16px;
+}
+
+.video-content-box {
+	position: relative;
+	width: 100%;
+	height: 300px;
+}
+
+
+/*地址外层盒子*/
+
+.address-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 30px;
+	color: #fff;
+	line-height: 30px;
+	padding: 0 10px;
+	background: rgba(3, 0, 0, 0.6);
+}
+
+
+/*视频样式*/
+
+.video-content-box video {
+	width: 100%;
+	height: 100%;
+}
+
+
+/*视频控制器外层盒子*/
+
+.controls-box {
+	display: none;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 48px;
+	background: rgba(0, 0, 0, 0.59);
+}
+
+
+/*停止发布按钮*/
+
+.stop-public-btn {
+	display: inline-block;
+	width: 54px;
+	height: 54px;
+	background: #2b87cd;
+	color: #fff;
+	border: 3px solid rgba(0, 0, 0, 0.4);
+	border-radius: 50%;
+	text-align: center;
+	line-height: 20px;
+	padding: 3px;
+	box-sizing: border-box;
+	margin: -15px 0 5px 15px;
+}
+
+
+/*声音按钮*/
+
+.voice-close-btn {
+	display: inline-block;
+	height: 20px;
+	width: 22px;
+	margin: 14px 0 0 17px;
+	background: url(/theme/img/index/voice-close-icon.png) no-repeat center;
+	background-size: 100% 100%;
+}
+
+.voice-btn {
+	display: inline-block;
+	height: 20px;
+	width: 22px;
+	margin: 14px 0 0 17px;
+	background: url(/theme/img/index/voice-icon.png) no-repeat center;
+	background-size: 100% 100%;
+}
+
+
+/*视频控制器列表*/
+
+.video-content-list {
+	float: right;
+}
+
+.video-content-list>li {
+	float: right;
+	padding-right: 10px;
+	line-height: 48px;
+}
+
+
+/*停止视频按钮*/
+
+.video-stop-btn {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background: url(/theme/img/index/play-stop.png) no-repeat center;
+	background-size: 100% 100%;
+	margin-top: 13px;
+}
+
+.video-start-btn {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background: url(/theme/img/index/icon_play.png) no-repeat center;
+	background-size: 100% 100%;
+	margin-top: 13px;
+}
+
+
+/*全屏按钮*/
+
+.full-screen-btn {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: url(/theme/img/index/full-screen.png) no-repeat center;
+	background-size: 100% 100%;
+	margin-top: 15px;
+}
+
+
+/*发布视频按钮盒子*/
+
+.public-box {
+	width: 190px;
+	text-align: center;
+	margin: auto;
+	padding-top: 80px;
+}
+
+.public-video-button {
+	margin-top: 24px;
+	min-width: 100px !important;
+}
+
+
+/**********************现场视频页面样式结束**************************/
+
+
+/********************聊天以及警情页面样式开始************************/
+
+.chatting-and-form {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-height: 740px;
+	background: #fff;
+	overflow-y: auto;
+}
+
+
+/*聊天最外层盒子*/
+
+.chatting-max-box {
+	position: relative;
+	float: left;
+	width: 42%;
+	min-height: 100%;
+	background: #fff;
+	box-sizing: border-box;
+	border-right: 10px solid #efeff4;
+}
+
+
+/*聊天盒子开始*/
+
+.chatting-content-box {
+	position: absolute;
+	top: 44px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+
+/*聊天内容内层盒子*/
+
+.chatting-content-inner-box {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 6px 20px 0px 20px;
+	overflow-y: auto;
+}
+
+.chatting-inner-box {
+	width: 100%;
+	height: 420px;
+	border: 1px solid #ccc;
+	background: #efeff4;
+	padding: 10px 5px;
+	box-sizing: border-box;
+	overflow-y: auto;
+}
+
+
+/*输入框外层盒子*/
+
+.chatting-input-box {
+	position: relative;
+	width: 100%;
+	height: 65px;
+	text-align: right;
+}
+
+
+/*聊天输入框*/
+
+.chatting-input {
+	position: absolute;
+	top: 0;
+	right: 80px;
+	bottom: 0;
+	left: 0;
+	border: 1px solid #ccc;
+	border-top: 0;
+	border-right: 0;
+}
+
+.chatting-input textarea {
+	resize: none;
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+}
+
+
+/*聊天气泡样式*/
+
+div.speech {
+	float: left;
+	margin: 6px 0;
+	padding: 8px;
+	table-layout: fixed;
+	word-break: break-all;
+	position: relative;
+	background: #fff;
+	border: 1px solid #e4e4e4;
+	border-radius: 5px;
+}
+
+div.speech:before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 15px;
+	top: -20px;
+	border: 10px solid;
+	border-color: transparent transparent #e4e4e4 transparent;
+}
+
+div.speech:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 17px;
+	top: -16px;
+	border: 8px solid;
+	border-color: transparent transparent #e4e4e4 transparent;
+}
+
+div.speech.right {
+	display: inline-block;
+	box-shadow: -2px 2px 2px #e4e4e4;
+	margin-right: 12px;
+	margin-top: 0;
+	max-width: 50%;
+	float: right;
+	background: #9ac5f1;
+}
+
+div.speech.right:before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 4px;
+	bottom: auto;
+	left: auto;
+	right: -10px;
+	border-width: 9px 0 9px 10px;
+	border-color: transparent #9ac5f1;
+}
+
+div.speech.right:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 5px;
+	bottom: auto;
+	left: auto;
+	right: -8px;
+	border-width: 8px 0 8px 9px;
+	border-color: transparent #9ac5f1;
+}
+
+div.speech.left {
+	display: inline-block;
+	box-shadow: 1px 1px 1px #e4e4e4;
+	margin-left: 12px;
+	margin-top: 0;
+	max-width: 50%;
+	position: relative;
+	background: #fff;
+}
+
+div.speech.left:before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 4px;
+	bottom: auto;
+	left: -10px;
+	border-width: 9px 10px 9px 0;
+	border-color: transparent #fff;
+}
+
+div.speech.left:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 5px;
+	bottom: auto;
+	left: -8px;
+	border-width: 8px 9px 8px 0;
+	border-color: transparent #fff;
+}
+
+.left img {
+	float: left;
+	margin-top: 10px;
+}
+
+.right img {
+	float: right;
+	margin-top: 10px;
+}
+
+.left-chatting-box {
+	position: relative;
+	width: 95%;
+	clear: both;
+	float: left;
+	margin-left: 10px;
+}
+
+.right-chatting-box {
+	width: 95%;
+	clear: both;
+	float: right;
+	margin-right: 10px;
+}
+
+.left-head-img {
+	width: 45px;
+	height: 45px;
+	display: block;
+	float: left;
+	overflow: hidden;
+}
+
+.left-head-img img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.left-name{
+	float: left;
+	padding-left: 5px;
+	font-size: 12px;
+	color: #666;
+}
+
+.right-name{
+	float: right;
+	padding-right: 5px;
+	font-size: 12px;
+	color: #666;
+}
+
+.right-head-img {
+	width: 45px;
+	height: 45px;
+	display: block;
+	float: right;
+	overflow: hidden;
+}
+
+.right-head-img img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.center-box {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.center-box p {
+	text-align: center;
+	color: #999;
+}
+
+.center-box span {
+	display: inline-block;
+	background: #b3b3b7;
+	height: 22px;
+	border-radius: 5px;
+	padding: 0 5px;
+	color: #fff;
+	font-size: 12px;
+	line-height: 22px;
+}
+
+
+/*发送按钮*/
+
+.send-btn {
+	width: 80px;
+	height: 100%;
+	background: #2b399e;
+	color: #fff;
+	font-size: 16px;
+	border: 1px solid #2b399e;
+}
+
+
+/*常用语外框*/
+
+.always-chatting {
+	width: 100%;
+	max-height: 174px;
+	margin: 15px auto;
+	overflow-y: auto;
+	background: #efeff4;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	padding: 6px;
+}
+
+
+/*常用语样式*/
+
+.phrase {
+	float: left;
+	height: 30px;
+	border: 1px solid #dfdcdc;
+	border-radius: 5px;
+	background: #fff;
+	padding: 0 12px;
+	line-height: 30px;
+	text-align: center;
+	margin: 4px;
+}
+
+
+/*选中的常用语样式*/
+
+.phrase-check {
+	float: left;
+	height: 30px;
+	border: 1px solid #2B399C;
+	color: #2B399C;
+	border-radius: 5px;
+	background: #CFD2F1;
+	padding: 0 12px;
+	line-height: 30px;
+	text-align: center;
+	margin: 4px;
+}
+
+
+/*警情外层盒子开始*/
+
+.sirens-box {
+	position: relative;
+	float: left;
+	width: 58%;
+	min-height: 100%;
+}
+
+
+/*警情信息外层盒子*/
+
+.sirens-message-box {
+	width: 100%;
+	border-bottom: 10px solid #efeff4;
+}
+
+.sirens-content-box {
+	width: 100%;
+	padding: 4px 25px 10px 25px;
+	box-sizing: border-box;
+}
+
+.form-box {
+	width: 100%;
+}
+
+.cell-div {
+	float: left;
+	width: 31.5%;
+	margin: 8px 5px;
+}
+
+.cell-div>span:first-child {
+	display: inline-block;
+	width: 60px;
+	text-align: right;
+}
+
+.cell-div>input[type="text"],
+.cell-div>select {
+	border: 1px solid #bababa;
+	height: 28px;
+	width: 68%;
+}
+
+.textarea-div {
+	width: 100%;
+}
+
+.vertical-webkit-baseline-middle {
+	vertical-align: -webkit-baseline-middle;
+}
+
+.textarea-div>input[type="text"],.textarea-div>select {
+	width: 86.5% !important;
+}
+
+.cell-div textarea {
+	resize: none;
+	border: 1px solid #bababa;
+	vertical-align: text-top;
+	width: 86.5%;
+	height: 80px;
+	padding: 5px;
+}
+
+.center-button-box {
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+
+/*按钮样式*/
+
+.center-button-box .button1 {
+	margin: 0 20px;
+}
+
+
+/*查看派遣人员按钮*/
+
+.look-dispatch-personnel-btn {
+	display: inline-block;
+	float: right;
+	height: 30px;
+	padding: 0 15px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 15px;
+}
+
+
+/*派遣人员外层盒子*/
+
+.dispatch-personnel-box {
+	display: none;
+}
+
+
+/*派遣人员列表*/
+
+.dispatch-personnel-list {
+	width: 100%;
+	max-height: 94px;
+	padding: 0 30px;
+	box-sizing: border-box;
+	overflow-y: auto;
+	margin-bottom: 15px;
+}
+
+
+/*派遣人员名单样式*/
+
+.dispatch-personnel {
+	float: left;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 10px;
+	background: #efeff4;
+	border: 1px solid #d7d7d7;
+	border-radius: 5px;
+	margin: 0 12px 10px 0;
+}
+
+
+/*警单详情外层盒子样式*/
+
+.sirens-detail-box {
+	position: absolute;
+	top: 307px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+}
+
+.sirens-detail-list-box {
+	position: absolute;
+	top: 44px;
+	right: 0;
+	bottom: 15px;
+	left: 0;
+	width: 100%;
+	overflow-y: auto;
+	padding: 0 30px 10px 30px;
+	box-sizing: border-box;
+}
+
+.sirens-detail-list>li {
+	border-bottom: 1px solid #e1e1e1;
+	padding: 10px 0 10px 0;
+}
+
+.sirens-detail-list>li>p {
+	padding-bottom: 3px;
+}
+
+.multimedia-box {
+	margin-top: 10px;
+	width: 100%;
+}
+
+.multimedia-div {
+	position: relative;
+	float: left;
+	margin: 0 15px 15px 0;
+}
+.multimedia-div_f{
+	position: relative;
+	float: left;
+	margin: 0 15px 15px 0;
+}
+.float-window {
+	position: absolute;
+	/*top: 10px;
+	left: 10px;*/
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 3px;
+	text-align: left;
+	width: 200px;
+	height: 80px;
+	z-index: 99999;
+	margin: auto;
+	color: #fff;
+	display: none;
+}
+
+.float-window-top:before {
+	content: '';
+	width: 0;
+	height: 0;
+	border: 15px solid transparent;
+	border-left-color: rgba(0,0,0,0.5);
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	border-width: 0px 9px 9px 9px;
+}
+.float-window-top:after {
+	content: '';
+	width: 0;
+	height: 0;
+	border: 15px solid transparent;
+	border-right-color: rgba(0,0,0,0.5);
+	position: absolute;
+	right: 50%;
+	top: 100%;
+	border-width: 0px 9px 9px 9px;
+}
+
+.float-window-bottom:before{
+	content: '';
+	width: 0;
+	height: 0;
+	border: 15px solid transparent;
+	border-left-color: rgba(0,0,0,0.5);
+	position: absolute;
+	left: 50%;
+	top: -9px;
+	border-width: 9px 9px 0px 9px;
+}
+
+.float-window-bottom:after{
+	content: '';
+	width: 0;
+	height: 0;
+	border: 15px solid transparent;
+	border-right-color: rgba(0,0,0,0.5);
+	position: absolute;
+	right: 50%;
+	top: -9px;
+	border-width: 9px 9px 0px 9px;
+}
+
+
+/*取证视频样式*/
+
+.multimedia-video-box {
+	width: 66px;
+	height: 66px;
+	background: #040729;
+	text-align: center;
+	border: 1px solid #040729;
+}
+
+.multimedia-video-box>img {
+	margin-top: 18px;
+}
+
+.multimedia-div video {
+	background: #000;
+	border: 1px solid #e1e1e1;
+}
+.multimedia-div_f>img{
+	display: block;
+	width: 66px;
+	height: 66px;
+	border: 1px solid #e1e1e1;
+}
+
+/*实时视频盒子*/
+
+.live-stream-video-box {
+	width: 140px;
+	height: 90px;
+	background: #040729;
+	text-align: center;
+}
+
+.live-stream-video-box>img {
+	margin-top: 30px;
+}
+
+.live-stream-video-box video {
+	background: #000;
+	border: 1px solid #e1e1e1;
+}
+
+.multimedia-div>img {
+	display: block;
+	width: 66px;
+	height: 66px;
+	border: 1px solid #e1e1e1;
+}
+
+.audio-box {
+	width: 66px;
+	height: 66px;
+	background: #efeff4;
+	border: 1px solid #e1e1e1;
+	text-align: center;
+}
+
+.audio-box>img {
+	display: inline-block;
+	margin-top: 15px;
+	height: 20px;
+}
+
+.audio-box>p {
+	padding-top: 3px;
+}
+
+
+/********************聊天以及警情页面样式结束************************/
+
+
+/************************地图页面样式开始***************************/
+
+
+/*地图盒子*/
+
+.map-box {
+	width: 100%;
+	height: 100%;
+	background: url(/theme/img/fireCheck/map.png) no-repeat center;
+	background-size: 100% 100%;
+}
+
+.search-localtion-box {
+	position: absolute;
+	top: 40px;
+	left: 84px;
+	width: 440px;
+	height: 45px;
+	border-radius: 5px;
+}
+
+.search-localtion-box input[type="text"] {
+	height: 100%;
+	width: 365px;
+	border: 1px solid #d7d7d7;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background: #fff;
+	padding: 0 20px;
+}
+
+.search-localtion-box button {
+	float: right;
+	width: 75px;
+	height: 100%;
+	background: #217ede;
+	color: #fff;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.add-new-sirens {
+	position: absolute;
+	top: 100px;
+	left: 540px;
+}
+
+
+/*列表外层盒子*/
+
+.map-police-box {
+	position: absolute;
+	top: 100px;
+	left: 84px;
+	width: 440px;
+	max-height: 815px;
+	background: #fff;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	z-index: 999;
+	overflow-y: auto;
+}
+
+
+/*事发地址*/
+
+.the-site {
+	height: 100px;
+	width: 100%;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: #ededed;
+}
+
+.the-site img {
+	display: inline-block;
+	height: 32px;
+	width: 25px;
+	margin: 34px 20px;
+	float: left;
+}
+
+.the-site img.hj-icon-img {
+	height: 48px;
+	width: 36px;
+	margin: 17px 20px;
+}
+
+.site-title {
+	display: inline-block;
+	width: 280px;
+	min-height: 20px;
+	line-height: 20px;
+	float: left;
+	color: #e30a0a;
+	margin: 15px 0 5px 0;
+	font-size: 16px;
+}
+
+.the-site p {
+	display: inline-block;
+	width: 280px;
+	line-height: 20px;
+	color: #999;
+}
+
+.map-police-list-box {
+	max-height: 488px;
+	overflow-y: auto;
+}
+
+.police-person-list {
+	display: none;
+}
+
+
+/*附近派出所列表*/
+
+.map-police-list {
+	margin: 0 14px;
+	max-height: 488px;
+}
+
+.map-police-list li {
+	min-height: 100px;
+	border-bottom: 1px solid #d7d7d7;
+	padding-bottom: 5px;
+}
+
+.map-police-list li:last-child {
+	border: 0;
+}
+
+.map-police-list li {
+	min-height: 100px;
+	border-bottom: 1px solid #d7d7d7;
+	padding-bottom: 5px;
+}
+
+
+/*附近设备显示div样式*/
+
+.hj-nearby-div {
+	height: 91px;
+	background: #fff;
+	padding: 10px 0;
+	box-sizing: border-box;
+}
+
+.hj-nearby-div>div {
+	float: left;
+	height: 70px;
+	width: 50%;
+	/*line-height: 100px;*/
+	box-sizing: border-box;
+}
+
+.hj-nearby-div>div img {
+	display: inline-block;
+	height: 48px;
+	width: 36px;
+	margin: 10px 20px;
+	float: left;
+}
+
+.hj-nearby-div>div span {
+	display: inline-block;
+	width: 120px;
+	min-height: 20px;
+	line-height: 24px;
+	float: left;
+	font-size: 16px;
+}
+
+.hj-nearby-div>div .nerby-title {
+	margin-top: 13px;
+}
+
+.liandong {
+	border-right: 1px solid #d7d7d7;
+}
+
+.nearby-history {
+	height: 40px;
+	line-height: 40px;
+	background: #ededed;
+	padding: 0 20px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+
+/*火警地图列表样式*/
+
+.hj-map-police-list {
+	margin: 0 15px;
+}
+
+.hj-map-police-list li {
+	min-height: 60px;
+	border-bottom: 1px solid #d7d7d7;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+
+/*大头针样式*/
+
+.site-img {
+	display: inline-block;
+	float: left;
+	height: 48px;
+	width: 36px;
+	margin: 34px 20px 34px 6px;
+}
+
+
+/*派出所名称*/
+
+.police-name {
+	display: inline-block;
+	float: left;
+	height: 20px;
+	width: 280px;
+	line-height: 20px;
+	margin: 10px 0 5px 0;
+	font-size: 16px;
+	color: #217ede;
+}
+
+.police-address {
+	display: inline-block;
+	width: 280px;
+	line-height: 20px;
+	color: #999;
+	margin-bottom: 5px;
+}
+
+
+/*火警地图样式*/
+
+.hj-map-police-list li .police-address {
+	width: 100%;
+}
+
+.juli {
+	display: inline-block;
+	width: 280px;
+	line-height: 20px;
+	color: #999;
+}
+
+.juli img {
+	vertical-align: middle;
+}
+
+.check-button {
+	float: right;
+	background: url(/theme/img/fireCheck/unchecked-box-icon.png) no-repeat center;
+	background-size: 100% 100%;
+	height: 30px;
+	width: 30px;
+	margin-top: -40px;
+}
+
+.checked-button-bg {
+	background-image: url(/theme/img/fireCheck/checked-box-iocn.png);
+}
+
+.check-button input[type="checkbox"] {
+	opacity: 0;
+	cursor: pointer;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	width: 30px;
+	height: 30px;
+}
+
+.count-police-box {
+	display: inline-block;
+	float: left;
+	margin: 12px 0 0 20px;
+}
+
+.count-police-box>p {
+	text-align: left;
+	line-height: 26px;
+}
+
+.submit-button {
+	height: 76px;
+	width: 100%;
+	text-align: center;
+	line-height: 60px;
+	border-top: 1px solid #d7d7d7;
+}
+
+.submit-button button {
+	width: 100px;
+	height: 40px;
+	background: #1d224a;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 16px;
+	float: right;
+	margin: 18px 20px 0 0;
+}
+
+
+/************************地图页面样式结束***************************/
+
+
+/************************历史记录样式开始***************************/
+
+.history-max-box {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+
+
+/*查询和日历外层盒子*/
+
+.inquire-and-calendar {
+	width: 330px;
+	height: 100%;
+	overflow-y: auto;
+	box-sizing: border-box;
+}
+
+
+/*查询外层盒子*/
+
+.inquire-box {
+	width: 100%;
+}
+
+
+/*查询条件列表盒子*/
+
+.inquiry-condition-box {
+	padding: 0 20px 10px 20px;
+}
+
+
+/*查询条件列表*/
+
+.inquiry-condition-box>li {
+	padding: 5px 10px;
+}
+
+.inquiry-condition-box>li input[type="text"],
+.inquiry-condition-box>li select {
+	border: 1px solid #d7d7d7;
+	height: 30px;
+	width: 210px;
+}
+
+.inquire-box .button1 {
+	width: 210px;
+}
+
+
+/*自定义下拉列表盒子*/
+
+.my-select-list-box {
+	position: absolute;
+	top: 29px;
+	left: 0;
+	right: 0;
+	background: #fff;
+	border: 1px solid #d7d7d7;
+	display: none;
+}
+
+
+/*自定义下拉列表*/
+
+.my-select-list {
+	max-height: 110px;
+	overflow-y: auto;
+}
+
+
+/*自定义下拉列表行*/
+
+.my-select-list li {
+	padding: 8px 10px;
+	border-bottom: 1px solid #ddd;
+	background: #fafafa;
+}
+
+.my-select-list li>span {
+	display: inline-block;
+	width: 140px;
+}
+
+.my-select-list li:last-child {
+	border: 0;
+}
+
+.select-submit-btn-box {
+	height: 30px;
+	width: 100%;
+	border-top: 1px solid #d7d7d7;
+	line-height: 30px;
+	text-align: center;
+}
+
+.select-submit-btn-box .button1 {
+	width: 100%;
+	min-width: 0;
+	height: 100%;
+	border: 0;
+}
+
+.my-select-list .check-button {
+	float: right;
+	background: url(/theme/img/jiejingtai/hj-check-bg.png) no-repeat center;
+	background-size: 100% 100%;
+	margin: 0;
+	width: 14px;
+	height: 14px;
+	margin-top: 3px;
+}
+
+.my-select-list .check-button input[type="checkbox"] {
+	width: 14px;
+	height: 14px;
+}
+
+.my-select-list .select-checked-bg {
+	background: url(/theme/img/jiejingtai/hj-check-bg1.png) no-repeat center;
+}
+
+.inquiry-condition-box li:first-child span {
+	vertical-align: middle;
+}
+
+
+/*状态样式*/
+
+.state-box {
+	display: inline-block;
+	width: 220px;
+	vertical-align: text-top;
+}
+
+.state {
+	float: left;
+	height: 25px;
+	width: 98px;
+	text-align: center;
+	line-height: 25px;
+	border: 1px solid #d7d7d7;
+	margin: 0 10px 10px 0;
+}
+
+.state-checked {
+	border: 1px solid #217ede;
+	color: #217ede;
+	background: url(/theme/img/fireCheck/state-checked.png) no-repeat right bottom;
+}
+
+
+/*日历外层盒子*/
+
+.calendar-box {
+	width: 100%;
+	border-top: 10px solid #efeff4;
+	padding-bottom: 15px;
+	box-sizing: border-box;
+}
+
+.calendar-inner-box {
+	background: #fafafa;
+	width: 300px;
+	height: 330px;
+	margin-left: 15px;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+#dt {
+	display: none;
+}
+
+
+/*查询结果列表样式*/
+
+.search-result-box {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 330px;
+	border-left: 10px solid #efeff4;
+}
+
+.search-result-inner-box {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+
+/************************历史记录样式结束***************************/
+
+
+/************************历史详情样式开始***************************/
+
+
+/*基础信息外层盒子*/
+
+.basic-information-box {
+	width: 330px;
+	height: 100%;
+	position: relative;
+}
+
+.basic-information-detail-box {
+	position: absolute;
+	top: 44px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.basic-information-detail-inner-box {
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+}
+
+.basic-information-detail>li {
+	line-height: 30px;
+	padding-left: 20px;
+}
+
+.basic-information-detail>li>span {
+	vertical-align: -webkit-baseline-middle;
+}
+
+.basic-information-detail>li>div {
+	display: inline-block;
+	color: #999;
+	width: 210px;
+	vertical-align: text-top;
+}
+
+.basic-information-detail>li>div>p>a{
+	text-decoration:underline;
+}
+
+
+/*任务调度外层盒子*/
+
+.task-scheduling-box {
+	position: absolute;
+	top: 44px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.task-scheduling-list {
+	max-height: 100%;
+	overflow-y: auto;
+	padding: 0 20px;
+}
+
+.task-scheduling-list>li {
+	padding: 10px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+
+/*个人信息盒子*/
+
+.person-information-box {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 10px;
+}
+
+
+/*头像*/
+
+.head-img {
+	float: left;
+	height: 40px;
+	width: 40px;
+	background: #77c7bf;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 20px;
+}
+
+.person-information {
+	float: left;
+	margin-left: 10px;
+}
+
+.person-information>p {
+	line-height: 20px;
+}
+
+.multimedia-title {
+	margin-top: 10px;
+}
+
+
+/************************历史详情样式结束***************************/
+
+
+/************************上传版本样式开始***************************/
+
+.upload-app-box {
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	overflow-y: auto;
+}
+
+.upload-app-detail {
+	padding: 10px 20px;
+}
+
+.upload-app-detail>li {
+	line-height: 46px;
+}
+
+.upload-app-detail>li input[type="text"] {
+	width: 720px;
+	height: 32px;
+	border: 1px solid #d7d7d7;
+}
+
+.upload-app-detail>li textarea {
+	resize: none;
+	width: 720px;
+	height: 80px;
+	border: 1px solid #d7d7d7;
+	vertical-align: text-top;
+}
+
+.upload-app-detail>li>span {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.upload-button-box {
+	width: 800px;
+	text-align: center;
+}
+
+.upload-button-box>button {
+	margin: 10px 15px;
+}
+
+
+/************************上传版本样式结束***************************/
+
+.left-name{
+	float: left;
+	padding-left: 5px;
+	font-size: 12px;
+	color: #666;
+}
+
+.right-name{
+	float: right;
+	padding-right: 5px;
+	font-size: 12px;
+	color: #666;
+}
+
+.stop-btn{
+	margin: 15px 0 0 30px;
+	width: 30px;
+	height: 30px;
+	background: url("/theme/img/jiejingtai/video-stop.png") no-repeat center;
+	background-size: 100% 100%;
+	border: 0;
+}
+/*开始播放按钮*/
+.sr-btn{
+	margin: 15px 0 0 30px;
+	width: 30px;
+	height: 30px;
+	background: url("/theme/img/jiejingtai/video-star.png") no-repeat center;
+	background-size: 100% 100%;
+	border: 0;
+}
+
+.red-star {
+	display: inline-block;
+	width: 6px;
+	color: red;
+}

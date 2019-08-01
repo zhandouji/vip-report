@@ -1,0 +1,336 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑", arial;
+	font-size: 28px;
+	color: #333;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	max-height: 999999999px;
+}
+
+ul,
+li,
+ol {
+	list-style: none;
+}
+
+
+/*a标签样式*/
+
+a,
+a:link,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+	text-decoration: none;
+	background: transparent;
+	outline: 0;
+	cursor: pointer;
+}
+
+button,
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+textarea,
+select {
+	outline: none;
+	border: 1px solid #bababa;
+	padding: 0 5px;
+	box-sizing: border-box;
+	background: transparent;
+	color: #999;
+}
+
+
+/*外层盒子大小*/
+
+.box {
+	width: 100%;
+	height: 100%;
+	/*position: relative;*/
+}
+
+.red-star {
+	color: red;
+}
+
+
+/*内容模块*/
+
+.detail {
+	width: 100%;
+	height: 100%;
+	padding: 15px 0 50px 0;
+	box-sizing: border-box;
+	overflow: auto;
+}
+
+
+/*查询列表样式*/
+
+.demand-list li {
+	height: 110px;
+	line-height: 110px;
+	border-bottom: 1px solid #D4D4D4;
+	padding: 0 20px;
+}
+
+.demand-list li img {
+	display: block;
+	float: left;
+	height: 50px;
+	width: 50px;
+	margin-top: 30px;
+	margin-right: 10px;
+}
+
+.demand-list li a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 110px;
+}
+
+.demand-list li a i {
+	float: right;
+	margin-top: 40px;
+	font-size: 35px;
+	color: #ccc;
+}
+
+
+/**************************重名查询样式**************************/
+
+
+/*.the-same-name-box{
+	margin-top: 200px;
+}*/
+
+.the-same-name-box li {
+	padding: 60px 20px;
+}
+
+.the-same-name-box li input[type='text'] {
+	width: 600px;
+	height: 60px;
+	margin-left: 10px;
+	padding: 0 10px;
+}
+
+.same-name-submit {
+	width: 100%;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.same-name-submit button {
+	background: #217ede;
+	width: 600px;
+	height: 70px;
+	color: #fff;
+	border-radius: 8px;
+}
+
+.layui-m-layercont {
+	line-height: 80px;
+}
+
+
+/*************************流动人口信息备案********************/
+
+.content-box {
+	width: 100%;
+	height: 100%;
+	padding: 10px 0px 80px 0px;
+	box-sizing: border-box;
+	overflow: auto;
+	background: #fff;
+}
+
+.juzhuzheng-box{
+	background: #fff;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+
+.juzhuzheng-box li {
+	padding: 19px 5px;
+	border-bottom: 1px solid #dadada;
+}
+
+.juzhuzheng-box li i{
+	display: inline-block;
+	color: #ccc;
+	font-size: 45px;
+	/*float: right;
+	margin-top: 8px;*/
+	vertical-align: middle;
+}
+
+.juzhuzheng-box input[type="text"],
+.juzhuzheng-box select,
+.juzhuzheng-box option {
+	width: 510px;
+	height: 60px;
+	margin-left: 10px;
+	padding: 0 10px;
+	border: 0;
+	text-align: right;
+}
+
+/*分组外层div*/
+.required-div {
+	height: 90px;
+	line-height: 90px;
+	color: #217ede;
+	border-bottom: 1px solid #217ede;
+	/*margin-bottom: 10px;*/
+	font-weight: 600;
+	background: #fff;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+.line{
+	height: 20px;
+	width: 100%;
+	background: #EFEFF4;
+}
+
+.juzhuzheng-box li>span:first-child{
+	display: inline-block;
+	width: 127px;
+	text-align: center;
+}
+
+.vertical-align-middle{
+	 vertical-align: middle;
+}
+
+/*自定义下拉框*/
+.input-select-box{
+	display: inline-block;
+}
+
+/*自定义下拉框最外层盒子*/
+.input-select-list-box{
+	display: none;
+	position: absolute;
+	top: 0px;
+	right: 0;
+	bottom: 0px;
+	left: 0px;
+	border-right: 1px solid #bababa;
+	z-index: 999;
+	background: rgba(0,0,0,0.2);
+}
+
+/*下拉框内嵌层*/
+.input-select-list-box1{
+	width: 100%;
+}
+
+/*下拉框内容定位外层*/
+.input-select-list-box2{
+	width: 640px;
+	max-height: 750px;
+	margin: 0 auto;
+	margin-top: 260px;
+	border-radius: 10px;
+	background: #fff;
+}
+
+/*弹窗列表标题*/
+.input-select-title{
+	height: 80px;
+	line-height: 80px;
+	border-bottom: 2px solid #dadada;
+	padding: 0 20px;
+	background: #fff;
+	box-sizing: border-box;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+/*下拉框列表*/
+.input-select-list{
+	max-height: 660px;
+	margin: auto;
+	background: #fff;
+	overflow-y: scroll;
+	padding: 0 20px;
+	box-sizing: border-box;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+/*下拉框列表行*/
+.input-select-list li{
+	line-height: 88px;
+	border-bottom: 1px solid #dadada;
+	padding: 0 10px;
+}
+
+/*下拉框选择箭头*/
+.input-select-list li:last-child{
+	border: 0;
+}
+
+/*下拉选中行样式*/
+.checked-li,.checked-tab-title{
+	color: #217ede;
+}
+
+/*省市县三联选择*/
+.select-tab-title{
+	display: inline-block;
+	width: 190px;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	border-right: 1px solid #dadada;
+	font-weight: 600;
+}
+
+.select-tab-title:last-child{
+	border: 0;
+}
+
+/*地市*/
+.dishi{
+	display: none;
+}
+
+/*区县*/
+.quxian{
+	display: none;
+}
+
+/*上传照片*/
+.add-img{
+	display: inline-block;
+	vertical-align: middle;
+	width: 144px;
+	height: 144px;
+	border: 1px dotted #dadada;
+}
+
+/*身份证受理页面独有样式*/
+.get-sfz-cell{
+	display: none;
+}
+
+/*注意事项提示语*/
+.attention{
+	height: 30px;
+	font-size: 25px;
+	color: red;
+	padding: 10px 10px 0 10px;
+}

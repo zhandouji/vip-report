@@ -1,0 +1,158 @@
+.clear{
+	display: block;
+	overflow: hidden;
+}
+
+.staffing-box{
+	width: 100%;
+	min-width: 850px;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.staffing-box *{
+	font-size: 15px;
+}
+
+input[type="text"],
+select{
+	height: 30px;
+	width: 300px;
+	background: #fefefe;
+	padding: 0 10px;
+	box-sizing: border-box;
+	border: 1px solid #d2d6de;
+}
+
+td{
+	padding: 4px;
+}
+
+/*各个类型列表样式*/
+.type-list td:nth-child(odd){
+	text-align: right;
+	font-weight: bold;
+	/*min-width: 70px;*/
+	white-space: nowrap;
+}
+
+.type-list td:nth-child(even){
+	text-align: left;
+}
+
+/*权限的显示与隐藏*/
+.power{
+	display: none;
+}
+
+/*备选人员外框*/
+.police-person{
+	width: 100%;
+	background: #fefefe;
+	border: 1px solid #d2d6de;
+	padding: 5px;
+	box-sizing: border-box;
+	max-height: 160px;
+	overflow-y: auto;
+}
+/*备选人员div*/
+.person{
+	float: left;
+	width: fit-content;
+	min-width: 90px;
+	height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background: #efeff4;
+	border: 1px solid #d2d6de;
+	border-radius: 3px;
+	margin: 4px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.vertical-align{
+	vertical-align: initial;
+}
+    
+/*选择人员标题*/
+.manage-title{
+	font-weight: bold;
+	margin-left: 12px;
+	padding: 5px 0;
+	/*border-bottom: 1px solid #d2d6de;*/
+}
+
+/*已选择人员列表外层盒子*/
+.manage-list-box{
+	width: 100%;
+	margin-top: 10px;
+	padding-left: 12px;
+	box-sizing: border-box;
+}
+
+/*已选择人员列表*/
+.manage-list{
+	width: 100%;
+	min-width: 850px;
+	border-collapse: collapse;
+}
+
+
+.manage-list th{
+	border: 1px solid #d2d6de;
+	background: #8ab5ce;
+	padding: 10px;
+	color: #fff;
+}
+
+.manage-list td{
+	border: 1px solid #d2d6de;
+	padding: 8px;
+}
+
+.manage-list td:first-child{
+	width: 70px;
+	font-weight: bold;
+}
+
+/*备注*/
+.manage-list td>span{
+	float: right;
+	margin-top: 10px;
+}
+.manage-list td span>span{
+	color: red;
+}
+
+.person button{
+	background: red;
+	height: 14px;
+	width: 14px;
+	border: 0;
+	padding: 0;
+	border-radius: 7px;
+	color: #fff;
+	line-height: 10px;
+	float: right;
+	margin-top: -4px;
+	margin-right: -12px;
+	text-align: center;
+}
+
+.submit-button{
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+	
+}
+.submit-button button{
+	background: #8ab5ce;
+	width: 90px;
+	height: 30px;
+	border-radius: 3px;
+	color: #fff;
+	font-weight: bold;
+}
+

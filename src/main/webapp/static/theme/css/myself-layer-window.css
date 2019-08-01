@@ -1,0 +1,406 @@
+.max-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/*报警人报警历史的查询样式开始*/
+
+.bjr-history-box {
+  min-height: 100%;
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+}
+
+.bjr-search-box {
+  padding: 8px 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+.bjr-search-box .message-cell {
+  width: 25%;
+}
+
+.bjr-history-box .message-cell-lian-dong {
+  width: 84% !important;
+}
+
+.bjr-search-box .float-right-button {
+  width: 16%;
+  text-align: right;
+  padding-right: 20px;
+}
+
+/*报警人报警历史的查询样式结束*/
+
+/*报警历史的详情页面的样式开始*/
+
+.history-details-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.tab-list {
+  /*border-bottom: 1px solid #d5d5d5;*/
+  background-color: #d0d0e0;
+}
+
+.tab-list li {
+  float: left;
+  padding: 14px 30px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.cheched-li {
+  color: #2b399e;
+  background-color: #fff;
+}
+
+.tab-content-box {
+  position: absolute;
+  top: 52px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.tab-content {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+  display: none;
+}
+
+.tab-content:first-child {
+  display: block;
+}
+
+.jingdan-message p {
+  padding: 3px 0;
+}
+
+.jingdan-message p img {
+  max-height: 140px;
+}
+
+.jingdan-message td:nth-child(odd),
+.jingqing-video td:nth-child(odd) {
+  text-align: right;
+  width: 100px;
+}
+
+.jingdan-message td:nth-child(even),
+.jingqing-flow td:nth-child(even) {
+  text-align: left;
+}
+
+.jingqing-video td:nth-child(even) {
+  text-align: center;
+}
+
+.jingqing-flow td:nth-child(odd) {
+  text-align: center;
+  width: 150px;
+}
+
+.history-video-box {
+  position: relative;
+  width: 760px;
+  height: 570px;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  background-image: url(../img/jiejingtai/video-bg1.jpg);
+}
+
+.history-video-box video {
+  height: 570px;
+  width: 760px;
+  max-height: 570px;
+  max-width: 760px;
+}
+
+.person-message-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+}
+
+.person-message-box span {
+  margin: 0 10px;
+  color: #fff;
+  font-weight: 600;
+}
+
+/*视频控制条外层盒子*/
+
+.video-control-box {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+}
+
+/*视频播放按钮*/
+
+.video-control-btn {
+  float: left;
+  width: 40px;
+  height: 40px;
+  background: url(../img/jiejingtai/play.png) no-repeat center;
+  margin: 10px 0 0 40px;
+}
+
+/*视频转换角度按钮*/
+
+.video-rotating-control {
+  float: right;
+  width: 36px;
+  height: 36px;
+  background: url(../img/jiejingtai/rotating.png) no-repeat center;
+  margin: 14px 40px 0 0;
+}
+
+/*进度条外层盒子样式*/
+
+.progress-bar-max-box {
+  float: left;
+  width: 580px;
+  height: 100%;
+  box-sizing: border-box;
+  margin-left: 10px;
+}
+
+.progress-bar-box {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 480px;
+  line-height: 60px;
+}
+
+.progress-bar-box:hover {
+  cursor: pointer;
+}
+
+/*进度条*/
+
+.progress-bar {
+  display: inline-block;
+  width: 480px;
+  height: 6px;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+/*总时长*/
+
+.total-time {
+  display: inline-block;
+  color: #fff;
+  height: 100%;
+  line-height: 60px;
+  width: 38px;
+}
+
+/*当前时长*/
+
+.current-time {
+  display: inline-block;
+  color: #fff;
+  height: 100%;
+  line-height: 60px;
+  width: 38px;
+}
+
+.current-bar {
+  position: relative;
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  width: 60px;
+  background-color: #217ede;
+  border-radius: 3px;
+  border-right: 10px solid #217ede;
+  box-sizing: border-box;
+}
+
+.current-btn {
+  position: absolute;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background-color: #217ede;
+  border-radius: 50%;
+  top: 24px;
+  left: 0px;
+}
+
+/*报警历史的详情页面的样式结束*/
+
+/*火警全部警情页面样式开始*/
+
+.of-all-the-alert {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+.of-all-the-alert .message-cell {
+  width: 50%;
+}
+
+.all-the-alert-message {
+  margin-left: 12px;
+  margin-bottom: 30px;
+}
+
+/*火警全部警情页面样式结束*/
+
+/*附近警情视频外层盒子样式*/
+
+.nearby-video-box {
+  float: left;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 18px 26px;
+}
+
+.nearby-video {
+  height: 467px;
+  width: 347px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nearby-video video {
+  width: 100%;
+  height: 100%;
+}
+
+/*附近警情相关信息外层盒子样式*/
+
+.nearby-message-box {
+  float: left;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 62px;
+}
+
+.nearby-message-table {
+  width: 360px;
+}
+
+.nearby-message-table td {
+  padding: 8px 0;
+  font-size: 15px;
+}
+
+.nearby-message-table td:nth-child(odd) {
+  text-align: right;
+  white-space: nowrap;
+  vertical-align: text-top;
+}
+
+.nearby-message-table td:nth-child(even) {
+  text-align: left;
+}
+
+.deal-with-button {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.deal-with-button button {
+  border: 0;
+  width: 166px;
+  height: 48px;
+  border-radius: 5px;
+  color: #fff;
+  margin: 0 10px;
+}
+
+.warning-text {
+  color: #f65959;
+  margin-top: 20px;
+  padding-left: 30px;
+}
+
+.close-btn {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  color: red;
+  background-image: url(../../plugins/layer-v3.1.1/theme/default/icon.png);
+  background-position: 1px -40px;
+  width: 16px;
+  height: 16px;
+}
+
+/**************************添加聊天组成员样式***************************/
+.add-group-box {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+.add-group-name {
+  width: 360px;
+  height: 27px;
+}
+
+.video-person-name {
+  margin-top: 12px;
+  margin-bottom: 30px;
+}
+
+.person-name-box {
+  display: inline-block;
+  width: 360px;
+  height: 200px;
+  border: 1px solid #ccc;
+  vertical-align: text-top;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  overflow-y: auto;
+  padding: 6px;
+}
+
+.person-name-box span {
+  padding: 0 12px;
+  border: 1px solid #c4c4c4;
+  height: 30px;
+  border-radius: 5px;
+  line-height: 30px;
+  margin: 6px;
+  cursor: pointer;
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checked-video-person {
+  background-color: #e2e6fa;
+  border-color: #394192 !important;
+  color: #383b8c !important;
+}

@@ -1,0 +1,82 @@
+  /*视频播放按钮*/
+.video-control-btn {
+  float: left;
+  width: 40px;
+  height: 40px;
+  background: url(/theme/img/jiejingtai/play.png) no-repeat center;
+  margin: 10px 0 0 40px;
+}
+/*进度条外层盒子样式*/
+.progress-bar-max-box {
+  float: left;
+  width: 650px;
+  height: 100%;
+  box-sizing: border-box;
+  margin-left: 10px;
+}
+.progress-bar-box {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 550px;
+  line-height: 60px;
+}
+
+.progress-bar-box:hover {
+  cursor: pointer;
+}
+/*进度条*/
+.progress-bar {
+  display: inline-block;
+  width: 550px;
+  height: 6px;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+/*总时长*/
+.total-time {
+  display: inline-block;
+  color: #fff;
+  height: 100%;
+  line-height: 60px;
+  width: 38px;
+}
+/*当前时长*/
+.current-time {
+  display: inline-block;
+  color: #fff;
+  height: 100%;
+  line-height: 60px;
+  width: 38px;
+}
+
+.current-bar {
+  position: relative;
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  width: 0px;
+  background-color: #217ede;
+  border-radius: 3px;
+  border-right: 10px solid #217ede;
+  box-sizing: border-box;
+}
+
+.current-btn {
+  position: absolute;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background-color: #217ede;
+  border-radius: 50%;
+  top: 24px;
+  left: 0px;
+}
+/*视频转换角度按钮*/
+.video-rotating-control {
+  float: right;
+  width: 36px;
+  height: 36px;
+  background: url(/theme/img/jiejingtai/rotating.png) no-repeat center;
+  margin: 14px 40px 0 0;
+}

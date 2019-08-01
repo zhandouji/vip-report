@@ -1,0 +1,692 @@
+/** {
+	touch-action: none;
+}*/
+
+.max-box {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	box-sizing: border-box;
+	overflow-y: overlay;
+}
+
+.main-inner-box {
+	width: 100%;
+	min-height: 100%;
+}
+
+#pullDown {
+	height: 0.66rem;
+	text-align: center;
+	color: #ccc !important;
+}
+
+#pullUp {
+	text-align: center;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	color: #ccc !important;
+	margin-top: -0.2rem;
+}
+
+#wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+
+/*老赖列表*/
+
+.laolai-list li {
+	background-color: #fff;
+	padding: 0.17rem;
+	border-bottom: 0.2rem solid #efeff4;
+}
+
+.person-img {
+	float: left;
+	width: 1.5rem;
+	height: 1.8rem;
+}
+
+.person-message {
+	float: left;
+	/*height: 100%;*/
+	width: 4.8rem;
+	margin-left: 0.3rem;
+	padding-top: 0.12rem;
+}
+
+.person-message p {
+	line-height: 0.54rem;
+}
+
+.laolai-list .person-message {
+	width: 4.66rem;
+}
+
+
+/*老赖查询*/
+
+.banner-img {
+	width: 100%;
+}
+
+.inquire-list {
+	width: 100%;
+	background-color: #fff;
+}
+
+.inquire-list li {
+	height: 0.99rem;
+	border-bottom: 0.01rem solid #efeff4;
+	line-height: 0.99rem;
+	padding: 0 0.3rem;
+}
+
+.inquire-list li span {
+	display: inline-block;
+	font-size: 0.32rem;
+	width: 1.6rem;
+}
+
+.inquire-list li input[type="text"] {
+	font-size: 0.32rem;
+	height: 100%;
+	width: 3.6rem;
+	color: #999;
+}
+
+.verification-code {
+	display: inline-block;
+	float: right;
+	width: 1.26rem !important;
+	height: 0.52rem;
+	/*background: url(../img/daming/code.png) no-repeat center;*/
+	background-size: 100% 100%;
+	margin-top: 0.24rem;
+}
+
+
+/*老赖详情页面样式*/
+
+.message-null {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 2.8rem;
+	height: 2.6rem;
+	margin: auto;
+}
+
+.basics-message-cell {
+	background-color: #fff;
+	padding: 0.3rem;
+	border-bottom: 0.16rem solid #efeff4;
+}
+
+.basics-message-cell .person-message {
+	padding-top: 0;
+	margin-top: -0.08rem;
+	background: url(/theme/img/deadbeat/watermark.png) no-repeat;
+	background-size: 1.9rem 1.46rem;
+	background-position: 2.9rem 0.3rem;
+	width: 4.8rem;
+}
+
+.basics-message-cell .person-message p {
+	line-height: 0.48rem;
+}
+
+.more-message-cell {
+	padding-left: 0.3rem;
+	background-color: #fff;
+	border-bottom: 0.16rem solid #efeff4;
+}
+
+.more-message-cell ul li {
+	border-bottom: 1px solid #efeff4;
+	padding: 0.34rem 0;
+}
+
+.more-message-cell ul li span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.more-message-cell ul li span:first-child {
+	width: 1.5rem;
+	margin-right: 0.22rem;
+}
+
+.more-message-cell ul li span:last-child {
+	width: 4.8rem;
+	color: #999;
+}
+
+
+/*开锁服务相关页面样式*/
+
+.tab-box {
+	width: 100%;
+	height: 0.85rem;
+	background-color: #fff;
+	box-shadow: 0 0 10px 1px #ccc;
+}
+
+.tab-list {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.tab-list li {
+	float: left;
+	height: 100%;
+	width: 50%;
+	text-align: center;
+}
+
+.tab-list li span {
+	display: inline-block;
+	height: 100%;
+	width: 1.68rem;
+	line-height: 0.85rem;
+}
+
+
+/*选中的tab标签样式*/
+
+.checked-tab span {
+	color: #217ede;
+	border-bottom: 0.04rem solid #217ede;
+	box-sizing: border-box;
+}
+
+.unlocking-list {
+	position: absolute;
+	top: 0.85rem;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: overlay;
+}
+
+.unlocking-list .company-list,
+.unlocking-list .personage-list {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 0.2rem;
+}
+
+.unlocking-personage {
+	display: none;
+}
+
+
+/*已认证图片*/
+
+.attestation-img {
+	width: 0.3rem;
+	height: 0.35rem;
+}
+
+.attestation-title {
+	display: inline-block;
+	margin-left: 0.26rem;
+	color: #faba67;
+}
+
+.unlocking-list>div>ul>li {
+	background-color: #fff;
+	padding: 0.2rem;
+	box-sizing: border-box;
+	border-bottom: 0.2rem solid #efeff4;
+}
+
+.company-list li p {
+	padding: 0.1rem 0;
+}
+
+.icon-location {
+	width: 0.26rem;
+	height: 0.32rem;
+	margin-right: 0.18rem;
+	vertical-align: middle;
+}
+
+.location-text {
+	display: inline-block;
+	width: 5.7rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #666;
+}
+
+.icon-phone {
+	width: 0.32rem;
+	height: 0.32rem;
+	margin-right: 0.12rem;
+	vertical-align: middle;
+}
+
+.dial-phone {
+	width: 0.44rem;
+	height: 0.44rem;
+	margin-left: 0.23rem;
+	vertical-align: middle;
+}
+
+.unlocking-person-name {
+	line-height: 0.54rem;
+}
+
+
+/*星级评分*/
+
+.grade-star {
+	display: inline-block;
+	margin-left: 0.28rem;
+}
+
+.grade-star li {
+	position: relative;
+	float: left;
+	height: 0.36rem;
+	width: 0.36rem;
+	background-color: #e4e4e4;
+}
+
+.star-bg {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	height: 0.36rem;
+	width: 0;
+	z-index: 24;
+	background-color: #faba67;
+}
+
+.icon-star {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0.36rem;
+	height: 0.36rem;
+	z-index: 25;
+}
+
+
+/*公司详情页面样式*/
+
+.part-box {
+	width: 100%;
+	background-color: #fff;
+	border-bottom: 0.2rem solid #efeff4;
+}
+
+.part-title {
+	text-align: center;
+	color: #217ede;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	border-bottom: 1px solid #efeff4;
+}
+
+.rates-text {
+	text-indent: 2em;
+	padding: 0.2rem 0.4rem;
+	line-height: 0.54rem;
+}
+
+.unlocking-personage-box {
+	padding: 0.2rem;
+}
+
+.unlocking-personage-box>.personage-list>li {
+	padding: 0.2rem;
+	background-color: #f9f9f9;
+	border-bottom: 0.2rem solid #fff;
+}
+
+.personage-list .person-message {
+	width: 4.6rem;
+}
+
+
+/*开锁人详情页面样式开始*/
+
+.unlocking-person-message {
+	background-color: #fff;
+	padding: 0.3rem;
+	border-bottom: 0.2rem solid #efeff4;
+}
+
+.unlocking-person-message .person-message {
+	margin-top: -0.2rem;
+	width: 4.66rem;
+}
+
+.unlocking-person-message .person-message p {
+	line-height: 0.5rem;
+}
+
+.datail-star-box .grade-star {
+	margin-left: 0;
+}
+
+.comments-box {
+	background-color: #fff;
+}
+
+
+/*关于评价的相关信息样式*/
+
+.about-comments {
+	height: 0.9rem;
+	line-height: 0.9rem;
+}
+
+.comments-list {
+	padding-left: 0.3rem;
+}
+
+.comments-list li {
+	border-bottom: 1px solid #efeff4;
+	padding: 0.24rem 0;
+}
+
+
+/*评价用户的头像样式*/
+
+.user-img {
+	float: left;
+	width: 0.8rem;
+	height: 0.8rem;
+	border-radius: 0.4rem;
+	background: url(../img/daming/user-bg.png) no-repeat center;
+	background-size: 100% 100%;
+}
+
+.user-name {
+	float: left;
+	margin-left: 0.2rem;
+	width: 5.6rem;
+}
+
+.comments-content {
+	margin-left: 1rem;
+	width: 5.6rem;
+	padding: 0.1rem 0;
+	line-height: 0.5rem;
+}
+
+
+/*地图页面相关样式*/
+
+.myMap {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.amap-scalecontrol {
+	left: 1rem !important;
+}
+
+
+/*我的服务*/
+
+.service-button {
+	float: left;
+	width: 50%;
+	height: 2.4rem;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+
+.service-button>a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-top: 0.45rem;
+	font-weight: 600;
+	box-sizing: border-box;
+}
+
+.service-button:nth-child(odd) {
+	border-right: 0.01rem solid #efeff4;
+}
+
+.service-button:nth-child(even) {
+	border-left: 0.01rem solid #efeff4;
+}
+
+.service-button-icon {
+	height: 0.9rem;
+	margin-bottom: 0.2rem;
+}
+
+
+/*个人中心的开锁服务页面样式*/
+
+.service-tab-list {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.service-tab-list li {
+	float: left;
+	width: 25%;
+	height: 100%;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.service-tab-list li span {
+	display: inline-block;
+	height: 100%;
+	line-height: 0.85rem;
+	box-sizing: border-box;
+	padding: 0 0.05rem;
+}
+
+.service-list-box {
+	width: 100%;
+	min-height: 100%;
+	display: none;
+	padding-top: 0.2rem;
+	box-sizing: border-box;
+}
+
+.service-list-box .service-list>li {
+	padding: 0;
+	padding-left: 0.3rem;
+}
+
+.all-service-list {
+	display: block;
+}
+
+.service-cell-title {
+	height: 0.9rem;
+	border-bottom: 1px solid #efeff4;
+	box-sizing: border-box;
+	line-height: 0.9rem;
+	padding-right: 0.3rem;
+	box-sizing: border-box;
+	margin-bottom: 0.15rem;
+}
+
+.cell-title {
+	border-left: 0.06rem solid #217ede;
+	padding-left: 0.16rem;
+}
+
+.cell-type {
+	float: right;
+	color: #217ede;
+}
+
+.icon-time {
+	height: 0.3rem;
+	width: 0.3rem;
+	margin-right: 0.19rem;
+	vertical-align: middle;
+}
+
+.service-list>li>p {
+	padding: 0.10rem 0;
+}
+
+.service-cell-control {
+	height: 1.1rem;
+	border-top: 1px solid #efeff4;
+	margin-top: 0.15rem;
+	line-height: 1.1rem;
+	padding-right: 0.3rem;
+	text-align: right;
+}
+
+.service-cell-control button {
+	width: 1.6rem;
+	height: 0.8rem;
+	border: 1px solid transparent;
+	border-radius: 0.1rem;
+	margin-left: 0.26rem;
+	font-size: 0.32rem;
+}
+
+
+/*****************二维码页面样式****************/
+
+.qr-code-bg {
+	background: url(../img/daming/qr-code.png) no-repeat center;
+	background-size: 100% 100%;
+}
+
+.qr-code-box {
+	position: absolute;
+	top: 1.85rem;
+	left: 0.71rem;
+	width: 5.8rem;
+	height: 7.2rem;
+	border-radius: 0.2rem;
+	background-color: #fff;
+}
+
+.user-head-img {
+	position: absolute;
+	top: -0.8rem;
+	left: 2.1rem;
+	height: 1.6rem;
+	width: 1.6rem;
+}
+
+.user-head-img>img {
+	width: 100%;
+	height: 100%;
+	border-radius: 0.8rem;
+}
+
+.qr-user-name {
+	width: 100%;
+	text-align: center;
+	margin-top: 1.17rem;
+	font-size: 0.48rem;
+}
+
+.qr-img {
+	width: 4rem;
+	height: 4rem;
+	margin: 0.3rem 0 0 0.9rem;
+}
+
+.qr-text {
+	width: 100%;
+	text-align: center;
+	margin-top: 0.22rem;
+	color: #999;
+}
+
+
+/*身份证照片组样式*/
+
+.id-card-group {
+	height: 1.6rem;
+	width: 100%;
+	box-sizing: border-box;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+	margin-top: 0.25rem;
+}
+
+.id-card-group::-webkit-scrollbar {
+	display: none;
+}
+
+.id-card-group img {
+	width: 1.6rem;
+	height: 1.6rem;
+	margin-right: 0.22rem;
+}
+
+
+/*视频轮播的组件*/
+
+.unlocking-video-group {
+	height: 3.6rem;
+	width: 7.2rem;
+	margin-left: -0.3rem;
+	box-sizing: border-box;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+	margin-top: 0.25rem;
+}
+
+.unlocking-video-group::-webkit-scrollbar {
+	display: none;
+}
+
+.video-group-box {
+	height: 100%;
+	white-space: nowrap;
+	line-height: 3.5rem;
+}
+
+.video-box {
+	display: inline-block;
+	height: 3.1rem;
+	width: 5.2rem;
+	margin: 0 0.16rem;
+	background-color: rgba(0, 0, 0, .8);
+	box-sizing: border-box;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.video-box video {
+	width: 100%;
+	height: 100%;
+}
+
+.center-video {
+	width: 6rem;
+	height: 3.6rem;
+	margin-top: 0;
+}

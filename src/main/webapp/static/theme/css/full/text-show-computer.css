@@ -1,0 +1,95 @@
+/*清除浮动*/
+.clear{
+	display: block;
+	overflow: hidden;
+}
+
+/*公共样式*/
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: "微软雅黑",arial;
+	font-size: 14px;
+	color: #333;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+ul,li{
+	list-style: none;
+}
+
+button,
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+textarea,
+select{
+	outline: none;
+	border: 1px solid #bababa;
+	padding: 0 5px;
+	box-sizing: border-box;
+	background: transparent;
+}
+
+/*a标签样式*/
+
+a,
+a:link,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+	text-decoration: none;
+	background: transparent;
+	outline: 0;
+	cursor: pointer;
+}
+
+/*页面展示样式开始*/
+.text-show-box{
+	width: 100%;
+	height: 100%;
+	min-width: 800px;
+}
+
+.text-show-content{
+	width: 100%;
+	height: 100%;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	/*overflow-y: auto;*/
+}
+
+.text-show-content p{
+	line-height: 24px;
+}
+
+.text-show-content img{
+	/*width: 25%;*/
+	/*float: left;*/
+	/*margin-right: 10px;*/
+	max-width: 100%;
+}
+
+.text-show-title{
+	height: 30px;
+	font-size: 20px;
+	font-weight: bolder;
+	line-height: 30px;
+	text-align: center;
+}
+
+.text-show-time{
+	color: #999;
+	font-size: 13px;
+	text-align: center;
+}

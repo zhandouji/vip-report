@@ -1,0 +1,267 @@
+/*清除浮动*/
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+/*外层盒子样式*/
+.content-main-details{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	position: relative;
+}
+
+/*标签菜单样式*/
+.content-main-details .main-details-nav{
+	height: 50px;
+	background-color: #d0d0e0;
+	line-height: 40px;
+}
+
+.details-nav-ul{
+	display: block;
+	overflow: hidden;
+	margin-top: 8px;
+}
+
+.content-main-details .main-details-nav li{
+	float: left;
+	color: #333;
+	font-size: 16px;
+	height: 46px;
+	width: 100px;
+	text-align: center;
+	margin: 8px 5px 0 5px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+.content-main-details .main-details-nav li:first-child{
+	margin-left: 10px;
+}
+.content-main-details .main-details-nav li:hover{
+	background-color: #fff;
+	color: #2b399e;
+}
+
+.content-main-details .main-details-nav li.click{
+	background-color: #fff;
+	color: #2b399e;
+}
+
+
+/*table css*/
+/*.content-main-details table{*/
+	/*background: #fff;*/
+	/*width: 100%;*/
+	/*border: 1px solid #ddd;*/
+/*}*/
+/*.content-main-details table th{*/
+	/*!*background: #89a0ae;*!*/
+	/*padding: 8px 6px;*/
+	/*color: #fff;*/
+	/*text-align: center;*/
+	/*!*border-right: 1px solid #758999;*!*/
+	/*!*border-bottom: 1px solid #758999;*!*/
+/*}*/
+/*.content-main-details table td{*/
+	/*color: #333333;*/
+	/*padding: 8px 6px 8px 12px;*/
+	/*!*border-bottom: 1px solid #e3e3e3;*!*/
+	/*!*border-right: 1px solid #e3e3e3;*!*/
+/*}*/
+/*.content-main-details td .circle{*/
+	/*display: block;*/
+	/*width: 10px;*/
+	/*height: 10px;*/
+	/*border-radius: 50%;*/
+/*}*/
+
+
+/*内容外层盒子*/
+#five_div{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50px;
+	bottom: 0;
+}
+
+/*标签内容中的所有内容盒子样式*/
+#five_div>div{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	display: none;
+}
+
+#five_div>div table{
+	font-size: 14px;
+}
+
+#five_div>div table tr td:nth-of-type(odd){
+	text-align: right;
+	width:8%;
+	min-width: 90px;
+	background: #efeff4;
+	font-weight: 600;
+}
+
+#five_div>div table tr td:nth-of-type(even){
+	text-align: left;
+	min-width: 100px;
+	line-height: 24px;
+}
+
+#five_div>div table .map-button {
+	height: 27px;
+	width: 120px;
+	border: 0;
+	float: right;
+	margin-right: 20px;
+	background: #3a9bc1;
+	color: #ffffff;
+}
+/*报警单信息页面样式*/
+#five_div>div.main-details-bjdxx{
+	background-color: #FFFFFF;
+	position: relative;
+	z-index: 10;
+	display: block;
+}
+
+/*取证详情css开始  图片*/
+.main-details-xcqz{
+	position: relative;
+}
+#jq22 {
+	width: 100%;
+	margin: 0 auto; 
+	font-size: 0;
+}
+#jq22 li {
+	display: inline-block; 
+	width: 10%; 
+	margin-left: 1%; 
+	padding-top: 1%; 
+	position: relative;
+}
+#jq22 li img {
+	width: 100%;
+}
+#jq22 li span{
+	display: none;
+}
+/*要添加的元素css*/
+.viewer-container #text{
+	position: absolute; 
+	left: 0; 
+	right: 0; 
+	/*bottom: 200px;*/ 
+	margin: auto; 
+	font-size: 20px; 
+	z-index: 99999; 
+	color: #fff; 
+	/*width: 60%; */
+	height: 80px;
+	background-color: rgba(0,0,0,0.6);
+	text-align: center;
+	line-height: 80px;
+}
+.viewer-button{
+	top: 80px;
+}
+
+/*现场取证css结束*/
+/*报警视频开始*/
+.main-details-bjysp td{
+	height: auto;
+}
+
+.video-box{
+	height: 600px;
+	width: 800px;
+	margin: 0 auto;
+  background: url("/theme/img/jiejingtai/video-box-bg2.png") no-repeat center;
+	background-size: 100% 100%;
+	position: relative;
+	border: 1px solid #ccc;
+}
+.video-title{
+	position: absolute;
+	left:0;
+	top:0;
+	right: 0;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background: rgba(0,0,0,0.3);
+	color: #fff;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.video-title>span{
+	color: #fff;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+/*报警视频控制框*/
+.video-control-box{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 60px;
+	background: rgba(0,0,0,0.3);
+	line-height: 60px;
+}
+/*开始播放按钮*/
+.sr-btn{
+	margin: 15px 0 0 30px;
+	width: 30px;
+	height: 30px;
+	background: url("/theme/img/jiejingtai/video-star.png") no-repeat center;
+	background-size: 100% 100%;
+	border: 0;
+}
+/*结束播放按钮*/
+.stop-btn{
+	margin: 15px 0 0 30px;
+	width: 30px;
+	height: 30px;
+	background: url("/theme/img/jiejingtai/video-stop.png") no-repeat center;
+	background-size: 100% 100%;
+	border: 0;
+}
+
+#videobox video{
+	width: 800px;
+	height: 600px;
+}
+
+.main-details-bjsp p{
+	width: 300px;
+	text-align: center;
+	font-weight: 600;
+}
+/*报警音频*/
+.main-details-bjyp{
+	float: left;
+}
+.details-bjyp{
+	width: 300px;
+}
+
+.main-details-bjyp p{
+	width: 300px;
+	text-align: center;
+	font-weight: 600;
+}
+/*报警视频结束*/

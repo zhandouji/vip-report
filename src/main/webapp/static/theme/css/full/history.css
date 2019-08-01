@@ -1,0 +1,93 @@
+/*页面主要内容外层盒子*/
+.content-detail-box2{
+	padding: 0 8px;
+	box-sizing: border-box;
+}
+
+/*表单外层盒子样式*/
+.form-box{
+	width: 100%;
+	padding: 10px 0;
+	border-bottom: 1px dashed #d3d3d3;
+}
+
+/*表单每一项的样式*/
+.form-cell{
+	float: left;
+	padding: 8px 10px;
+	box-sizing: border-box;
+	width: 33%;
+}
+
+/*每一项的标题名称*/
+.form-cell span{
+	display: inline-block;
+	width: 72px;
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+}
+
+/*每一项的填写框样式*/
+.form-cell input[type="text"],
+.form-cell input[type="tel"],
+.form-cell select{
+	height: 32px;
+	width: 80%;
+	background: #fff;
+	border-radius: 3px;
+}
+
+/*四级联动下拉框样式开始样式*/
+.form-cell:last-child{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.form-four-list{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.form-four-list li{
+	float: left;
+	padding-right: 15px;
+}
+
+.form-four-list li select{
+	min-width: 120px;
+	padding: 0 10px;
+}
+
+/*查询按钮样式*/
+.form-cell:last-child button{
+	float: right;
+	background: #1d224a;
+	border: 0;
+	height: 32px;
+	width: 180px;
+	border-radius: 5px;
+	color: #fff;
+	margin-right: 3.2%;
+}
+
+.form-cell:last-child button i{
+	color: #fff;
+}
+
+.right-form-button{
+	float: right;
+	background: #1d224a;
+	border: 0;
+	height: 36px;
+	width: 260px;
+	border-radius: 5px;
+	color: #fff;
+	margin-right: 3.2%;
+	color: #fff;
+}
+
+/*查询按钮中的图标样式*/
+.right-form-button i{
+	color: #fff;
+}

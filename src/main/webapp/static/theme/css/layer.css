@@ -1,0 +1,423 @@
+button, input[type="text"], input[type="password"], input[type="tel"],input[type="number"], textarea, select {
+    outline: 0;
+    border: 1px solid #bababa;
+    padding: 0 5px;
+    box-sizing: border-box;
+    background: transparent
+}
+
+.layer-box {
+    width: 100%;
+    height: 100%;
+    min-width: 1000px
+}
+
+.layer-content-box {
+    width: 100%;
+    height: 100%;
+   /* padding: 20px;*/
+    box-sizing: border-box;
+    overflow-y: auto
+}
+
+table {
+    border-collapse: collapse
+}
+
+.layer-table1 {
+    width: 100%;
+    margin-bottom: 20px
+}
+
+.layer-table1 td {
+    padding: 5px;
+    height: 40px;
+    vertical-align: baseline
+}
+
+.layer-table1 td:nth-child(odd) {
+    text-align: right
+}
+
+.layer-table1 td:nth-child(even) {
+    text-align: left
+}
+
+.layer-table1 td input[type="text"], .layer-table1 td select {
+    width: 300px;
+    height: 30px;
+    background: #fff;
+    border-radius: 3px
+}
+
+.layer-table1 td p, .layer-table2 td p {
+    color: red;
+    font-size:8px;
+    height: 10px;
+    margin: 5px 0
+}
+
+.layer-table1 td textarea {
+    resize: none;
+    width: 70%;
+    min-width: 782px;
+    height: 75px;
+    border-radius: 3px;
+    background: #fff;
+    padding: 5px
+}
+
+.red-star {
+    display: inline-block;
+    color: red
+}
+
+.layer-table2 {
+    width: 100%;
+    margin-bottom: 20px
+}
+
+.layer-table2 td {
+    padding: 5px;
+    height: 40px;
+    vertical-align: baseline
+}
+
+.layer-table2 td:nth-child(odd) {
+    text-align: right;
+    width: 32%
+}
+
+.layer-table2 td input[type="text"], .layer-table2 td select {
+    width: 420px;
+    height: 30px;
+    background: #fff;
+    border-radius: 3px
+}
+
+.layer-table2 td p {
+    color: red;
+    font-size: 8px;
+}
+
+.layer-table2 td textarea {
+    resize: none;
+    width: 420px;
+    height: 75px;
+    border-radius: 3px;
+    background: #fff;
+    padding: 5px
+}
+
+.layer-table1 td.textarea-title, .layer-table2 td.textarea-title, .layer-table3 td.textarea-title {
+    vertical-align: top;
+    padding-top: 10px
+}
+
+.layer-table1 td.submit-button-box, .layer-table2 td.submit-button-box {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0
+}
+
+.submit-button-box > button {
+    width: 260px;
+    height: 45px;
+    background-color: rgba(29, 34, 74, 1);
+    border-radius: 5px;
+    color: #fff
+}
+
+.layer-table3 {
+    width: 100%;
+    margin-bottom: 20px
+}
+
+.layer-table3 td {
+    padding: 5px
+}
+
+.layer-table3 td:nth-child(odd) {
+    text-align: right
+}
+
+.layer-table3 td p {
+    color: #999;
+    width: 360px;
+    text-align: left
+}
+
+.layer-table4 {
+    width: 100%;
+    margin-bottom: 20px
+}
+
+.layer-table4 tr td {
+    text-align: left;
+    padding: 5px;
+    vertical-align: baseline
+}
+
+.layer-table4 tr td.submit-button-box {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0
+}
+
+.layer-table4 tr td p {
+    line-height: 24px;
+    margin: 0
+}
+
+.layer-table4 tr td p.left-answer {
+    padding-right: 50%;
+    padding-left: 30px
+}
+
+.layer-table4 tr td p.right-answer {
+    padding-left: 55%
+}
+
+.layer-table4 td textarea {
+    resize: none;
+    width: 100%;
+    height: 120px;
+    border-radius: 3px;
+    background: #fff;
+    padding: 5px
+}
+
+.layer-table5{
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+.layer-table5 td{
+    border: 1px solid #ddd;
+    padding: 0 8px;
+}
+
+.layer-table5 td:nth-child(odd){
+    text-align: right;
+    white-space:nowrap;
+}
+
+.layer-table5 td:nth-child(even){
+    text-align: left;
+    color: #999;
+}
+
+
+.layer-table6 {
+    width: 100%;
+    margin-bottom: 20px
+}
+
+.layer-table6 td {
+    padding: 5px;
+    height: 40px;
+    vertical-align: baseline
+}
+
+.layer-table6 td:nth-child(odd) {
+    text-align: right
+}
+
+.layer-table6 td:nth-child(even) {
+    text-align: left
+}
+
+.layer-table6 td input[type="text"], input[type="number"], .layer-table6 td select {
+    width: 300px;
+    height: 30px;
+    background: #fff;
+    border-radius: 3px
+}
+
+.layer-table6 td.submit-button-box {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0
+}
+
+
+.user-message-box {
+    width: 100%;
+    height: 115px;
+    background: #e8e8e8;
+    margin-bottom: 10px
+}
+
+.user-message-box ul li {
+    float: left;
+    height: 115px
+}
+
+.user-message-box ul li img {
+    height: 85px;
+    width: 85px;
+    margin: 15px 20px
+}
+
+.user-message-box ul li p {
+    line-height: 25px;
+    font-weight: 600
+}
+
+.user-message-box ul li p:first-child {
+    margin-top: 35px
+}
+
+.user-message-box ul li:last-child {
+    font-weight: bold;
+    float: right;
+    line-height: 115px;
+    padding-right: 30px
+}
+
+.layer-content-box .table1 select, .layer-content-box .table1 input[type="text"] {
+    width: 100%;
+    height: 32px;
+    border-radius: 3px;
+    background: #fff
+}
+
+.layer-content-box .table1 a {
+    color: #1f4ea1
+}
+
+.submit-button-box {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0
+}
+
+/*定义自定义输入框样式*/
+.layer-table1 td .select-max-box .hj-select{
+    background: url(../img/index/select-icon.png) no-repeat scroll right center transparent;
+    background-position-x: 98%;
+    padding-right: 18px;
+    line-height: 27px;
+}
+.select-max-box{
+    position: relative;
+}
+
+/*自定义下拉框开始*/
+.hj-layer-select-list-box{
+    position: absolute;
+    top: 29px;
+    right: 1px;
+    left: 0;
+    background: #fff;
+    z-index: 88;
+    border: 1px solid #bababa;
+    display: none;
+}
+
+.hj-layer-select-list{
+    max-height: 160px;
+    overflow-y: auto;
+}
+
+.hj-layer-select-list li{
+    height: 30px;
+    line-height: 30px;
+    border: 1px dotted #eee;
+    padding: 0 10px;
+}
+
+.hj-layer-select-list li:hover{
+    background: #eee;
+}
+
+.hj-layer-submit-box{
+    height: 36px;
+    background: #e3e3e3;
+    line-height: 36px;
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+
+.hj-layer-submit-box button{
+    width: 60px;
+    height: 28px;
+    line-height: 28px;
+    float: right;
+    margin-top: 5px;
+}
+/*自定义下拉框结束*/
+
+/*自定义多选框*/
+  .checkbox-box1{
+      display: inline-block;
+      float: right;
+      height: 14px;
+      width: 14px;
+      background: url(../img/jiejingtai/hj-check-bg.png) no-repeat center;
+      border-radius: 4px;
+      margin-top: 6px;
+      line-height: 14px;
+      cursor: pointer;
+      vertical-align: sub;
+  }
+
+.checkbox-box1 input[type="checkbox"]{
+    opacity: 0;
+    cursor: pointer;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    width: 14px;
+    height: 14px;
+}
+
+.checkbox1-checked{
+    background: url(../img/jiejingtai/hj-check-bg1.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.save-button-box {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.collect-button-box{
+    margin-top: 50px;
+    height: 50px;
+    padding-left: 300px;
+}
+
+.collect-button-box button{
+    width: 160px;
+}
+
+.quxiao{
+    display: none;
+}
+
+.pass-suggest{
+    display: none;
+}
+
+.pass-suggest td textarea {
+    resize: none;
+    width: 80%;
+    height: 75px;
+    border-radius: 3px;
+    background: #fff;
+    padding: 5px;
+}
+
+.isHas-role{
+    width: 200px;
+    height: 30px;
+    border-radius: 3px;
+    color: #999;
+    border: 1px solid #bababa;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+

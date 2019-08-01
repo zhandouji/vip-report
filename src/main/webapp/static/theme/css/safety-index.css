@@ -1,0 +1,951 @@
+/*清除浮动*/
+
+.clear:after {
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+
+/*公共样式*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: "微软雅黑", arial;
+	font-size: 14px;
+	color: #333;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+button,
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+textarea,
+select {
+	outline: none;
+	border: 1px solid #bababa;
+	padding: 0 5px;
+	box-sizing: border-box;
+	background: transparent;
+}
+
+
+/*a标签样式*/
+
+a,
+a:link,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+	text-decoration: none;
+	background-color: transparent;
+	outline: 0;
+	cursor: pointer;
+}
+
+
+/*阴影*/
+
+.shadow {
+	-webkit-box-shadow: #666 0px 0px 10px;
+	-moz-box-shadow: #666 0px 0px 10px;
+	box-shadow: #666 0px 0px 10px;
+}
+
+
+/*滚动条样式*/
+
+
+/*滚动条整体部分样式*/
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+	background-color: rgba(240, 240, 240, 1);
+}
+
+
+/*滑块样式*/
+
+::-webkit-scrollbar-thumb {
+	background-color: rgba( 212, 212, 212, 0.5);
+	border-radius: 3px;
+	-webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+/*外层轨道样式（滑块的外层）*/
+
+::-webkit-scrollbar-track {
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0 0 6px transparent;
+}
+
+
+/*边角样式*/
+
+::-webkit-scrollbar-corner {
+	background: url(../img/index/drag.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/*滚动条两端的按钮样式*/
+
+::-webkit-scrollbar-button:vertical:start {
+	height: 10px;
+	background: url(../img/index/up.png) no-repeat top;
+	background-size: 100% 100%;
+}
+
+::-webkit-scrollbar-button:vertical:end {
+	height: 10px;
+	background: url(../img/index/down.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+::-webkit-scrollbar-button:horizontal:start {
+	width: 10px;
+	background: url(../img/index/left.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+::-webkit-scrollbar-button:horizontal:end {
+	width: 10px;
+	background: url(../img/index/right.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/**********各种字体样式************/
+
+
+/*黑蓝字体*/
+
+.color-black-blue {
+	color: #1d224a !important;
+}
+
+
+/*深蓝色字体*/
+.color-dark-blue {
+	color: #2b399e !important;
+}
+
+
+/*蓝色字体*/
+
+.color-blue {
+	color: #217ede !important;
+}
+
+
+/*绿色字体*/
+
+.color-green {
+	color: #1e9826 !important;
+}
+
+
+/*橙色字体*/
+
+.color-orange {
+	color: #e5621a !important;
+}
+
+
+/*黑灰色字体*/
+
+.color-black-gray {
+	color: #666 !important;
+}
+
+
+/*深灰色字体*/
+
+.color-dark-gray {
+	color: #999 !important;
+}
+
+
+/*白色字体*/
+
+.color-white {
+	color: #fff !important;
+}
+
+
+/*枚红色字体*/
+.color-rose-red {
+	color: #f65959 !important;
+}
+
+
+/*红星*/
+
+.color-red {
+	color: red !important;
+}
+
+
+/************背景颜色***********/
+
+
+/*黑蓝背景*/
+
+.bg-black-blue {
+	background-color: #1d224a !important;
+}
+
+
+/*深蓝色背景*/
+
+.bg-dark-blue {
+	background-color: #2b399e !important;
+}
+
+
+/*蓝色背景*/
+
+.bg-blue {
+	background-color: #217ede !important;
+}
+
+
+/*绿色背景*/
+
+.bg-green {
+	background-color: #1e9826 !important;
+}
+
+
+/*橙色背景*/
+
+.bg-orange {
+	background-color: #e5621b !important;
+}
+
+
+/*黑灰色背景*/
+
+.bg-black-gray {
+	background-color: #666 !important;
+}
+
+
+/*深灰色背景*/
+
+.bg-dark-gray {
+	background-color: #999 !important;
+}
+
+
+/*灰色背景*/
+
+.bg-gray {
+	background-color: #e7e7e7 !important;
+}
+
+
+/************边框颜色***********/
+
+
+/*黑蓝边框*/
+
+.border-black-blue {
+	border-color: #1d224a !important;
+}
+
+
+/*深蓝色边框*/
+
+.border-dark-blue {
+	border-color: #2b399e !important;
+}
+
+
+/*蓝色边框*/
+
+.border-blue {
+	border-color: #217ede !important;
+}
+
+
+/*绿色边框*/
+
+.border-green {
+	border-color: #1e9826 !important;
+}
+
+
+/*橙色边框*/
+
+.border-orange {
+	border-color: #e5621b !important;
+}
+
+
+/*黑灰色边框*/
+
+.border-black-gray {
+	border-color: #666 !important;
+}
+
+
+/*深灰色边框*/
+
+.border-dark-gray {
+	border-color: #999 !important;
+}
+
+
+/*灰色边框*/
+
+.border-gray {
+	border-color: #ccc !important;
+}
+
+
+/*白灰色*/
+
+.border-ashen {
+	border-color: #e7e7e7 !important;
+}
+
+
+/*淡灰色*/
+
+.border-french-gray {
+	border-color: #bababa !important;
+}
+
+
+/*浅灰色*/
+
+.border-light-gray {
+	border-color: #dfdcdc !important;
+}
+
+
+/*枚红色字体*/
+
+.border-rose-red {
+	border-color: #f65959 !important;
+}
+
+
+/*边框样式*/
+
+.border-solid-style {
+	border-style: solid !important;
+}
+
+.border-dotted-style {
+	border-style: dotted !important;
+}
+
+
+/*边框宽度*/
+
+.border-width-1px {
+	border-width: 1px;
+}
+
+
+/*圆角*/
+
+.border-radius-5px {
+	border-radius: 5px;
+}
+
+
+/******字体大小*******/
+
+.font-size-12px {
+	font-size: 12px;
+}
+
+.font-size-16px {
+	font-size: 16px;
+}
+
+.font-size-18px {
+	font-size: 18px;
+}
+
+.font-size-22px {
+	font-size: 22px;
+}
+.font-size-24px {
+	font-size: 24px;
+}
+
+
+/*加粗字体*/
+
+.font-blod {
+	font-weight: 600;
+}
+
+
+/*表格外层盒子*/
+
+.table-box {
+	width: 100%;
+	padding: 10px 20px;
+	box-sizing: border-box;
+}
+
+
+/*列表样式1*/
+
+.table1 {
+	border-collapse: collapse;
+	border: 1px solid #ddd;
+	width: 100%;
+}
+
+.table1 th {
+	background: #d0d0e0;
+	font-size: 16px;
+	padding: 10px 12px;
+	text-align: center;
+}
+
+.table1 td {
+	padding: 10px 12px;
+	text-align: center;
+}
+
+.table1 tr:nth-child(odd) {
+	background: #efeff4;
+}
+
+.table1 tr:nth-child(even) {
+	background: #fff;
+}
+
+
+/*表格2*/
+
+.table2 {
+	border-collapse: collapse;
+	border: 1px solid #c8c8c8;
+	width: 100%;
+}
+
+.table2 th {
+	background: #d0d0e0;
+	font-size: 16px;
+	padding: 10px 12px;
+	text-align: center;
+}
+
+.table2 td {
+	padding: 10px 12px;
+	text-align: center;
+	border: 1px solid #c8c8c8;
+}
+
+.table2 td:nth-child(odd) {
+	background: #efeff4;
+}
+
+.table2 td:nth-child(even) {
+	background: #fff;
+}
+
+
+/*按钮1样式*/
+
+.button1 {
+	height: 32px;
+	width: 82px;
+	background: #2b399e;
+	color: #fff;
+	line-height: 32px;
+	border-radius: 5px;
+	margin: 2px 5px;
+}
+
+
+/*按钮2样式*/
+
+.button2 {
+	height: 30px;
+	width: 80px;
+	border: 1px solid #2b399e;
+	color: #2b399e;
+	line-height: 30px;
+	border-radius: 5px;
+	margin: 2px 5px;
+}
+
+
+/*按钮样式*/
+
+.button3 {
+	min-width: 140px;
+	height: 35px;
+	padding: 0 15px;
+	border-width: 1px;
+	border-radius: 5px;
+	border-style: solid;
+}
+
+
+/*操作按钮样式*/
+
+/*深蓝色背景按钮*/
+.caozuo-button1 {
+	height: 30px;
+	width: 60px;
+	border: 0;
+	border-radius: 5px;
+	color: #fff;
+	background: #2b399e;
+}
+
+/*绿色背景按钮*/
+.caozuo-button2 {
+	height: 30px;
+	width: 60px;
+	border: 0;
+	border-radius: 5px;
+	color: #fff;
+	background: #069624;
+}
+
+/*橙色背景按钮*/
+.caozuo-button3 {
+	height: 30px;
+	width: 60px;
+	border: 0;
+	border-radius: 5px;
+	color: #fff;
+	background: #dd9118;
+}
+
+/*暗红色背景按钮*/
+.caozuo-button4 {
+	height: 30px;
+	width: 60px;
+	border: 0;
+	border-radius: 5px;
+	color: #fff;
+	background: #c70000;
+}
+
+/*天蓝色按钮背景*/
+.caozuo-button5 {
+	height: 30px;
+	width: 60px;
+	border: 0;
+	border-radius: 5px;
+	color: #fff;
+	background: #16aadb;
+}
+/*紫色背景按钮*/
+.caozuo-button6 {
+	height: 30px;
+	width: 60px;
+	border: 0;
+	border-radius: 5px;
+	color: #fff;
+	background: #4b5ae9;
+}
+
+.button-box {
+	width: 100%;
+	text-align: right;
+	margin-bottom: 10px;
+}
+
+.add-button {
+	height: 32px;
+	width: 70px;
+	background: #dd5418;
+	border: 0;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.download-button {
+	height: 32px;
+	width: 100px;
+	background: #069624;
+	border: 0;
+	border-radius: 5px;
+	color: #fff;
+	margin-left: 20px;
+}
+
+.add-button>i,
+.download-button>i {
+	color: #fff;
+}
+
+.search-button {
+	background: #1d224a;
+	width: 260px;
+	height: 32px;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.search-button i {
+	color: #fff;
+}
+
+
+/**********************页面公共部分样式*************************/
+
+
+/*最外层盒子样式*/
+
+.max-box {
+	height: 100%;
+	width: 100%;
+	min-width: 1300px;
+	background: #efeff4;
+	position: relative;
+	overflow: auto;
+}
+
+
+/*页面头部*/
+
+.header-box {
+	height: 70px;
+	border-bottom: 4px solid #1d224a;
+	line-height: 70px;
+	background: url(../img/index/bottom-img.png) no-repeat right bottom;
+}
+
+.logo-img {
+	display: block;
+	float: left;
+	margin: 6px 16px 6px 40px;
+}
+
+.logo-text {
+	display: block;
+	float: left;
+	color: #2b399e;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.right-img {
+	display: block;
+	float: left;
+	height: 15px;
+	width: 195px;
+	margin: 29px 0 0 28px;
+}
+
+
+/*用户信息*/
+
+.admin-box {
+	float: right;
+	margin-right: 35px;
+}
+
+.admin-box li {
+	float: right;
+	padding: 0 15px;
+}
+
+.admin-box li i,
+.admin-box li span {
+	color: #2b399e;
+	padding: 0 5px;
+}
+
+.admin-box li i {
+	font-size: 20px;
+	vertical-align: text-bottom;
+}
+
+
+/*左侧菜单*/
+
+.left-menu-box {
+	position: absolute;
+	top: 70px;
+	bottom: 0;
+	left: 0;
+	width: 60px;
+	background: #1d224a;
+}
+
+.left-menu-box * {
+	color: #fff;
+}
+
+
+/*菜单收起展开按钮样式*/
+
+.menu-hidden {
+	position: relative;
+	border-bottom: 1px solid rgba(239, 239, 244, 0.12);
+	height: 60px;
+	line-height: 60px;
+	padding-left: 20px;
+}
+
+.menu-hidden>span {
+	display: none;
+}
+
+.menu-hidden:hover {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.menu-hidden:hover * {
+	color: #d9bd16;
+}
+
+
+/*菜单列表样式*/
+
+
+/*一级菜单样式开始*/
+
+.left-menu-level1>li {
+	position: relative;
+}
+
+.left-menu-level1>li>a {
+	display: block;
+	height: 60px;
+	line-height: 60px;
+	padding-left: 20px;
+	border-bottom: 1px solid rgba(239, 239, 244, 0.12);
+}
+
+.left-menu-level1>li>a>span {
+	display: none;
+}
+
+.left-menu-box i {
+	font-size: 18px;
+	vertical-align: middle;
+	margin-right: 10px;
+	width: 20px;
+}
+
+.left-menu-level1>li>a>i.icon-right {
+	float: right;
+	margin-right: 10px;
+	margin-top: 20px;
+	color: #fff;
+	display: none;
+}
+
+
+/*当鼠标悬浮时li的样式*/
+
+.left-menu-level1>li:hover>a {
+	background: rgba( 255, 255, 255, 0.2);
+}
+
+.left-menu-level1>li:hover>a>i,
+.left-menu-level1>li:hover>a>span {
+	color: #d9bd16;
+}
+
+.left-menu-level1>li:hover>a>.icon-right {
+	color: #fff;
+}
+
+
+/*被选中时的li的样式*/
+
+.left-menu-level1 .checked-level1>a {
+	background: rgba( 255, 255, 255, 0.2);
+}
+
+.checked-level1>a>i,
+.checked-level1>a>span {
+	color: #d9bd16;
+}
+
+
+/*当菜单隐藏之后鼠标悬浮li上面的样式*/
+
+.hidden-li {
+	position: absolute;
+	top: 0;
+	left: 60px;
+	width: 180px;
+	background: #4a4e6e;
+	border-bottom: 1px solid rgba(239, 239, 244, 0.12);
+	padding-left: 20px;
+	z-index: 999;
+}
+
+
+/*一级菜单样式结束*/
+
+
+/*二级菜单样式开始*/
+
+.left-menu-level2 {
+	display: none;
+}
+
+.left-menu-level2>li>a {
+	display: block;
+	height: 60px;
+	line-height: 60px;
+	padding-left: 35px;
+	background: rgba(255, 255, 255, 0.1);
+	border-bottom: 1px solid rgba(239, 239, 244, 0.12);
+}
+
+
+/*二级菜单选中样式*/
+
+.left-menu-level2>.checked-level2>a {
+	background: rgba( 255, 255, 255, 0.2);
+}
+
+.left-menu-level2>.checked-level2>a>span,
+.left-menu-level2>.checked-level2>a>i {
+	color: #d9bd16;
+}
+
+
+/*当鼠标悬浮在一级菜单上时的二级菜单样式*/
+
+.hidden-level2-list {
+	position: absolute;
+	top: 61px;
+	left: 60px;
+	width: 200px;
+	background: #4a4e6e;
+	z-index: 999;
+}
+
+.hidden-level2-list>li>a {
+	background: #4a4e6e;
+	padding-left: 20px;
+}
+
+
+/*二级菜单样式结束*/
+
+
+/*菜单点击时的样式*/
+
+.li-bg1 {
+	background: transparent;
+}
+
+.li-bg2 {
+	background: rgba( 255, 255, 255, 0.1);
+}
+
+.li-bg3 {
+	background: rgba( 255, 255, 255, 0.2);
+}
+
+.color1 {
+	color: #fff;
+}
+
+.color2 {
+	color: #d9bd16;
+}
+
+.color-orange {
+	color: #E56216;
+}
+
+
+/*右侧主要内容的外层盒子*/
+
+.all-content-box {
+	position: absolute;
+	top: 74px;
+	right: 0;
+	bottom: 0;
+	left: 60px;
+}
+
+.main-content-box {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+
+/*面包屑样式*/
+
+.map-nav {
+	height: 52px;
+	width: 100%;
+	background: #fff;
+	line-height: 52px;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+.map-nav * {
+	color: #666;
+}
+
+
+/*左侧导航*/
+
+.left-map-title {
+	float: left;
+}
+
+.left-map-title span:last-child {
+	color: #2B399E;
+}
+
+
+/*右侧时间控件*/
+
+.right-time {
+	float: right;
+	margin-right: 10px;
+}
+
+
+/*主要内容编辑区域样式*/
+
+.content-detail-box1 {
+	position: absolute;
+	top: 60px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.content-detail-box2 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}

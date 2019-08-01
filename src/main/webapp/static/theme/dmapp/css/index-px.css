@@ -1,0 +1,251 @@
+/*该公共样式是配合单位为rem进行使用的，请确认页面中引入的js是关于rem单位的*/
+/*清除浮动*/
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+/*第二种清除浮动*/
+.clear1{
+	display: block;
+	overflow: hidden;
+}
+
+/***************************公共样式开始****************/
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-family: "微软雅黑","arial", "arial black";
+	color: #333;
+	font-size: 30px;
+}
+
+/*页面外层的样式*/
+html,body{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+/*列表风格*/
+ul,
+ol,
+li{
+	list-style: none;
+}
+
+/*按钮以及输入框的样式*/
+button,
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select{
+	outline: none;
+	padding: 0 5px;
+	box-sizing: border-box;
+	background-color: transparent;
+	border: 0;
+}
+
+textarea{
+	resize: none;
+	padding: 3px 5px;
+}
+
+/*a标签的样式*/
+a,
+a:link,
+a:hover,
+a:active,
+a:visited,
+a:focus{
+	text-decoration: none;
+	outline: 0;
+	cursor: pointer;
+}
+
+img{
+	display: inline-block;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	vertical-align: bottom;
+}
+
+/*清除表格样式*/
+table,
+tr,
+td,
+th{
+	border-collapse: collapse;
+}
+
+/*自定义滚动条*/
+::-webkit-scrollbar{
+	width: 10px;
+	height: 10px;
+	background-color: transparent;
+	-webkit-overflow-scrolling: touch;
+}
+
+/*滑块样式*/
+::-webkit-scrollbar-thumb{
+	background-color: rgba(0,0,0,0.2);
+	border-radius: 5px;
+}
+
+/*外层轨道样式（滑块的外层）*/
+::-webkit-scrollbar-track {
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0 0 6px transparent;
+}
+
+/*隐藏滚动条样式*/
+.hidden-scrollbar::-webkit-scrollbar{
+	display: none;
+}
+
+
+/*内边距样式*/
+.padding-20px{
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+/*白灰色背景*/
+.bg-white-gray{
+	background-color: #efeff4 !important;
+}
+
+/*白色背景*/
+.bg-white{
+	background-color: #fff;
+}
+
+/*各种字体颜色*/
+/*深灰色字体*/
+.color-gray-999{
+	color: #999 !important;
+}
+
+.color-gray-666{
+	color: #666 !important;
+}
+
+/*浅橙色字体*/
+.color-white-orange{
+	color: #faba67 !important;
+}
+
+.color-blue{
+	color: #217ede !important;
+}
+
+/*边框颜色*/
+.border-gray-e0{
+	border-color: #e0e0e0 !important;
+}
+
+.border-blue{
+	border-color: #217ede !important;
+}
+
+/*各种边框的宽度*/
+/*没有边框*/
+.border-width-0{
+	border: 0 !important;
+}
+
+/*各种字体大小*/
+.font-size-36px{
+	font-size: 36px;
+}
+
+.font-size-30px{
+	font-size: 30px;
+}
+
+.font-size-28px{
+	font-size: 28px;
+}
+
+/*加粗字体*/
+.font-blod{
+	font-weight: 600;
+}
+
+.font-no-blod{
+	font-weight: 100;
+}
+
+/*按钮居中盒子*/
+.button-center-box{
+	text-align: center;
+}
+
+/*垂直居中*/
+.vertical-align-middle{
+	vertical-align: middle;
+}
+
+/*向右*/
+.float-right{
+	float: right;
+}
+
+/*向左*/
+.float-left{
+	float: left;
+}
+
+/*实心大按钮*/
+.inquire-button{
+	width: 660px;
+	height: 88px;
+	background-color: #217ede;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 36px;
+	margin: 50px 0;
+}
+
+/*空心大按钮*/
+.cancel-button{
+	width: 660px;
+	height: 88px;
+	background-color: #fff;
+	border-radius: 10px;
+	color: #217ede;
+	font-size: 36px;
+	margin: 50px 0;
+	border: 1px solid #217ede;
+}
+
+
+.margin-top-0{
+	margin-top: 0 !important;
+}
+
+.margin-right-0{
+	margin-right: 0 !important;
+}
+
+.margin-bottom-0{
+	margin-bottom: 0 !important;
+}
+
+.margin-left-0{
+	margin-left: 0 !important;
+}
+
+/*文本右对齐*/
+.text-align-right{
+	text-align: right;
+}

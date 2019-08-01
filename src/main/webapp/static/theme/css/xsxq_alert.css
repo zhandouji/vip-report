@@ -1,0 +1,67 @@
+.xsxq-alert{
+    margin: 10px;
+    padding: 0;
+}
+
+.xsxq-alert  td{
+    padding: 10px 5px;
+    text-align: left;
+    min-width: 80px;
+}
+.xsxq-alert  td:nth-child(odd){
+    text-align: right;
+    font-weight: bold;
+}
+
+.xsxq-alert  tr:last-child td{
+    text-align: center;
+}
+
+.xsxq-alert td input[type="text"],.xsxq-alert td select{
+    height: 30px;
+    width: 240px;
+    padding: 0 5px;
+    line-height: 30px;
+}
+.xsxq-alert td input[type="checkbox"]{
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+}
+
+
+.xsxq-alert td button{
+    display: inline-block;
+    height: 30px;
+    width: 90px;
+}
+
+.person_role{
+    float: left;
+    width: fit-content;
+    min-width: 90px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #efeff4;
+    border: 1px solid #d2d6de;
+    border-radius: 3px;
+    margin: 4px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.person_role button{
+    background: red;
+    height: 14px;
+    width: 14px;
+    border: 0;
+    padding: 0;
+    border-radius: 7px;
+    color: #fff;
+    line-height: 10px;
+    float: right;
+    margin-top: -4px;
+    margin-right: -12px;
+    text-align: center;
+}

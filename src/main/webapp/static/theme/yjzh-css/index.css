@@ -1,0 +1,413 @@
+/*清除浮动*/
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+/*清除浮动二*/
+.clear1{
+	display: block;
+	overflow: hidden;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-family: "微软雅黑", "arial", "arial black";
+	font-size: 14px;
+	color: #333;
+}
+
+/*页面的body大小*/
+html,body{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+/*清楚列表默认的样式*/
+ul,ol,li{
+	list-style: none;
+}
+
+button,
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+textarea,
+select{
+	outline: none;
+	padding: 0 5px;
+	box-sizing: border-box;
+	background: transparent;
+	border: 0;
+}
+
+select{
+	/*将默认的select选择框样式清除*/
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	/*在选择框的最右侧中间显示小箭头图片*/
+	background: url(../yjzh-img/main/select-bg.png) no-repeat scroll center right;
+	background-position-x: 98%;
+	padding-right: 18px;
+}
+
+button{
+	cursor: pointer;
+}
+
+/*a标签样式*/
+
+a,
+a:link,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+	text-decoration: none;
+	/*background: transparent;*/
+	outline: 0;
+	cursor: pointer;
+}
+
+/*清除列表边框之间的缝隙*/
+table,td,th,tr{
+	border-collapse: collapse;
+}
+
+img{
+	border: 0;
+}
+
+/*阴影*/
+.shadow {
+	-webkit-box-shadow: #666 0px 0px 5px;
+	-moz-box-shadow: #666 0px 0px 5px;
+	box-shadow: #666 0px 0px 5px;
+}
+
+
+/*滚动条样式*/
+/*滚动条整体部分样式*/
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+	background-color: rgba(240, 240, 240, 1);
+}
+
+
+/*滑块样式*/
+
+::-webkit-scrollbar-thumb {
+	background-color: rgba( 212, 212, 212, 0.5);
+	border-radius: 3px;
+	-webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+/*外层轨道样式（滑块的外层）*/
+
+::-webkit-scrollbar-track {
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0 0 6px transparent;
+}
+
+
+/*边角样式*/
+
+::-webkit-scrollbar-corner {
+	background: url(../yjzh-img/main/drag.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+/*滚动条两端的按钮样式*/
+
+::-webkit-scrollbar-button:vertical:start {
+	height: 10px;
+	background: url(../yjzh-img/main/up.png) no-repeat top;
+	background-size: 100% 100%;
+}
+
+::-webkit-scrollbar-button:vertical:end {
+	height: 10px;
+	background: url(../yjzh-img/main/down.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+::-webkit-scrollbar-button:horizontal:start {
+	width: 10px;
+	background: url(../yjzh-img/main/left.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+::-webkit-scrollbar-button:horizontal:end {
+	width: 10px;
+	background: url(../yjzh-img/main/right.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+/**********各种字体样式************/
+/*黑蓝字体*/
+.color-black-blue{
+	color: #1d224a !important;
+}
+
+/*深蓝色字体*/
+.color-dark-blue{
+	color: #2b399e !important;
+}
+
+/*蓝色字体*/
+.color-blue{
+	color: #217ede !important;
+}
+
+/*绿色字体*/
+.color-green{
+	color: #1e9826 !important;
+}
+
+/*橙色字体*/
+.color-orange{
+	color: #e5621b !important;
+}
+
+/*黑灰色字体*/
+.color-black-gray{
+	color: #666 !important;
+}
+
+/*深灰色字体*/
+.color-dark-gray{
+	color: #999 !important;
+}
+
+/*白色字体*/
+.color-white{
+	color: #fff !important;
+}
+
+/*枚红色字体*/
+.color-rose-red{
+	color: #f65959 !important;
+}
+
+/*红星*/
+.color-red{
+	color: red !important;
+}
+
+/*深红色字体*/
+.color-dull-red{
+	color: #d2432c !important;
+}
+
+/************背景颜色***********/
+/*黑蓝背景*/
+.bg-black-blue{
+	background-color: #1d224a !important;
+}
+
+/*深蓝色背景*/
+.bg-dark-blue{
+	background-color: #2b399e !important;
+}
+
+/*蓝色背景*/
+.bg-blue{
+	background-color: #217ede !important;
+}
+
+/*绿色背景*/
+.bg-green{
+	background-color: #1e9826 !important;
+}
+
+/*橙色背景*/
+.bg-orange{
+	background-color: #e5621b !important;
+}
+
+/*黑灰色背景*/
+.bg-black-gray{
+	background-color: #666 !important;
+}
+
+/*深灰色背景*/
+.bg-dark-gray{
+	background-color: #999 !important;
+}
+
+/*灰色背景*/
+.bg-gray{
+	background-color: #e8e8e8 !important;
+}
+
+/************边框颜色***********/
+/*黑蓝边框*/
+.border-black-blue{
+	border-color: #1d224a !important;
+}
+
+/*深蓝色边框*/
+.border-dark-blue{
+	border-color: #2b399e !important;
+}
+
+/*蓝色边框*/
+.border-blue{
+	border-color: #217ede !important;
+}
+
+/*绿色边框*/
+.border-green{
+	border-color: #1e9826 !important;
+}
+
+/*橙色边框*/
+.border-orange{
+	border-color: #e5621b !important;
+}
+
+/*黑灰色边框*/
+.border-black-gray{
+	border-color: #666 !important;
+}
+
+/*深灰色边框*/
+.border-dark-gray{
+	border-color: #999 !important;
+}
+
+/*灰色边框*/
+.border-gray{
+	border-color: #ccc !important;
+}
+
+/*白灰色*/
+.border-ashen{
+	border-color: #e1e1e1 !important;
+}
+
+/*淡灰色*/
+.border-french-gray{
+	border-color: #bababa !important;
+}
+
+/*浅灰色*/
+.border-light-gray{
+	border-color: #dfdcdc !important;
+}
+/*枚红色字体*/
+.border-rose-red{
+	border-color: #f65959 !important;
+}
+
+/*边框样式*/
+.border-solid-style{
+	border-style: solid;
+}
+
+.border-dotted-style{
+	border-style: dotted;
+}
+
+/*边框宽度*/
+.border-width-1px{
+	border-width: 1px;
+}
+
+/*圆角*/
+.border-radius-5px{
+	border-radius: 5px;
+}
+
+/******字体大小*******/
+.font-size-12px{
+	font-size: 12px !important;
+}
+
+.font-size-16px{
+	font-size: 16px !important;
+}
+
+.font-size-18px{
+	font-size: 18px !important;
+}
+
+.font-size-22px{
+	font-size: 22px !important;
+}
+
+/*加粗字体*/
+.font-blod{
+	font-weight: 600;
+}
+
+/*按钮样式*/
+.button1{
+	min-width: 140px;
+	height: 35px;
+	padding: 0 15px;
+	border-width: 1px;
+	border-radius: 5px;
+	border-style: solid;
+}
+
+/*自定义下拉框外层盒子*/
+.my-select-box{
+	position: relative;
+	display: inline-block;
+}
+
+/*自定义下拉框的输入样式*/
+.my-select{
+	background: url(../yjzh-img/main/select-bg.png) no-repeat scroll center right !important;
+	background-position-x: 98% !important;
+	padding-right: 18px !important;
+}
+
+/*表格外层盒子*/
+.table-box{
+	width: 100%;
+	padding: 10px 12px;
+	box-sizing: border-box;
+}
+
+/*列表样式1*/
+.table1{
+	border-collapse: collapse;
+	border: 1px solid #ddd;
+	width: 100%;
+}
+
+.table1 th{
+	background: #d0d0e0;
+	font-size: 15px;
+	padding: 10px 12px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.table1 td{
+	padding: 10px 12px;
+	text-align: center;
+}
+
+.table1 tr:nth-child(odd){
+	background: #efeff4;
+}
+
+.table1 tr:nth-child(even){
+	background: #fff;
+}
+
+.float-right{
+	float: right;
+}

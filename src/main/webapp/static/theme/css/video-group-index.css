@@ -1,0 +1,861 @@
+/*清楚浮动*/
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+/*第二种清除浮动*/
+
+.clear1 {
+  display: block;
+  overflow: hidden;
+}
+
+/**************************公共样式开始****************/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 14px;
+  font-family: "微软雅黑", "arial", "arial black";
+  color: #333;
+}
+
+/*页面外层的大小*/
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/*列表风格*/
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+span {
+  display: inline-block;
+}
+
+/*按钮以及输入框样式*/
+
+/*按钮以及输入框的样式*/
+
+button,
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+textarea,
+select {
+  outline: none;
+  padding: 0 5px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  resize: none;
+  line-height: 22px;
+  padding-top: 3px;
+}
+
+select {
+  /*将默认的select选择框样式清除*/
+  appearance: none;
+  /*所有主流浏览器都不支持*/
+  -moz-appearance: none;
+  /*Firefox支持*/
+  -webkit-appearance: none;
+  /*Safari和Chrome支持*/
+  background: url(../img/index/select-style.png) no-repeat scroll right center transparent;
+  padding-right: 20px;
+}
+
+/*清除IE的默认选择框样式清除，隐藏下拉箭头*/
+
+select::-ms-expand {
+  display: none;
+}
+
+/*设计按钮当鼠标悬浮的时候鼠标变成手的样式*/
+
+button {
+  cursor: pointer;
+}
+
+/*a标签的样式*/
+
+a,
+a:link,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  text-decoration: none;
+  outline: 0;
+  cursor: pointer;
+}
+
+/*清除列表边框之前的缝隙*/
+
+table,
+tr,
+td,
+th {
+  border-collapse: collapse;
+}
+
+img {
+  display: inline-block;
+  border: 0;
+}
+
+/*阴影*/
+
+.shadow {
+  -webkit-box-shadow: #666 0px 0px 5px;
+  -moz-box-shadow: #666 0px 0px 5px;
+  box-shadow: #666 0px 0px 5px;
+}
+
+/*滚动条样式*/
+
+/*滚动条整体部分样式*/
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(240, 240, 240, 1);
+}
+
+/*滑块样式*/
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(212, 212, 212, 0.5);
+  border-radius: 3px;
+  -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+/*外层轨道样式（滑块的外层）*/
+
+::-webkit-scrollbar-track {
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 6px transparent;
+}
+
+/*边角样式*/
+
+::-webkit-scrollbar-corner {
+  background: url(../img/index/drag.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+/*滚动条两端的按钮样式*/
+
+::-webkit-scrollbar-button:vertical:start {
+  height: 10px;
+  background: url(../img/index/up.png) no-repeat top;
+  background-size: 100% 100%;
+}
+
+::-webkit-scrollbar-button:vertical:end {
+  height: 10px;
+  background: url(../img/index/down.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+::-webkit-scrollbar-button:horizontal:start {
+  width: 10px;
+  background: url(../img/index/left.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+::-webkit-scrollbar-button:horizontal:end {
+  width: 10px;
+  background: url(../img/index/right.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+/*各色字体样式*/
+/*白色字体*/
+.color-white {
+  color: #fff;
+}
+
+/*黑蓝字体*/
+.color-black-blue {
+  color: #1d224a !important;
+}
+
+/*深蓝色字体*/
+.color-dark-blue {
+  color: #2b399e !important;
+}
+
+/*蓝色字体*/
+.color-blue {
+  color: #217ede !important;
+}
+
+/*绿色字体*/
+.color-green {
+  color: #1e9826 !important;
+}
+
+/*橙色字体*/
+.color-orange {
+  color: #e5621a !important;
+}
+
+/*黑灰色字体*/
+.color-black-gray {
+  color: #666 !important;
+}
+
+/*深灰色字体*/
+.color-dark-gray {
+  color: #999 !important;
+}
+
+/*灰色字体*/
+.color-gray {
+  color: #ccc;
+}
+
+/*浅灰色*/
+.color-light-gray {
+  color: #bababa;
+}
+
+/*枚红色字体*/
+.color-rose-red {
+  color: #f65959 !important;
+}
+
+/*黄色字体*/
+.color-yellow {
+  color: #e6a417 !important;
+}
+
+/*金黄色字体*/
+.color-golden {
+  color: #ffde00 !important;
+}
+
+/*紫色字体*/
+.color-purple {
+  color: #9215cc !important;
+}
+
+/*青色字体*/
+.color-cyan {
+  color: #1cbe9e !important;
+}
+
+/*红星*/
+.color-red {
+  color: #f02d07 !important;
+}
+
+/*深红色字体*/
+.color-dull-red {
+  color: #d2432c !important;
+}
+
+/*各种背景颜色*/
+.bg-color-white {
+  background-color: #fff;
+}
+
+/*黑蓝背景*/
+.bg-black-blue {
+  background-color: #1d224a !important;
+}
+
+/*深蓝色背景*/
+.bg-dark-blue {
+  background-color: #2b399e !important;
+}
+
+/*蓝色背景*/
+.bg-blue {
+  background-color: #217ede !important;
+}
+
+/*绿色背景*/
+.bg-green {
+  background-color: #1e9826 !important;
+}
+
+/*橙色背景*/
+.bg-orange {
+  background-color: #e5621b !important;
+}
+
+/*枚红色字体*/
+.bg-rose-red {
+  background-color: #f65959 !important;
+}
+
+/*黄色字体*/
+.bg-yellow {
+  background-color: #e6a417 !important;
+}
+
+/*黑灰色背景*/
+.bg-black-gray {
+  background-color: #666 !important;
+}
+
+/*深灰色背景*/
+.bg-dark-gray {
+  background-color: #999 !important;
+}
+
+/*灰色背景*/
+.bg-gray {
+  background-color: #e7e7e7 !important;
+}
+
+/*红色背景*/
+.bg-red {
+  background-color: #f02d07;
+}
+
+/************边框颜色***********/
+/*黑蓝边框*/
+
+.border-black-blue {
+  border-color: #1d224a !important;
+}
+
+/*深蓝色边框*/
+.border-dark-blue {
+  border-color: #2b399e !important;
+}
+
+/*蓝色边框*/
+.border-blue {
+  border-color: #217ede !important;
+}
+
+/*绿色边框*/
+.border-green {
+  border-color: #1e9826 !important;
+}
+
+/*橙色边框*/
+.border-orange {
+  border-color: #e5621b !important;
+}
+
+/*黑灰色边框*/
+.border-black-gray {
+  border-color: #666 !important;
+}
+
+/*深灰色边框*/
+.border-dark-gray {
+  border-color: #999 !important;
+}
+
+/*灰色边框*/
+.border-gray {
+  border-color: #ccc !important;
+}
+
+/*白灰色*/
+.border-ashen {
+  border-color: #e7e7e7 !important;
+}
+
+/*淡灰色*/
+.border-french-gray {
+  border-color: #bababa !important;
+}
+
+/*浅灰色*/
+.border-light-gray {
+  border-color: #dfdcdc !important;
+}
+
+/*枚红色边框*/
+.border-rose-red {
+  border-color: #f65959 !important;
+}
+
+/*黄色边框*/
+.border-yellow {
+  border-color: #e6a417 !important;
+}
+
+/*红色边框*/
+.border-red {
+  border-color: #f02d07;
+}
+
+/*边框样式*/
+.border-solid-style {
+  border-style: solid !important;
+}
+
+.border-dotted-style {
+  border-style: dotted !important;
+}
+
+/*边框宽度*/
+
+.border-width-1px {
+  border-width: 1px;
+}
+
+/*圆角*/
+.border-radius-3px {
+  border-radius: 3px;
+}
+
+.border-radius-5px {
+  border-radius: 5px;
+}
+
+/******字体大小*******/
+
+.font-size-12px {
+  font-size: 12px;
+}
+
+.font-size-15px {
+  font-size: 15px;
+}
+
+.font-size-16px {
+  font-size: 16px;
+}
+
+.font-size-18px {
+  font-size: 18px;
+}
+
+.font-size-22px {
+  font-size: 22px;
+}
+
+/*加粗字体*/
+
+.font-blod {
+  font-weight: 600;
+}
+
+/*列表的风格样式*/
+
+/*表格外层盒子样式*/
+
+.table1-box {
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.table2-box {
+  width: 100%;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.table3-box {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.table1 {
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.table1 tr:nth-child(odd) {
+  background-color: #efeff4;
+}
+
+.table1 tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.table1 th {
+  background-color: #d0d0e0;
+  font-size: 16px;
+  padding: 12px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.table1 td {
+  padding: 10px 12px;
+  text-align: center;
+}
+
+/*第二种弹窗样式*/
+.table2 {
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.table2 th {
+  background-color: #efeff4;
+  font-size: 15px;
+  padding: 12px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.table2 td {
+  padding: 10px 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.table2 td:nth-child(odd) {
+  background-color: #efeff4;
+}
+
+.table2 td:nth-child(even) {
+  background-color: #fff;
+}
+
+.page-nav {
+  height: 40px;
+  line-height: 40px;
+  text-align: right;
+  padding: 0 12px;
+}
+
+.page-nav02 {
+  height: 40px;
+  line-height: 40px;
+  text-align: right;
+}
+
+/*针对列表中不允许换行的样式*/
+.td-nowrap {
+  white-space: nowrap;
+}
+
+.button-center-box {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.button-right-box {
+  text-align: right;
+  margin-top: 8px;
+  padding: 4px;
+}
+
+/*按钮1样式*/
+.btn1 {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 20px;
+  border-color: transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/*列表中操作按钮样式*/
+.btn2 {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 4px;
+  /*min-width: 60px;*/
+  border-radius: 5px;
+  border-color: transparent;
+  color: #fff;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 600;
+}
+
+/*操作按钮中的删除图标,调度图标,编辑图标样式*/
+.btn2 .fa-trash-o,
+.btn2 .fa-retweet,
+.btn2 .fa-pencil-square-o {
+  font-size: 16px;
+}
+
+/*带圆角按钮*/
+.btn3 {
+  display: inline-block;
+  height: 36px;
+  min-width: 140px;
+  line-height: 36px;
+  text-align: center;
+  padding: 0 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/*带圆角按钮*/
+.btn4 {
+  display: inline-block;
+  height: 30px;
+  min-width: 120px;
+  line-height: 30px;
+  text-align: center;
+  padding: 0 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/*带圆角按钮*/
+.btn5 {
+  display: inline-block;
+  height: 32px;
+  min-width: 110px;
+  line-height: 32px;
+  text-align: center;
+  padding: 0 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-left: 12px;
+}
+
+/*带圆角按钮*/
+.btn6 {
+  display: inline-block;
+  height: 30px;
+  min-width: 100px;
+  line-height: 30px;
+  text-align: center;
+  padding: 0 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/*分部块标题*/
+
+.part-title {
+  border-left-width: 4px;
+  border-style: solid;
+  font-size: 18px;
+  padding: 0 12px;
+  font-weight: bolder;
+  margin: 15px 0;
+  line-height: 20px;
+}
+
+/*浮动方向*/
+.float-left {
+  float: left !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
+/*多项数据填充自定义输入框样式*/
+.message-cell {
+  position: relative;
+  float: left;
+  padding: 0 12px 12px 0;
+  height: 40px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.cell-title {
+  display: inline-block;
+  float: left;
+  height: 100%;
+  line-height: 27px;
+  padding-right: 5px;
+  text-align: right;
+
+}
+
+.input-select-box {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  bottom: 12px;
+  height: 27px;
+}
+
+.input-select-box div,
+.input-select-box input[type="text"],
+.input-select-box select {
+  width: 100%;
+  height: 100%;
+}
+
+.input-select-box textarea {
+  width: 100%;
+}
+
+.message-cell-textarea {
+  width: 100% !important;
+  height: 70px;
+}
+
+.message-cell-100 {
+  width: 100% !important;
+}
+
+.input-select-box .lian-dong-box {
+  display: inline-block;
+  /*width: 24%;*/
+  box-sizing: border-box;
+  padding: 0;
+  padding-right: 8px;
+}
+
+.input-select-box .lian-dong-box:last-child {
+  padding-right: 0;
+}
+
+.red-star {
+  float: right;
+  color: red;
+}
+
+.margin-top-0px {
+  margin-top: 0px;
+}
+
+.margin-top-8px {
+  margin-top: 8px;
+}
+
+.margin-top-12px {
+  margin-top: 12px;
+}
+
+.margin-bottom-12px {
+  margin-bottom: 12px;
+}
+
+.padding-0px {
+  padding: 0 !important;
+}
+
+/*文本对齐方式*/
+.text-align-left {
+  text-align: left !important;
+}
+
+.text-align-center {
+  text-align: center !important;
+}
+
+.text-align-right {
+  text-align: right !important;
+}
+
+.vertical-text-top {
+  vertical-align: text-top;
+}
+
+.vertical-text-middle {
+  vertical-align: middle;
+}
+
+/*多选下拉框*/
+.drop-down-box {
+  position: absolute;
+  top: 30px;
+  width: 100% !important;
+  max-height: 110px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  z-index: 999;
+  display: none;
+}
+
+/*多选下拉框内层盒子*/
+.drop-down-inner-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.drop-down-list-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  overflow-y: auto;
+  height: auto !important;
+}
+
+/*下拉框列表*/
+.drop-down-list {
+  width: 100%;
+}
+
+.drop-down-list li {
+  line-height: 36px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.drop-down-list li:hover {
+  background-color: #f2f2f2;
+}
+
+.drop-checked-box {
+  float: right;
+  margin-top: 11px;
+  height: 14px;
+  width: 14px;
+  background: url(../img/huojing/hj-check-bg.png) no-repeat center;
+}
+
+.cheched-submit {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 35px !important;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  line-height: 35px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.checked-box-input {
+  background: url(../img/index/select-style.png) scroll no-repeat right;
+  padding-right: 14px !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

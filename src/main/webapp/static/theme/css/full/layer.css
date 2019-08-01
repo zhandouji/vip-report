@@ -1,0 +1,259 @@
+/*弹窗最外层盒子*/
+button,
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+textarea,
+select{
+	outline: none;
+	border: 1px solid #bababa;
+	padding: 0 5px;
+	box-sizing: border-box;
+	background: transparent;
+}
+
+.layer-box{
+	width: 100%;
+	height: 100%;
+	min-width: 1000px;
+}
+
+/*弹窗内容外层盒子*/
+.layer-content-box{
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	overflow-y: auto;
+}
+
+/************************************弹窗表格样式1***************************************/
+table{
+	border-collapse: collapse;
+}
+.layer-table1{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.layer-table1 td{
+	padding: 5px;
+	height: 40px;
+	vertical-align: baseline;
+}
+
+/*单数列样式*/
+.layer-table1 td:nth-child(odd){
+	text-align: right;
+	/*width: 120px;*/
+}
+/*双数列样式*/
+.layer-table1 td:nth-child(even){
+	text-align: left;
+}
+
+/*td中的输入的样式*/
+.layer-table1 td input[type="text"],.layer-table1 td select{
+	width: 300px;
+	height: 30px;
+	background: #fff;
+	border-radius: 3px;
+}
+
+/*必填项为空时的提醒*/
+.layer-table1 td p,.layer-table2 td p{
+	color: red;
+	height: 20px;
+	margin: 5px 0;
+}
+
+.layer-table1 td textarea{
+	resize: none;
+	width: 76%;
+	min-width: 810px;
+	height: 75px;
+	border-radius: 3px;
+	background: #fff;
+	padding: 5px;
+}
+
+/*红星必填项*/
+.red-star{
+	display: inline-block;
+	color: red;
+}
+
+/********************************************弹窗表格样式2*********************************************************/
+.layer-table2{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.layer-table2 td{
+	padding: 5px;
+	height: 40px;
+	vertical-align: baseline;
+}
+
+.layer-table2 td:nth-child(odd){
+	text-align: right;
+	width: 32%;
+}
+
+/*td中的输入的样式*/
+.layer-table2 td input[type="text"],.layer-table2 td select{
+	width: 420px;
+	height: 30px;
+	background: #fff;
+	border-radius: 3px;
+}
+
+/*必填项为空时的提醒*/
+.layer-table2 td p{
+	color: red;
+}
+
+.layer-table2 td textarea{
+	resize: none;
+	width: 420px;
+	height: 75px;
+	border-radius: 3px;
+	background: #fff;
+	padding: 5px;
+}
+
+.layer-table1 td.textarea-title,.layer-table2 td.textarea-title,.layer-table3 td.textarea-title{
+	vertical-align: top;
+	padding-top: 10px;
+}
+
+/*确定提交按钮的外层盒子样式*/
+.layer-table1 td.submit-button-box,.layer-table2 td.submit-button-box{
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.submit-button-box>button{
+	width: 260px;
+	height: 45px;
+	background-color: rgba(29, 34, 74, 1);
+	border-radius: 5px;
+	color: #fff;
+}
+
+/*查看页面的样式*/
+.layer-table3{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.layer-table3 td{
+	padding: 5px;
+}
+
+.layer-table3 td:nth-child(odd){
+	text-align: right;
+}
+
+.layer-table3 td p{
+	color: #999;
+	width: 360px;
+	text-align: left;
+}
+
+/*列表4的样式*/
+
+.layer-table4 {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.layer-table4 tr td {
+	text-align: left;
+	padding: 5px;
+	vertical-align: baseline;
+}
+
+.layer-table4 tr td.submit-button-box {
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.layer-table4 tr td p {
+	line-height: 24px;
+	margin: 0;
+}
+
+.layer-table4 tr td p.left-answer{
+	padding-right: 50%;
+	padding-left: 30px;
+}
+
+.layer-table4 tr td p.right-answer{
+	padding-left: 55%;
+}
+
+.layer-table4 td textarea {
+	resize: none;
+	width: 100%;
+	height: 120px;
+	border-radius: 3px;
+	background: #fff;
+	padding: 5px;
+}
+
+/*用户管理页面的用户信息样式*/
+.user-message-box {
+	width: 100%;
+	height: 115px;
+	background: #e8e8e8;
+	margin-bottom: 10px;
+}
+
+.user-message-box ul li {
+	float: left;
+	height: 115px;
+}
+
+.user-message-box ul li img {
+	height: 85px;
+	width: 85px;
+	margin: 15px 20px;
+}
+
+.user-message-box ul li p {
+	line-height: 25px;
+	font-weight: 600;
+}
+
+.user-message-box ul li p:first-child {
+	margin-top: 35px;
+}
+
+.user-message-box ul li:last-child {
+	font-weight: bold;
+	float: right;
+	line-height: 115px;
+	padding-right: 30px;
+}
+
+/*弹窗里面涉及table1的样式*/
+.layer-content-box .table1 select,.layer-content-box .table1 input[type="text"] {
+	width: 100%;
+	height: 32px;
+	border-radius: 3px;
+	background: #fff;
+}
+
+.layer-content-box .table1 a {
+	color: #1f4ea1;
+}
+
+.submit-button-box {
+	margin-top: 10px;
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+}

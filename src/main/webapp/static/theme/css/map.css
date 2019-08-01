@@ -1,0 +1,319 @@
+.map-police-box {
+    position: absolute;
+    top: 53px;
+    right: 84px;
+    width: 440px;
+    max-height: 740px;
+    background: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    z-index: 999;
+    overflow-y: auto
+}
+
+.the-site {
+    height: 100px;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #ededed
+}
+
+.the-site img {
+    display: inline-block;
+    height: 32px;
+    width: 25px;
+    margin: 34px 20px;
+    float: left
+}
+
+.site-title {
+    display: inline-block;
+    width: 280px;
+    min-height: 20px;
+    line-height: 20px;
+    float: left;
+    color: #e30a0a;
+    margin: 12px 0 5px 0;
+    font-size: 16px
+}
+
+.the-site p {
+    display: inline-block;
+    width: 280px;
+    line-height: 20px;
+    color: #999
+}
+
+.map-police-list {
+    margin: 0 14px
+}
+
+.map-police-list li {
+    min-height: 100px;
+    border-bottom: 1px solid #d7d7d7;
+    padding-bottom: 5px
+}
+
+.site-img {
+    display: inline-block;
+    float: left;
+    background: url(../img/map/blue-img.png);
+    background-size: 100% 100%;
+    height: 32px;
+    width: 25px;
+    margin: 34px 20px 34px 6px;
+    color: #fff;
+    text-align: center;
+    line-height: 28px;
+    font-size: 18px
+}
+
+.police-name {
+    display: inline-block;
+    float: left;
+    height: 20px;
+    width: 280px;
+    line-height: 20px;
+    margin: 10px 0 5px 0;
+    font-size: 16px;
+    color: #217ede
+}
+
+.police-address {
+    display: inline-block;
+    width: 280px;
+    line-height: 20px;
+    color: #999;
+    margin-bottom: 5px
+}
+
+.juli {
+    display: inline-block;
+    width: 280px;
+    line-height: 20px;
+    color: #999
+}
+
+.juli img {
+    vertical-align: middle
+}
+
+.check-button {
+    float: right;
+    background: url(../img/map/unchecked.png);
+    background-size: 100% 100%;
+    height: 30px;
+    width: 30px;
+    margin-top: -40px
+}
+
+.checked-button {
+    background: url(../img/map/checked.png);
+    background-size: 100% 100%
+}
+
+.submit-button {
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    margin: 30px 0 20px 0;
+    line-height: 60px
+}
+
+.submit-button button {
+    width: 380px;
+    height: 55px;
+    background: #1d224a;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 24px
+}
+
+/*火警地图搜索样式*/
+.search_address-box{
+    position: absolute;
+    top: 53px;
+    left: 84px;
+    width: 440px;
+    height: 45px;
+    z-index: 999;
+}
+
+.search_address{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.search_address input[type="text"]{
+    width: 360px;
+    height: 100%;
+    border: 1px solid #d7d7d7;
+    border-right: 0;
+    background-color: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.search_address button{
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    width: 80px;
+    height: 100%;
+    background-color: #217ede;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#panel {
+    position: fixed;
+    z-index: 999;
+    background-color: white;
+    max-height: 90%;
+    overflow-y: auto;
+    top: 10px;
+    right: 10px;
+    width: 280px;
+    border-bottom: solid 1px silver;
+}
+
+/**************左侧新加内容样式****************/
+/*左侧选项栏*/
+.map-tab-bar-box{
+    position: absolute;
+    top: 53px;
+    left: 60px;
+    width: 460px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 5px;
+    z-index: 999;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.map-tab-bar-list{
+    height: 40px;
+}
+
+.map-tab-bar-list li{
+    float: left;
+    height: 40px;
+    width: 33%;
+    line-height: 40px;
+    text-align: center;
+    border-right: 1px #dbdee2 dashed;
+    color: #7c8196;
+}
+
+.map-tab-bar-list .checked-bar,.map-tab-bar-list .checked-bar i{
+    color: #217ede;
+}
+
+.map-tab-bar-list li:last-child{
+    border: 0;
+}
+
+.map-tab-bar-list li i{
+    color: #7c8196;
+}
+
+.query-condition-box{
+    position: absolute;
+    top: 125px;
+    left: 60px;
+    width: 460px;
+    z-index:999;
+}
+
+.near-police-box{
+    display: none;
+    margin-bottom: 15px;
+}
+
+.near-police-box select{
+    width: 402px;
+    border: 1px solid #dadada;
+    height: 36px;
+    font-size: 12px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.near-alert-box{
+    display: none;
+    margin-bottom: 15px;
+}
+
+.near-alert-box input[type="text"]{
+    width: 118px;
+    height: 36px;
+    border: 1px solid #dadada;
+    font-size: 12px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.near-alert-box select{
+    width: 70px;
+    height: 36px;
+    border: 1px solid #dadada;
+    font-size: 12px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.inquire-btn{
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: #217ede;
+    color: #fff;
+    border: 0;
+}
+
+.inquire-result-box{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.inquire-result-title{
+    text-align: center;
+    height: 40px;
+    background-color: #ededed;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.inquire-result-list-box{
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+.inquire-result-list{
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.inquire-result-list li{
+    border-bottom: 1px solid #d7d7d7;
+    padding: 10px 5px;
+}
+
+.inquire-result-list li img{
+    vertical-align: middle;
+}
+
+.inquire-result-list li div{
+    display: inline-block;
+    vertical-align: middle;
+}

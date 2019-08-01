@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true" />
+        <setting name="useGeneratedKeys" value="true" />
+    </settings>
+    <!--非自定义别名，所有javaJDK中的类都定义了别名，别名是类名不区分大小写: map 替换java.util.Map
+        如果是包装类，还可以使用基本数据类型：int 替换java.lang.Integer
+    -->
+    <typeAliases>
+        <!--自定义别名-->
+        <typeAlias  alias="int" type="java.lang.Integer"/>
+        <typeAlias type="java.lang.String" alias="String"/>
+        <typeAlias type="java.lang.Double" alias="double"/>
+        <typeAlias type="java.util.List" alias="List"/>
+        <typeAlias type="java.lang.Long" alias="Long"/>
+        <typeAlias type="java.util.Map" alias="map"/>
+
+
+    </typeAliases>
+</configuration>

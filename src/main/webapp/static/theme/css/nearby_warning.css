@@ -1,0 +1,143 @@
+.nerby-warning-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 260px;
+    height: 50px;
+    background-color: #fff;
+    z-index: 200;
+    opacity: 0;
+}
+
+.title-box {
+    width: 100%;
+    height: 50px;
+    background-color: #f8f8f8;
+    color: #dd2f2f;
+    padding-left: 30px;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.unread-number{
+    font-size: 16px;
+    color: #dd2f2f;
+}
+
+.read-btn{
+    float: right;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    margin-right: 10px;
+    background-image: url(../img/nearby_warning/icon.png);
+    background-position: -65px -40px;
+    margin-top: 19px;
+}
+
+.layui-title{
+    color: #f65959;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+.nearby-max-box {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    box-sizing: border-box;
+}
+/*附近警情视频外层盒子样式*/
+
+.nearby-video-box {
+    float: left;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 18px 26px;
+}
+
+.nearby-video {
+    height: 467px;
+    width: 347px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nearby-video video {
+    width: 100%;
+    height: 100%;
+}
+/*附近警情相关信息外层盒子样式*/
+
+.nearby-message-box {
+    float: left;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 62px;
+}
+
+.nearby-message-table {
+    width: 360px;
+}
+
+.nearby-message-table td {
+    padding: 8px 0;
+    font-size: 15px;
+}
+
+.nearby-message-table td:nth-child(odd) {
+    text-align: right;
+    white-space: nowrap;
+    vertical-align: text-top;
+}
+
+.nearby-message-table td:nth-child(even) {
+    text-align: left;
+}
+
+.deal-with-button {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.deal-with-button button {
+    border: 0;
+    width: 166px;
+    height: 48px;
+    border-radius: 5px;
+    color: #fff;
+    margin: 0 10px;
+}
+/*枚红色*/
+
+.bg-rose-red {
+    background-color: #f65959 !important;
+}
+
+.warning-text {
+    color: #f65959;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+.close-btn{
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    color: red;
+    background-image: url(../img/nearby_warning/icon.png);
+    background-position: 1px -40px;
+    width: 16px;
+    height: 16px;
+}
+

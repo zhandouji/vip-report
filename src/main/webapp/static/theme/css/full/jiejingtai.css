@@ -1,0 +1,1542 @@
+/*头部接警菜单样式*/
+
+.top-menu-box {
+	width: 100%;
+	height: 52px;
+	background: #fff;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+.top-menu-box * {
+	color: #666;
+}
+
+.top-menu-box ul li {
+	float: left;
+	height: 52px;
+	line-height: 52px;
+}
+
+.top-menu-box ul li button {
+	width: 100px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid #666;
+	margin: 0 6px;
+}
+
+.top-menu-box ul li .check-button1 {
+	background-color: #20A10E;
+	border: 1px solid #20A10E;
+}
+
+.top-menu-box ul li .check-button2 {
+	background-color: #ddbd24;
+	border: 1px solid #ddbd24;
+}
+
+.top-menu-box ul li .check-button3 {
+	background-color: #f02d07;
+	border: 1px solid #f02d07;
+}
+
+.top-menu-box ul li .active {
+	color: #ffffff;
+}
+
+
+/*未完成报警按钮*/
+
+.unfinish-button {
+	float: right;
+	width: 170px;
+	height: 32px;
+	background: #1d224a;
+	color: #fff;
+	border-radius: 16px;
+	margin-top: 10px;
+}
+
+.unfinish-button span {
+	color: #ffde00;
+}
+
+
+/*每个部分的标题*/
+
+.part-title {
+	height: 20px;
+	padding: 0 16px;
+	line-height: 20px;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 20px 0;
+}
+
+
+/**************************************视频框外层盒子*****************************/
+
+.shipin-box {
+	position: absolute;
+	top: 60px;
+	left: 8px;
+	bottom: 8px;
+	width: 460px;
+	min-height: 750px;
+	background: #fff;
+}
+
+.shipin-box .part-title {
+	border-left: 4px solid #f65959;
+	color: #f65959;
+}
+
+.map-button {
+	float: right;
+}
+
+.map-button img {
+	display: inline-block;
+	height: 16px;
+	width: 15px;
+	vertical-align: sub;
+}
+
+.map-button span {
+	color: #2b399e;
+	font-size: 16px;
+	font-weight: 200;
+	vertical-align: bottom;
+}
+
+
+/*视频*/
+
+.video-box {
+	width: 436px;
+	height: 555px;
+	background: url(../img/jiejingtai/video-bg.jpg) no-repeat center;
+	margin: 0 12px 12px 12px;
+	position: relative;
+}
+
+.huojing-video-box {
+	width: 436px;
+	height: 555px;
+	background: url(../img/jiejingtai/video-bg1.png) no-repeat center;
+	margin: 0 12px 12px 12px;
+	position: relative;
+}
+
+.voice-box {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	display: none;
+	z-index: 900;
+}
+
+.voice-box button {
+	width: 45px;
+	height: 45px;
+	border: 0;
+	padding: 0;
+	background-size: 100% 100%;
+	margin: 0 10px 0 0;
+}
+
+.voice {
+	background: url(../img/jiejingtai/speaker.png);
+	margin-right: 20px;
+}
+
+.speaker {
+	background: url(../img/jiejingtai/voice.png);
+}
+
+
+/*多人视频框*/
+
+.part-video {
+	margin-left: 6px;
+}
+
+.part-video li {
+	float: left;
+	width: 100px;
+	height: 100px;
+	padding: 0 6px;
+}
+
+.part-video li img {
+	width: 100px;
+	height: 100px;
+}
+
+
+/**********************当页面宽度低于1600px时******************************/
+
+@media screen and (max-width:1599px) {
+	/*************************报警人信息以及聊天框外层盒子**************************/
+	.chat-box {
+		position: absolute;
+		top: 60px;
+		left: 476px;
+		right: 8px;
+		/*background: #fff;*/
+		height: 360px;
+	}
+	.chat-box2 {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+	/*报警人信息*/
+	.person-message {
+		width: 292px;
+		height: 340px;
+		background: #fff;
+		padding-top: 20px;
+	}
+	.person-message .part-title {
+		border-left: 4px solid #1b92e5;
+		color: #1b92e5;
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+	.message-box {
+		width: 272px;
+		height: 204px;
+		margin-left: 12px;
+		padding-bottom: 10px;
+		border-bottom: 1px dashed #ccc;
+	}
+	.message-box img {
+		float: left;
+		width: 74px;
+		height: 90px;
+		border: 1px solid #c9c9c9;
+	}
+	.message-box ul {
+		float: left;
+		margin: 5px 0 0 0;
+		min-width: 200px;
+	}
+	.message-box ul li {
+		line-height: 28px;
+	}
+	.message-box ul li span {
+		display: block;
+		width: 150px;
+	}
+	/*统计条*/
+	.count-history {
+		padding-left: 12px;
+		line-height: 48px;
+	}
+	.count-history span {
+		font-size: 13px;
+	}
+	.num1 {
+		color: #217ede;
+	}
+	.num2 {
+		color: #df0909;
+	}
+	/*查看历史报警按钮样式*/
+	.find-history-button {
+		float: right;
+		display: block;
+		width: 100px;
+		height: 30px;
+		border-radius: 5px;
+		background: #e4f0f8;
+		border: 1px solid #1b92e5;
+		color: #1b92e5;
+		margin: -5px 12px 0 0;
+	}
+	/*聊天框外层盒子*/
+	.chatting-box {
+		position: absolute;
+		top: 0;
+		left: 300px;
+		right: 0;
+		bottom: 0;
+		background: #fff;
+		padding: 20px 12px 0 12px;
+		box-sizing: border-box;
+	}
+	.chatting-box .part-title {
+		color: #2b399e;
+		border-left: 4px solid #2b399e;
+		margin-top: 0;
+	}
+	.chatting {
+		width: 100%;
+		height: 160px;
+		margin: 0 auto;
+		background: #efeff4;
+		border: 1px solid #ccc;
+		overflow-y: auto;
+		padding: 10px 4px;
+		box-sizing: border-box;
+	}
+}
+
+
+/*******************当页面大于1600px时*************/
+
+@media screen and (min-width: 1600px) {
+	.chat-box {
+		position: absolute;
+		top: 60px;
+		left: 476px;
+		bottom: 8px;
+		width: 460px;
+		background: #fff;
+		min-height: 750px;
+	}
+	/*报警人信息*/
+	.person-message {
+		width: 100%;
+		height: 187px;
+		background: #fff;
+		padding-top: 20px;
+		border-bottom: 8px solid #efeff4;
+	}
+	.person-message .part-title {
+		border-left: 4px solid #1b92e5;
+		color: #1b92e5;
+		margin-top: 0;
+		margin-bottom: 15px;
+	}
+	.message-box {
+		width: 436px;
+		margin: 0 auto;
+		padding-bottom: 10px;
+		border-bottom: 1px dashed #ccc;
+	}
+	.message-box ul {
+		float: left;
+		margin-left: 17px;
+	}
+	.message-box ul li {
+		height: 28px;
+		line-height: 28px;
+	}
+	.message-box ul li span {
+		display: inline-block;
+		width: 150px;
+	}
+	/*统计条*/
+	.count-history {
+		padding-left: 12px;
+		line-height: 48px;
+	}
+	.num1 {
+		color: #217ede;
+	}
+	.num2 {
+		color: #df0909;
+	}
+	/*查看历史报警按钮样式*/
+	.find-history-button {
+		float: right;
+		width: 120px;
+		height: 30px;
+		border-radius: 5px;
+		background: #e4f0f8;
+		border: 1px solid #1b92e5;
+		color: #1b92e5;
+		margin: 8px 12px 0 0;
+	}
+	/*聊天框外层盒子*/
+	.chatting-box {
+		width: 100%;
+		background: #fff;
+		padding-top: 20px;
+	}
+	.chatting-box .part-title {
+		color: #2b399e;
+		border-left: 4px solid #2b399e;
+		margin-top: 0;
+	}
+	.chatting {
+		width: 436px;
+		height: 250px;
+		margin: 0 auto;
+		background: #efeff4;
+		border: 1px solid #ccc;
+		overflow-y: auto;
+		padding: 10px 4px;
+		box-sizing: border-box;
+	}
+}
+
+
+/*聊天气泡样式*/
+
+div.speech {
+	float: left;
+	margin: 6px 0;
+	padding: 8px;
+	table-layout: fixed;
+	word-break: break-all;
+	position: relative;
+	background: #fff;
+	border: 1px solid #e4e4e4;
+	border-radius: 5px;
+}
+
+div.speech:before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 15px;
+	top: -20px;
+	border: 10px solid;
+	border-color: transparent transparent #e4e4e4 transparent;
+}
+
+div.speech:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 17px;
+	top: -16px;
+	border: 8px solid;
+	border-color: transparent transparent #e4e4e4 transparent;
+}
+
+div.speech.right {
+	display: inline-block;
+	box-shadow: -2px 2px 2px #e4e4e4;
+	margin-right: 10px;
+	max-width: 50%;
+	float: right;
+	background: #9ac5f1;
+}
+
+div.speech.right:before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 9px;
+	bottom: auto;
+	left: auto;
+	right: -10px;
+	border-width: 9px 0 9px 10px;
+	border-color: transparent #9ac5f1;
+}
+
+div.speech.right:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 10px;
+	bottom: auto;
+	left: auto;
+	right: -8px;
+	border-width: 8px 0 8px 9px;
+	border-color: transparent #9ac5f1;
+}
+
+div.speech.left {
+	display: inline-block;
+	box-shadow: 1px 1px 1px #e4e4e4;
+	margin-left: 10px;
+	max-width: 50%;
+	position: relative;
+	background: #fff;
+}
+
+div.speech.left:before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 9px;
+	bottom: auto;
+	left: -10px;
+	border-width: 9px 10px 9px 0;
+	border-color: transparent #fff;
+}
+
+div.speech.left:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 10px;
+	bottom: auto;
+	left: -8px;
+	border-width: 8px 9px 8px 0;
+	border-color: transparent #fff;
+}
+
+.left img {
+	float: left;
+	margin-top: 10px;
+}
+
+.right img {
+	float: right;
+	margin-top: 10px;
+}
+
+.left-chatting-box {
+	width: 95%;
+	clear: both;
+	float: left;
+	margin-left: 10px;
+}
+
+.right-chatting-box {
+	width: 95%;
+	clear: both;
+	float: right;
+	margin-right: 10px;
+}
+
+.left-head-img {
+	width: 45px;
+	height: 45px;
+	display: block;
+	float: left;
+	overflow: hidden;
+}
+
+.left-head-img img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.right-head-img {
+	width: 45px;
+	height: 45px;
+	display: block;
+	float: right;
+	overflow: hidden;
+}
+
+.right-head-img img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.center-box {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.center-box p {
+	text-align: center;
+	color: #999;
+}
+
+.center-box span {
+	display: inline-block;
+	background: #b3b3b7;
+	height: 22px;
+	border-radius: 5px;
+	padding: 0 5px;
+	color: #fff;
+	font-size: 12px;
+	line-height: 22px;
+}
+
+
+/**********************当页面宽度低于1600px时******************************/
+
+@media screen and (max-width:1599px) {
+	/*发送框*/
+	.sending {
+		position: relative;
+		width: 100%;
+		margin: 0 auto;
+		height: 40px;
+	}
+	.sending-input-box {
+		position: absolute;
+		left: 0;
+		right: 68px;
+		height: 40px;
+	}
+	.sending .sending-input-box textarea {
+		width: 100%;
+		height: 40px;
+		resize: none;
+		overflow-y: auto;
+		background: #fff;
+		border: 1px solid #ccc;
+		border-top: 0;
+		padding: 5px;
+		box-sizing: border-box;
+	}
+	.sending button {
+		float: right;
+		height: 40px;
+		width: 68px;
+		background: #2b399e;
+		border: 1px solid #ccc;
+		border-top: 0;
+		border-left: 0;
+		color: #fff;
+		vertical-align: top;
+	}
+	/*常用语外框*/
+	.always-chatting {
+		width: 100%;
+		max-height: 82px;
+		margin: 8px auto;
+		overflow-y: auto;
+		background: #efeff4;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+	}
+}
+
+
+/*******************当页面大于1600px时*************/
+
+@media screen and (min-width: 1600px) {
+	/*发送框*/
+	.sending {
+		position: relative;
+		width: 438px;
+		margin: 0 auto;
+		height: 66px;
+	}
+	.sending-input-box {
+		position: absolute;
+		top: 0;
+		right: 68px;
+		bottom: 0;
+		left: 0;
+		height: 100%;
+	}
+	.sending textarea {
+		height: 100%;
+		width: 100%;
+		resize: none;
+		overflow-y: auto;
+		background: #fff;
+		border: 1px solid #ccc;
+		border-top: 0;
+		padding: 5px;
+		box-sizing: border-box;
+	}
+	.sending button {
+		float: right;
+		height: 66px;
+		width: 68px;
+		background: #2b399e;
+		border: 1px solid #ccc;
+		border-top: 0;
+		border-left: 0;
+		color: #fff;
+		vertical-align: top;
+	}
+	/*常用语外框*/
+	.always-chatting {
+		width: 438px;
+		max-height: 124px;
+		margin: 10px auto;
+		overflow-y: auto;
+		background: #efeff4;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+	}
+}
+
+.phrase {
+	float: left;
+	height: 30px;
+	border: 1px solid #dfdcdc;
+	border-radius: 5px;
+	background: #fff;
+	padding: 0 12px;
+	line-height: 30px;
+	text-align: center;
+	margin: 4px;
+}
+
+.phrase-check {
+	float: left;
+	height: 30px;
+	border: 1px solid #2B399C;
+	color: #2B399C;
+	border-radius: 5px;
+	background: #CFD2F1;
+	padding: 0 12px;
+	line-height: 30px;
+	text-align: center;
+	margin: 4px;
+}
+
+
+/**********************当页面宽度低于1600px时******************************/
+
+@media screen and (max-width:1599px) {
+	/**********************************警情信息以及处警信息外层盒子样式************************/
+	.jingqing-box {
+		position: absolute;
+		top: 428px;
+		right: 8px;
+		bottom: 8px;
+		left: 476px;
+		background: #fff;
+		min-height: 382px;
+	}
+}
+
+
+/*******************当页面大于1600px时*************/
+
+@media screen and (min-width: 1600px) {
+	.jingqing-box {
+		position: absolute;
+		top: 60px;
+		right: 8px;
+		bottom: 8px;
+		left: 944px;
+		background: #fff;
+		min-height: 750px;
+	}
+}
+
+.jingqing-message {
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+}
+
+
+/*警情信息标题*/
+
+.jingqing-message .part-title,
+.hj-jingqing-message .part-title {
+	color: #1e9826;
+	border-left: 4px solid #1e9826;
+	margin-bottom: 12px;
+}
+
+
+/*输入信息外层边框*/
+
+.message-input-box {
+	width: 100%;
+	padding: 0 12px 8px 12px;
+	border-bottom: 1px dashed #ccc;
+	box-sizing: border-box;
+}
+
+
+/*必填星*/
+
+.red-star {
+	display: inline-block;
+	width: 6px;
+	color: red;
+}
+
+.message-cell {
+	position: relative;
+	float: left;
+	margin: 8px 3px;
+}
+
+.message-cell>span:first-child {
+	display: inline-block;
+	width: 70px;
+	text-align: right;
+}
+
+.message-cell input[type='text'],
+.message-cell select {
+	height: 27px;
+	width: 144px;
+	margin-left: 2px;
+	line-height: 10px;
+}
+
+
+/*警情类型样式*/
+
+.jqlb-cell {
+	height: auto;
+}
+
+.message-cell .jqlb {
+	display: block;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+}
+
+.message-cell ul {
+	display: block;
+	overflow: hidden;
+}
+
+.message-cell ul li {
+	float: left;
+	height: 30px;
+	padding: 5px 5px 0 5px;
+}
+
+.message-cell ul li>select {
+	width: 145px;
+}
+
+
+/*警情描述样式*/
+
+.jqms {
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+	height: 70px;
+}
+
+.jqms span:first-child {
+	padding-top: 5px;
+	vertical-align: text-top;
+}
+
+.jqms .red-star {
+	float: right;
+	margin-right: 10px;
+}
+
+.textarea-box {
+	position: absolute;
+	top: 0;
+	left: 76px;
+	right: 20px;
+	height: 70px;
+}
+
+.textarea-box>textarea {
+	width: 100%;
+	height: 100%;
+	resize: none;
+	padding: 5px 10px;
+	vertical-align: text-top;
+}
+
+
+/*处警按钮样式*/
+
+.button-cell {
+	/*float: left;*/
+	width: 100%;
+	text-align: center;
+	background: #fff;
+	height: 60px;
+	padding-top: 10px;
+	box-sizing: border-box;
+}
+
+
+/**********************当页面宽度低于1600px时******************************/
+
+@media screen and (max-width:1599px) {
+	.button-cell select {
+		width: 180px;
+		height: 35px;
+		background: #fff;
+		border: 1px solid #1e9826;
+		border-radius: 5px;
+		color: #1e9826;
+		margin-right: 15px;
+		text-align: center;
+	}
+	.button-cell button {
+		background: #1e9826;
+		width: 140px;
+		height: 37px;
+		border-radius: 5px;
+		border: 0;
+		padding: 5px 10px;
+		color: #fff;
+		min-width: 80px;
+	}
+	/*处警信息外层盒子样式*/
+	.paijing-box {
+		width: 100%;
+	}
+	.paijing-box .part-title {
+		color: #e5621b;
+		border-left: 4px solid #e5621b;
+	}
+	/*派警所队外层盒子*/
+	.nearby-police-box {
+		width: 100%;
+		padding: 0 12px 12px 12px;
+		box-sizing: border-box;
+	}
+}
+
+
+/*******************当页面大于1600px时*************/
+
+@media screen and (min-width: 1600px) {
+	.button-cell select {
+		width: 180px;
+		height: 35px;
+		background: #fff;
+		border: 1px solid #e5621b;
+		border-radius: 5px;
+		color: #e5621b;
+		margin-right: 15px;
+		text-align: center;
+	}
+	.button-cell button {
+		background: #e5621b;
+		width: 140px;
+		height: 37px;
+		border-radius: 5px;
+		border: 0;
+		padding: 5px 10px;
+		color: #fff;
+		min-width: 80px;
+	}
+	/*处警信息外层盒子样式*/
+	.paijing-box {
+		width: 100%;
+	}
+	.paijing-box .part-title {
+		color: #e5621b;
+		border-left: 4px solid #e5621b;
+	}
+	/*派警所队外层盒子*/
+	.nearby-police-box {
+		width: 100%;
+		padding: 0 12px 12px 12px;
+		box-sizing: border-box;
+	}
+}
+
+
+/*附近警力*/
+
+.nearby-police {
+	float: left;
+	height: 260px;
+	border: 1px solid #bababa;
+	margin-right: 12px;
+}
+
+
+/*头部搜索盒子*/
+
+.police-titel {
+	height: 40px;
+	width: 100%;
+	background: #efeff4;
+	line-height: 40px;
+	padding: 0 5px;
+	box-sizing: border-box;
+}
+
+
+/*搜索框*/
+
+.search {
+	display: inline-block;
+	background: #fff;
+	height: 25px;
+	line-height: 25px;
+	padding: 0 5px;
+}
+
+.search span i {
+	color: #bababa;
+}
+
+.search input[type="search"] {
+	outline: none;
+	height: 25px;
+}
+
+.police-titel button {
+	float: right;
+	background: #b4d3f3;
+	color: #2b399e;
+	border: 0;
+	height: 25px;
+	margin: 7.5px 5px 0 0;
+}
+
+
+/*警力*/
+
+.police-team {
+	width: 100%;
+	padding: 8px 7px;
+	box-sizing: border-box;
+	height: 220px;
+	overflow-y: auto;
+}
+
+.teams1 {
+	float: left;
+	height: 28px;
+	border: 1px solid #dcdcdc;
+	border-radius: 5px;
+	padding: 0 10px;
+	line-height: 28px;
+	margin: 5px;
+}
+
+
+/*已选择警力列表外层盒子*/
+
+.check-police {
+	float: left;
+	height: 260px;
+}
+
+
+/*已选择警力列表*/
+
+.checked-teams-list {
+	height: 140px;
+	width: 100%;
+	border: 1px solid #bababa;
+}
+
+.checked-teams {
+	width: 100%;
+	height: 100px;
+	padding: 8px 7px;
+	box-sizing: border-box;
+	overflow-y: auto;
+}
+
+
+/*已选择列表中的警队*/
+
+.teams2 {
+	position: relative;
+	float: left;
+	height: 28px;
+	background: #efeff4;
+	border: 1px solid #bababa;
+	border-radius: 5px;
+	padding: 0 10px;
+	line-height: 28px;
+	margin: 5px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.teams2 span {
+	color: #e56216;
+}
+
+.delete {
+	position: absolute;
+	top: -6px;
+	right: -6px;
+	height: 15px;
+	width: 15px;
+	background: url(../img/jiejingtai/delete.png);
+	background-size: 100% 100%;
+	border: 0;
+	padding: 0;
+}
+
+
+/*处警建议外层盒子*/
+
+.police-advice-box {
+	width: 100%;
+	height: 108px;
+	margin-top: 10px;
+	border: 1px solid #bababa;
+}
+
+.police-advice {
+	border: 0;
+	height: 68px;
+	width: 100%;
+	resize: none;
+	padding: 5px;
+}
+
+
+/*******************未完成报警列表样式开始**********************/
+
+
+/*未完成报警列表外层盒子*/
+
+.unfinish-warning-box {
+	position: absolute;
+	top: 60px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	display: none;
+}
+
+
+/*未完成报警内层盒子*/
+
+.unfinish-warning-innerbox {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+
+/*未完成报警条数*/
+
+.unfinish-warning-title {
+	width: 100%;
+	height: 36px;
+	background: #efeff4;
+	font-size: 18px;
+	padding: 0 20px;
+	line-height: 30px;
+	box-sizing: border-box;
+}
+
+.unfinish-warning-title span {
+	color: #f02d07;
+	font-size: 18px;
+}
+
+
+/*收起未完成报警列表*/
+
+.pack-up-list {
+	width: 100%;
+	text-align: right;
+	padding: 12px 20px;
+	box-sizing: border-box;
+}
+
+.pack-up-list button {
+	border: 0;
+	background: transparent;
+	color: #2b399e;
+	font-size: 16px;
+}
+
+
+/*未完成列表*/
+
+.unfinish-warning-list {
+	width: 100%;
+	padding: 10px 20px;
+	box-sizing: border-box;
+}
+
+.unfinish-warning-list .table1 td {
+	min-width: 75px;
+}
+
+.unfinish-warning-list .table1 td:nth-child(6) {
+	max-width: 360px;
+}
+
+.unfinish-warning-list td:first-child span {
+	display: inline-block;
+	height: 28px;
+	width: 80px;
+	color: #fff;
+	border-radius: 14px;
+	line-height: 28px;
+	text-align: center;
+}
+
+.unfinish-warning-button1 {
+	background: #e51b37;
+}
+
+.unfinish-warning-button2 {
+	background: #e6a417;
+}
+
+.unfinish-warning-button3 {
+	background: #13aa36;
+}
+
+
+/*接警弹窗样式*/
+
+.receiving-alarm-box {
+	/*display: none;*/
+	position: fixed;
+	bottom: 8px;
+	right: 8px;
+	height: 180px;
+	width: 350px;
+	background: #d4d4d4;
+	text-align: center;
+}
+
+.receiving-alarm-box p {
+	background: #dd2f2f;
+	height: 45px;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	line-height: 45px;
+}
+
+.receiving-alarm-box p img {
+	height: 25px;
+	width: 25px;
+	margin-top: 10px;
+	vertical-align: sub;
+}
+
+.receiving-alarm-box span {
+	display: block;
+	margin: 30px 0 20px 0;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.receiving-alarm-box span i {
+	font-size: 18px;
+}
+
+.receiving-alarm-box button {
+	width: 94px;
+	height: 30px;
+	border-radius: 15px;
+	border: 0;
+	color: #fff;
+	margin: 8px;
+}
+
+.jujue-button {
+	background: #c88b16;
+}
+
+.jujue-button i {
+	color: #fff;
+	font-size: 16px;
+}
+
+.jieshou-button {
+	background: #1e9826;
+}
+
+.jieshou-button i {
+	color: #fff;
+	font-size: 16px;
+}
+
+#videoremote1 video {
+	max-height: 555px;
+}
+
+button {
+	cursor: pointer;
+}
+
+#bjrxx-tx {
+	float: left;
+	width: 74px;
+	height: 90px;
+	border: 1px solid #c9c9c9;
+	background-image: url('/theme/img/jiejingtai/head-img.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center center;
+}
+
+abbr {
+	cursor: help;
+	text-decoration: none;
+}
+
+
+/*****************火警接警页面样式**********************/
+
+
+/*火警警情信息最外层盒子*/
+
+.hj-jingqing-box {
+	overflow-y: auto;
+}
+
+.hj-jingqing-box select{
+	/*将默认的select选择框样式清除*/
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	/*在选择框的最右侧中间显示小箭头图片*/
+	background: url(../img/index/select-icon.png) no-repeat scroll right center transparent;
+	background-position-x: 98%;
+	padding-right: 18px;
+	line-height: 27px;
+}
+
+.hj-jingqing-box  .hj-select{
+	background: url(../img/index/select-icon.png) no-repeat scroll right center transparent;
+	background-position-x: 98%;
+	padding-right: 18px;
+	line-height: 27px;
+}
+
+/*火警警情信息外层盒子*/
+
+.hj-jingqing-message {
+	background: #fff;
+	padding: 1px 0;
+	position: relative;
+	border-bottom: 10px solid #efeff4;
+}
+
+.hj-jingqing-message .message-input-box,
+.hj-paijing-box .message-input-box {
+	border-bottom: 0;
+}
+
+.hj-address input[type="text"] {
+	width: 372px;
+}
+
+
+/*填写全部警情信息按钮样式*/
+
+.fill-all-massage {
+	display: inline-block;
+	color: #1e9826;
+	font-size: 14px;
+	text-align: right;
+	height: 27px;
+	line-height: 27px;
+	text-decoration: underline;
+}
+
+
+/*火警派警信息样式*/
+
+.hj-paijing-box {
+	background: #fff;
+	padding: 1px 0;
+	display: block;
+}
+
+.hj-paijing1,
+.hj-paijing2 {
+	border-bottom: 1.5px dotted #ccc;
+	margin: 0 12px;
+	padding: 8px 0 8px 0;
+}
+
+.hj-paijing1 .message-input-box,
+.hj-paijing2 .message-input-box {
+	padding: 0;
+}
+
+
+/*派警中cell标题的宽度*/
+
+.hj-paijing1 .message-cell>span:first-child {
+	width: 80px;
+}
+
+.hj-paijing1 .message-cell input[type='text'],
+.hj-paijing1 .message-cell select {
+	width: 252px;
+}
+
+@media screen and (max-width: 1599px) {
+	/*出警建议div的宽度*/
+	.hj-advice {
+		width: 690px;
+	}
+	/*出警建议的输入框宽度*/
+	.hj-paijing-box .hj-advice input[type="text"] {
+		width: 472px;
+	}
+	/*出警建议后的按钮样式*/
+	.hj-advice .add-button {
+		height: 30px;
+		float: right;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	/*出警建议div的宽度*/
+	.hj-advice {
+		max-width: 690px;
+		width: 80%;
+	}
+	/*出警建议的输入框宽度*/
+	.hj-paijing-box .hj-advice input[type="text"] {
+		width: 58%;
+	}
+	/*出警建议后的按钮样式*/
+	.hj-advice .add-button {
+		height: 30px;
+		width: 15%;
+		float: right;
+	}
+}
+
+.hj-paijing2 .message-cell>span:first-child {
+	width: 140px;
+}
+
+.hj-paijing2 .message-cell input[type='text'],
+.hj-paijing2 .message-cell select {
+	width: 192px;
+}
+
+
+/*火警按钮样式*/
+
+.hj-button-cell button {
+	border: 1px solid #e5621b;
+	margin: 5px 10px;
+}
+
+.hj-button-cell .reset-btn {
+	background: #fff;
+	color: #e5621b;
+}
+
+.hj-button-cell .finish-btn {
+	background: #e5621b;
+}
+
+/*选定设备div框*/
+.check-shebei{
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.shebei-box1{
+	position: relative;
+	width: 100%;
+	background: #efeff4;
+	border: 1px solid #bababa;
+	border-radius: 5px;	
+	padding: 10px 15px;
+	box-sizing: border-box;
+	color: #e5621b;
+	margin-bottom: 10px;
+}
+
+.personnel-box1{
+	float: left;
+	position: relative;
+	max-width: 100%;
+	background: #efeff4;
+	border: 1px solid #bababa;
+	border-radius: 5px;	
+	padding: 10px 15px;
+	box-sizing: border-box;
+	color: #e5621b;
+	margin:10px;
+}
+
+.hj-delete-span{
+	display: block;
+	position: absolute;
+	top: -8px;
+	right: -8px;
+	height: 20px;
+	width: 20px;
+	background: url(../img/jiejingtai/delete-span-bg.png) no-repeat center;
+	background-size: 100% 100%;
+}
+
+/*自定义下拉框开始*/
+.hj-select-list-box{
+	position: absolute;
+	top: 26px;
+	right: 0px;
+	background: #fff;
+	z-index: 88;
+	border: 1px solid #bababa;
+	display: none;
+}
+
+.message-cell .hj-select-list{
+	max-height: 111px;
+	overflow-y: auto;
+}
+
+.hj-paijing1 .hj-select-list-box{
+	width: 250px;
+}
+
+.hj-paijing2 .hj-select-list-box{
+	width: 190px;
+}
+
+.hj-jingqing-box ul li{
+	float: none;
+	border: 1px dotted #eee;
+	height: 30px;
+	line-height: 30px;
+}
+
+.hj-jingqing-box ul li:hover{
+	background: #eee;
+}
+
+.hj-submit-box{
+	height: 36px;
+	background: #e3e3e3;
+	line-height: 36px;
+	padding: 0 8px;
+	box-sizing: border-box;
+}
+
+.hj-submit-box button{
+	width: 60px;
+	height: 28px;
+	line-height: 28px;
+	float: right;
+	margin-top: 5px;
+}
+/*自定义下拉框结束*/
+
+/*自定义多选框*/
+.checkbox-box1{
+	display: inline-block;
+	float: right;
+	height: 14px;
+	width: 14px;
+	background: url(../img/jiejingtai/hj-check-bg.png) no-repeat center;
+	border-radius: 4px;
+	margin-top: 6px;
+	line-height: 14px;
+	cursor: pointer;
+	vertical-align: sub;
+}
+
+.checkbox-box1 input[type="checkbox"]{
+	opacity: 0;
+	cursor: pointer;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	width: 14px;
+	height: 14px;
+}
+
+.checkbox1-checked{
+	background: url(../img/jiejingtai/hj-check-bg1.png) no-repeat center;
+	background-size: 100% 100%;
+}
