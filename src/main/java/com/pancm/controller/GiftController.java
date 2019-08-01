@@ -4,6 +4,7 @@ import com.pancm.dao.GiftRepository;
 import com.pancm.pojo.bean.CommonsResponse;
 import com.pancm.pojo.entity.GiftEntity;
 import com.pancm.pojo.enums.ErrorCodeEnum;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -12,6 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -31,8 +33,13 @@ public class GiftController {
     }
 
     @GetMapping("/gift/getGiftLis")
-    public ModelAndView getGiftLis(HttpServletRequest request){
-        List<GiftEntity> list = giftRepository.findAll();
+    public ModelAndView getGiftLis(String name, HttpServletRequest request){
+        List<GiftEntity> list;
+        if(StringUtils.isEmpty(name)){
+            list = giftRepository.findAll();
+        }else {
+            list = giftRepository.findByNameLike("%" + name + "%");
+        }
         request.setAttribute("list", list);
         ModelAndView view = new ModelAndView("giftManager/giftManager_list");
         return view;

@@ -36,7 +36,8 @@ public enum ErrorCodeEnum {
     ELOQUA_ID_EXISTS2(217, "eloquaID already exists in the document"),
 
     NO_DATA_TO_PROCESSED(353,"没有需要处理的疑似重复数据"),
-    TEMPLATE_ERROR(354, "模板数据异常");
+    TEMPLATE_ERROR(354, "模板数据异常"),
+    PHONE_EXIST(355, "手机号已经存在");
 
     // 普通方法
     static String getName(int code) {

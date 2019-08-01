@@ -27,6 +27,8 @@ public class MemberEntity {
      */
     private String personPhone;
 
+    private boolean giftFlag = false;
+
 
 
     public Date getUpdateTime() {
@@ -166,5 +168,13 @@ public class MemberEntity {
 
     public void setPersonPhone(String personPhone) {
         this.personPhone = personPhone;
+    }
+
+    public boolean isGiftFlag() {
+        return giftFlag;
+    }
+
+    public void setGiftFlag(boolean giftFlag) {
+        this.giftFlag = giftFlag;
     }
 }

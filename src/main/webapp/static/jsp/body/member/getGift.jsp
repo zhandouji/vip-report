@@ -9,35 +9,36 @@
     <body>
     <div class="layer-box" style="min-width: 100%;">
         <input type="hidden" id="id" value="${info.id}">
+        <input type="hidden" id="score">
+
         <table class="layer-table6">
             <tr>
-                <td>姓　　名：</td>
-                <td><input type="text" id="memberName" value="${info.memberName}"  style="width:840px;" /></td>
+                <td>礼品选择：</td>
+                <td>
+                    <select id="gift" name="gift"  style="width:640px;" onchange="changeUnit();">
+                        <option value="0">请选择</option>
+                        <c:forEach items='${info.list}' var='item' varStatus="o">
+                            <option value="${item.id}" unit = "${item.unit}" score = "${item.score}">${item.name}</option>
+                        </c:forEach>
+                    </select>
+                </td>
             </tr>
 
             <tr>
-                <td>会员性别：</td>
-                <td>
-                    <select id="sex" name="sex"  style="width:840px;">
-                    <option value="1" <c:if test="${info.sex==1}">selected</c:if>>男</option>
-                    <option value="2" <c:if test="${info.sex==2}">selected</c:if>>女</option>
-                </select></td>
+                <td>礼品单位：</td>
+                <td><input id="unit" type="text" style="width:840px;" /></td>
             </tr>
             <tr>
-                <td>会员电话：</td>
-                <td><input id="phone" type="text" value="${info.phone}"  style="width:840px;" /></td>
+                <td>兑换数量：</td>
+                <td><input id="phone" type="text"onchange="changeCount(this)" style="width:840px;" /></td>
             </tr>
             <tr>
-                <td>会员邮箱：</td>
-                <td><input id="email" type="text" value="${info.email}"  style="width:840px;" /></td>
+                <td>所需积分：</td>
+                <td><input id="totalScore" type="text" style="width:840px;" /></td>
             </tr>
             <tr>
                 <td>会员积分：</td>
                 <td><input id="memberIntegral" type="text" value="${info.memberIntegral}"  style="width:840px;" /></td>
-            </tr>
-            <tr>
-                <td>介绍人：</td>
-                <td><input id="person" type="text" value="${info.personPhone}"  style="width:840px;" /></td>
             </tr>
             <tr>
                 <td colspan="2" class="submit-button-box">
@@ -122,6 +123,36 @@
             })
         }
 
+        /**
+         * 更改单位
+         */
+        function changeUnit() {
+            var select = $('#gift option:selected');
+            if(select.value == 0){
+                $("#unit").val("");
+                $("#score").val("");
+                return;
+            }
+            debugger;
+            $("#unit").val(select.attr("unit"));
+            $("#score").val(select.attr("score"));
+        }
+
+        /**
+         * 改变积分
+         */
+        function changeCount(obj) {
+            var count = obj.val();
+            var reg = new RegExp("^\\+?[1-9][0-9]*$");
+            if(!reg.test(count)){
+                layer.msg('请输入非零正整数', {
+                    icon: 2,
+                    time: 2000 //2秒关闭（如果不配置，默认是3秒）
+                });
+                return;
+            }
+           $("#totalScore").val($("#score").val() * count);
+        }
     </script>
     </body>
 </html>

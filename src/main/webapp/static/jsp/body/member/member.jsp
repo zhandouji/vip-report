@@ -12,22 +12,12 @@
             <span>查询条件</span>
             <input id="param" type="text" style="width: 60%;"/>
         </div>
-        <%--<div class="form-cell" style="width: 45%;">--%>
-            <%--<span>状态</span>--%>
-            <%--<select name="statusS" class="form-control" style="width: 50%;">--%>
-                <%--<option value="0">--请选择--</option>--%>
-                <%--<option value="1" >未发布</option>--%>
-                <%--<option value="2" >已发布</option>--%>
-            <%--</select>--%>
         </div>
         <div style="width: 25%; float:left;text-align: right;padding: 8px 28px 0 0;box-sizing: border-box;">
             <button type="button" id="safety_bt" onclick="queryDataList(1)" class="download-button"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;查询</button>
             <button type="button" onclick="addCase()" class="add-button"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;添加</button>
         </div>
     </form>
-    <p class="text-right">
-
-    </p>
 </div>
 <div id="content" class="table-box">
     <!-- 会员列表 -->

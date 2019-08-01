@@ -10,26 +10,14 @@
 <div class="form-box clear">
     <form class="form-horizontal" role="form">
         <div class="form-cell" style="width: 30%;">
-            <%--<span>兑换物管理</span>--%>
-            <%--<input id="name" type="text" style="width: 60%;"/>--%>
+            <span>兑换物管理</span>
+            <input id="name" type="text" style="width: 60%;"/>
         </div>
-        <%--<div class="form-cell" style="width: 45%;">--%>
-            <%--<span>状态</span>--%>
-            <%--<select name="status" class="form-control" style="width: 50%;">--%>
-                <%--<option value="0">--请选择--</option>--%>
-                <%--<option value="1" >未发布</option>--%>
-                <%--<option value="2" >已发布</option>--%>
-                <%--<option value="3" >已撤销</option>--%>
-            <%--</select>--%>
-        <%--</div>--%>
         <div style="width: 25%; float:left;text-align: right;padding: 8px 28px 0 0;box-sizing: border-box;">
-            <%--<button type="button" id="safety_bt" onclick="queryDataList();" class="download-button"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;查询</button>--%>
-            <button type="button" onclick="addCase()" class="add-button"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;添加</button>
+            <button type="button" id="safety_bt" onclick="queryDataList();" class="download-button"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;查询</button>
+            <button type="button" onclick="addGift()" class="add-button"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;添加</button>
         </div>
     </form>
-    <p class="text-right">
-
-    </p>
 </div>
 <div id="content" class="table-box">
 
@@ -42,7 +30,8 @@
     function queryDataList() {
         $.ajax({
             url:BASESERVLET + "/gift/getGiftLis",
-            type:"post",
+            type:"get",
+            data:{"name":$("#name").val()},
             dataType: "html",
             success:function(data){
                 $("#content").html(data);
@@ -50,7 +39,7 @@
         });
     }
 
-    function addCase() {
+    function addGift() {
         layer.open({
             type: 2,
             title: "添加",
@@ -62,7 +51,7 @@
         });
     }
 
-    function edits(id) {
+    function editsGift(id) {
         layer.open({
             type: 2,
             title: "编辑",

@@ -37,6 +37,9 @@
             <td><fmt:formatDate value="${item.createTime}" pattern="yyyy-MM-dd HH:mm:ss" /></td>
             </td>
             <td class="">
+                <c:if test="${item.giftFlag == true}">
+                    <button class="caozuo-button5" onclick="getGift('${item.id}')">兑换</button>
+                </c:if>
                 <button class="caozuo-button5" onclick="edits('${item.id}')">编辑</button>
                 <button class="caozuo-button4" onclick="deleteOne('${item.id}')">删除</button>
             </td>
@@ -56,6 +59,18 @@
             shade: 0.3,
             area: ['1000px', '650px'],
             content: BASESERVLET + "/member/getMemberById?id="+id
+        });
+    }
+
+    function getGift(id) {
+        layer.open({
+            type: 2,
+            title: "兑换礼品",
+            shadeClose: true,
+            closeBtn:1,
+            shade: 0.3,
+            area: ['1000px', '650px'],
+            content: BASESERVLET + "/member/getGift?id="+id
         });
     }
 

@@ -14,7 +14,7 @@
         <th>礼品ID</th>
         <th>礼品名称</th>
         <th>礼品积分</th>
-        <td>礼品单位</td>
+        <th>礼品单位</th>
         <th>礼品数量</th>
         <th>操作</th>
     </tr>
@@ -29,7 +29,7 @@
             <td>${item.unit}</td>
             <td>${item.count}</td>
             <td class="">
-                <button class="caozuo-button5" onclick="edits('${item.id}')">编辑</button>
+                <button class="caozuo-button5" onclick="editsGift('${item.id}')">编辑</button>
                 <button class="caozuo-button4" onclick="deletes('${item.id}')">删除</button>
             </td>
         </tr>

@@ -14,10 +14,10 @@ public interface MembersMapper {
     @Select("select * from member where id = #{id}")
     MemberEntity findOne(@Param("id") int id);
 
-    @Insert("insert into member(member_name, phone, sex, email, member_grade_id, person_phone)values(#{memberName}, #{phone}, #{sex}, #{email}, #{gradeId},#{personPhone})")
+    @Insert("insert into member(member_name, phone, sex, email, member_grade_id, person_phone, member_integral)values(#{memberName}, #{phone}, #{sex}, #{email}, #{gradeId},#{personPhone}, #{memberIntegral})")
     void saveOne(MemberEntity memberEntity);
 
-    @Update("update member set member_name = #{memberName}, phone = #{phone}, sex = #{sex}, email = #{email}, member_grade_id = #{gradeId}, person_phone = #{personPhone} where id = #{id}")
+    @Update("update member set member_name = #{memberName}, phone = #{phone}, sex = #{sex}, email = #{email}, member_grade_id = #{gradeId}, person_phone = #{personPhone}, member_integral = #{memberIntegral} where id = #{id}")
     void updateOne(MemberEntity memberEntity);
 
     @Delete("delete from member where id = #{id}")

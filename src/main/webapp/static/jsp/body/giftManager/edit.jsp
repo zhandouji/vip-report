@@ -7,10 +7,6 @@
         <link rel="stylesheet" href="${base}/static/theme/css/index.css">
     </head>
     <style>
-        .edit-list{
-            padding: 12px;
-        }
-
         #imgs img{
             width: 144px;
             height: 144px;
@@ -47,11 +43,11 @@
     </div>
 
     <script type="text/javascript">
-
         /**
          * 保存
          */
         function save() {
+            var id = $("#id").val();
             //积分
             var name = $("#name").val();
             if(!name){
@@ -85,12 +81,24 @@
                 });
                 return;
             }
-            var json = {
-                "name":name,
-                "score": score,
-                "unit":unit,
-                "count":count
+            var json = {};
+            if(id == ""){
+                json = {
+                    "name":name,
+                    "score": score,
+                    "unit":unit,
+                    "count":count
+                }
+            }else {
+                json = {
+                    "id":id,
+                    "name":name,
+                    "score": score,
+                    "unit":unit,
+                    "count":count
+                }
             }
+
             $.ajax({
                 url:BASESERVLET + "/gift/saveOrUpdate",
                 type:"post",
@@ -100,7 +108,7 @@
 //                    layer.msg(data.error);
                     if(data.code = 200){
                         var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
-                        window.parent.checkData(1);//访问父页面方法
+                        window.parent.queryDataList();//访问父页面方法
                         parent.layer.close(index);
                     }
                 }
