@@ -150,7 +150,6 @@
                 });
                 return;
             }
-            debugger;
             var totalCount = $("#score").val() * count;
            $("#totalScore").val(totalCount);
             if(totalCount > $("#memberIntegral").val()){
