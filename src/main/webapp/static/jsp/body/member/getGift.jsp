@@ -30,15 +30,15 @@
             </tr>
             <tr>
                 <td>兑换数量：</td>
-                <td><input id="phone" type="text"onchange="changeCount(this)" style="width:840px;" /></td>
+                <td><input id="count" type="text"onchange="changeCount(this)" style="width:840px;" /></td>
             </tr>
             <tr>
                 <td>所需积分：</td>
-                <td><input id="totalScore" type="text" style="width:840px;" /></td>
+                <td><input id="totalScore" type="text" style="width:840px;" readonly/></td>
             </tr>
             <tr>
                 <td>会员积分：</td>
-                <td><input id="memberIntegral" type="text" value="${info.memberIntegral}"  style="width:840px;" /></td>
+                <td><input id="memberIntegral" type="text" value="${info.memberIntegral}"  style="width:840px;" readonly/></td>
             </tr>
             <tr>
                 <td colspan="2" class="submit-button-box">
@@ -56,68 +56,42 @@
          * 保存
          */
         function saveOrUpdate() {
-            var memberName = $("#memberName").val();
-            var phone = $("#phone").val();
+            var giftId = $("#gift option:selected").val();
 
-            var email = $("#email").val();
+            var count = $("#count").val();
 
-            var person = $("#person").val();
-
-            var sex = $("select[name='sex']").val();
-
-            var memberIntegral = $("#memberIntegral").val();
-
-            if(!memberName){
-                layer.msg('请输入会员姓名', {
+            if(giftId == 0){
+                layer.msg('请选择要兑换的礼品', {
                     icon: 2,
                     time: 2000 //2秒关闭（如果不配置，默认是3秒）
                 });
                 return;
             }
-            if(!sex){
-                layer.msg('请选择会员性别', {
-                    icon: 2,
-                    time: 2000 //2秒关闭（如果不配置，默认是3秒）
-                });
-                return;
-            }
-            if(!phone){
-                layer.msg('请输入会员联系方式', {
+            if(count == '' && count == 0){
+                layer.msg('请输入兑换的礼品数', {
                     icon: 2,
                     time: 2000 //2秒关闭（如果不配置，默认是3秒）
                 });
                 return;
             }
 
-            if(!memberIntegral){
-                layer.msg('请输入会员积分', {
-                    icon: 2,
-                    time: 2000 //2秒关闭（如果不配置，默认是3秒）
-                });
-                return;
-            }
             var json = {
-                "memberName":memberName,
-                "email":email,
-                "phone":phone,
-                "sex": sex,
-                "personPhone": person,
-                "id":$("#id").val(),
-                "memberIntegral":memberIntegral
+                "count":count,
+                "giftId":giftId,
+                "id":$("#id").val()
             }
             $.ajax({
-                url:BASESERVLET + "/member/saveOrUpdate",
+                url:BASESERVLET + "/member/saveGift",
                 type:"post",
-                contentType:"application/json",
                 dataType:"json",
-                data:JSON.stringify(json),
+                data:json,
                 success:function (data) {
                     if(data.code == 200){
                         var index = parent.layer.getFrameIndex(window.name);
                         window.parent.queryDataList(1);
                         parent.layer.close(index);
                     }else {
-                        layer.msg("保存失败，" + data.msg, {icon: 2});
+                        layer.msg("失败，" + data.msg, {icon: 2});
                     }
                 }
             })

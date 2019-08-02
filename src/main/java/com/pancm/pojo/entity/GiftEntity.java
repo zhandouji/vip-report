@@ -24,7 +24,7 @@ public class GiftEntity {
     /**
      * 礼品剩余数量
      */
-    private String count;
+    private int count;
 
     public int getId() {
         return id;
@@ -58,11 +58,11 @@ public class GiftEntity {
         this.unit = unit;
     }
 
-    public String getCount() {
+    public int getCount() {
         return count;
     }
 
-    public void setCount(String count) {
+    public void setCount(int count) {
         this.count = count;
     }
 }

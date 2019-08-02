@@ -22,6 +22,7 @@
 <div id="content" class="table-box">
     <!-- 会员列表 -->
 </div>
+
 <script type="text/javascript">
     $(function () {
         queryDataList(1);

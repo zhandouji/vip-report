@@ -37,7 +37,11 @@ public enum ErrorCodeEnum {
 
     NO_DATA_TO_PROCESSED(353,"没有需要处理的疑似重复数据"),
     TEMPLATE_ERROR(354, "模板数据异常"),
-    PHONE_EXIST(355, "手机号已经存在");
+    PHONE_EXIST(355, "手机号已经存在"),
+    NO_GIFT(366, "未找到礼品"),
+    NO_COUNT_GIFT(367, "没有足够的礼品"),
+    NO_COUNT_SCORE(368, "没有足够的积分"),
+    NO_PERSON_PHONE(369, "未找到联系人");
 
     // 普通方法
     static String getName(int code) {
