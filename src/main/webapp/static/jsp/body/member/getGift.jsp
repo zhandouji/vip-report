@@ -42,7 +42,7 @@
             </tr>
             <tr>
                 <td colspan="2" class="submit-button-box">
-                    <button onclick="saveOrUpdate()">保存</button>
+                    <button id="saveBtn" onclick="saveOrUpdate()">保存</button>
                 </td>
             </tr>
         </table>
@@ -133,7 +133,6 @@
                 $("#score").val("");
                 return;
             }
-            debugger;
             $("#unit").val(select.attr("unit"));
             $("#score").val(select.attr("score"));
         }
@@ -142,7 +141,7 @@
          * 改变积分
          */
         function changeCount(obj) {
-            var count = obj.val();
+            var count = obj.value;
             var reg = new RegExp("^\\+?[1-9][0-9]*$");
             if(!reg.test(count)){
                 layer.msg('请输入非零正整数', {
@@ -151,7 +150,17 @@
                 });
                 return;
             }
-           $("#totalScore").val($("#score").val() * count);
+            debugger;
+            var totalCount = $("#score").val() * count;
+           $("#totalScore").val(totalCount);
+            if(totalCount > $("#memberIntegral").val()){
+                $("#saveBtn").css({'background-color' : 'gray'});
+                $("#saveBtn").attr("disabled", true);
+            }else {
+                $("#saveBtn").css({'background-color' : ''});
+                $("#saveBtn").attr("disabled", false);
+
+            }
         }
     </script>
     </body>
