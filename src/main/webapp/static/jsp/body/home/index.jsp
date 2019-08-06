@@ -8,7 +8,6 @@
 	<title>首页</title>
 	<meta charset="utf-8">
 	<meta http-equiv="Cache-Control" content="no-cache" />
-	<link rel="shortcut icon" type="image/x-icon" href="${base}/static/theme/img/index/logo.ico" media="screen" />
 	<link rel="stylesheet" type="text/css" href="${base}/static/plugins/font-awesome/css/font-awesome.min.css"/>
 	<link rel="stylesheet" type="text/css" href="${base}/static/theme/css/index.css"/>
 	<link rel="stylesheet" type="text/css" href="${base}/static/plugins/ali-icon/iconfont.css"/>
@@ -27,7 +26,6 @@
 <div class="max-box">
 	<!--头部开始-->
 	<div class="header-box">
-		<img class="logo-img" src="${base}/static/theme/img/index/logo.png"/>
 		<span class="logo-text" id="tittle_text">会员管理系统</span>
 		<img class="right-img" src="${base}/static/theme/img/login/right.png"/>
 		<ul class="admin-box">

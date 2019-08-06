@@ -83,7 +83,7 @@ public class MembersController {
     @PostMapping(value = "/member/saveOrUpdate")
     public CommonsResponse saveOrUpdate(@RequestBody MemberEntity memberEntity){
         List<MemberEntity> memberEntities = membersService.getMembersByCondition(memberEntity.getPhone());
-        if(!CollectionUtils.isEmpty(memberEntities)){
+        if(!CollectionUtils.isEmpty(memberEntities) && !Objects.equals(memberEntities.get(0).getId(), memberEntity.getId())){
             return CommonsResponse.successMsg(ErrorCodeEnum.PHONE_EXIST);
         }
         if(!StringUtils.isEmpty(memberEntity.getPersonPhone())){

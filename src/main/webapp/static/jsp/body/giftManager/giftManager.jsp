@@ -10,10 +10,10 @@
 <div class="form-box clear">
     <form class="form-horizontal" role="form">
         <div class="form-cell" style="width: 30%;">
-            <span>兑换物管理</span>
+            <span>兑换物名称</span>
             <input id="name" type="text" style="width: 60%;"/>
         </div>
-        <div style="width: 25%; float:left;text-align: right;padding: 8px 28px 0 0;box-sizing: border-box;">
+        <div style="width: 68%; float:left;text-align: right;padding: 8px 28px 0 0;box-sizing: border-box;">
             <button type="button" id="safety_bt" onclick="queryDataList();" class="download-button"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;查询</button>
             <button type="button" onclick="addGift()" class="add-button"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;添加</button>
         </div>

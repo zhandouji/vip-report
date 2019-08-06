@@ -23,12 +23,12 @@
 		</div>
 		<div class="login-box">
 			<div class="login shadow">
-				<div class="erweima01">
-					<img src="${base}/static/theme/img/login/erweima01.png?time=20180427" />
-				</div>
-				<div class="erweima02">
-					<img src="${baseServlet}/static/theme/img/login/erweima02.png?time=20180427" />
-				</div>
+				<%--<div class="erweima01">--%>
+					<%--<img src="${base}/static/theme/img/login/erweima01.png?time=20180427" />--%>
+				<%--</div>--%>
+				<%--<div class="erweima02">--%>
+					<%--<img src="${baseServlet}/static/theme/img/login/erweima02.png?time=20180427" />--%>
+				<%--</div>--%>
 				<div class="inputs-box">
 					<form id="loginForm" action="${baseServlet}/web/login" method="POST" >
 						<div id="msg_td" class="tsxx"  style="color:#FF0000;height: 10px;line-height: 10px;">${error }</div>
