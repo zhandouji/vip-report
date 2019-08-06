@@ -4,6 +4,10 @@ import com.pancm.dao.GiftRepository;
 import com.pancm.pojo.bean.CommonsResponse;
 import com.pancm.pojo.entity.GiftEntity;
 import com.pancm.pojo.enums.ErrorCodeEnum;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,9 +17,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 /**
  * 礼物管理类
@@ -33,14 +35,19 @@ public class GiftController {
     }
 
     @GetMapping("/gift/getGiftLis")
-    public ModelAndView getGiftLis(String name, HttpServletRequest request){
-        List<GiftEntity> list;
+    public ModelAndView getGiftLis(@RequestParam(name = "pageNum", defaultValue = "1") int pageNum, String name, HttpServletRequest request){
+        Page<GiftEntity> pageInfo;
+        Pageable pageable = new PageRequest(--pageNum, 10, Sort.Direction.DESC,"id");
         if(StringUtils.isEmpty(name)){
-            list = giftRepository.findAll();
+            pageInfo = giftRepository.findAll(pageable);
         }else {
-            list = giftRepository.findByNameLike("%" + name + "%");
+            pageInfo = giftRepository.findByNameLike("%" + name + "%", pageable);
         }
-        request.setAttribute("list", list);
+        Map<String, Object> res = new HashMap<>(4);
+        res.put("totalRow", pageInfo.getTotalElements());
+        res.put("currPage", pageNum);
+        res.put("list", pageInfo.getContent());
+        request.setAttribute("info", res);
         ModelAndView view = new ModelAndView("giftManager/giftManager_list");
         return view;
     }

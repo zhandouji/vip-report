@@ -1,5 +1,6 @@
 package com.pancm.controller;
 
+import com.github.pagehelper.PageInfo;
 import com.pancm.dao.GiftRepository;
 import com.pancm.dao.TransacationRecordRepository;
 import com.pancm.pojo.bean.CommonsResponse;
@@ -40,9 +41,9 @@ public class MembersController {
      */
     @PostMapping(value = "/member/getMembersList")
     public ModelAndView getMembersList(HttpServletRequest request, @RequestParam(value = "pageNum",defaultValue = "1") int pageNum, String param){
-        List<MemberEntity> memberEntities = membersService.findAll(pageNum, 20, param);
+        PageInfo<MemberEntity> pageInfo = membersService.findAll(pageNum, 10, param);
         List<GiftEntity> giftEntities = giftRepository.findAll();
-        for (MemberEntity memberEntity : memberEntities) {
+        for (MemberEntity memberEntity : pageInfo.getList()) {
             for (GiftEntity giftEntity : giftEntities) {
                 if(memberEntity.getMemberIntegral() > giftEntity.getScore()){
                     memberEntity.setGiftFlag(true);
@@ -51,7 +52,11 @@ public class MembersController {
             }
         }
         ModelAndView view = new ModelAndView("member/member_list");
-        request.setAttribute("list", memberEntities);
+        Map<String, Object> res = new HashMap<>();
+        res.put("totalRow", pageInfo.getTotal());
+        res.put("currPage", pageInfo.getPageNum());
+        res.put("list", pageInfo.getList());
+        request.setAttribute("info", res);
         return view;
     }
 
@@ -166,5 +171,15 @@ public class MembersController {
         recordEntity.setMobile(memberEntity.getPhone());
         recordRepository.save(recordEntity);
         return CommonsResponse.successMsg(ErrorCodeEnum.SUCCESS);
+    }
+
+    /**
+     * 跳转到会员管理页面
+     * @return
+     */
+    @GetMapping(value = "/user/toUserListPage")
+    public ModelAndView toUserListPage(){
+        ModelAndView view = new ModelAndView("member/member");
+        return view;
     }
 }

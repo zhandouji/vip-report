@@ -1,12 +1,13 @@
 package com.pancm.service;
 
+import com.github.pagehelper.PageInfo;
 import com.pancm.pojo.entity.MemberEntity;
 
 import java.util.List;
 
 public interface MembersService {
 
-    List<MemberEntity> findAll(int pageNum, int PageSize, String param);
+    PageInfo findAll(int pageNum, int PageSize, String param);
 
     MemberEntity findOne(int id);
 
@@ -15,4 +16,6 @@ public interface MembersService {
     void deleteOne(int id);
 
     List<MemberEntity> getMembersByCondition(String param);
+
+    Integer getListCount(String param);
 }

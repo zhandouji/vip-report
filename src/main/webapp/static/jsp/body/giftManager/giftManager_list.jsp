@@ -8,6 +8,8 @@
         min-width: 80px;
     }
 </style>
+<input id="totalRow" type="hidden" value="${info.totalRow}" />
+<input id="currPage" type="hidden" value="${info.currPage}" />
 <table class="table1">
     <tbody style="background: #FFF;">
     <tr>
@@ -18,10 +20,10 @@
         <th>礼品数量</th>
         <th>操作</th>
     </tr>
-    <c:if test="${empty list}">
+    <c:if test="${empty info.list}">
         <tr><td colspan="6">暂无数据...</td></tr>
     </c:if>
-    <c:forEach items='${list}' var='item' varStatus="o">
+    <c:forEach items='${info.list}' var='item' varStatus="o">
         <tr>
             <td>${item.id}</td>
             <td>${item.name}</td>
@@ -36,4 +38,3 @@
     </c:forEach>
     </tbody>
 </table>
-<%--<jsp:include page="../page4js.jsp"></jsp:include>--%>

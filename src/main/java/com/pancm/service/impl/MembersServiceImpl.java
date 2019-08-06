@@ -1,6 +1,7 @@
 package com.pancm.service.impl;
 
 import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.pancm.mapper.MembersMapper;
 import com.pancm.pojo.entity.MemberEntity;
 import com.pancm.service.MembersService;
@@ -18,13 +19,15 @@ public class MembersServiceImpl implements MembersService {
     private MembersMapper membersMapper;
 
     @Override
-    public List<MemberEntity> findAll(int pageNum, int PageSize, String param) {
+    public PageInfo findAll(int pageNum, int PageSize, String param) {
         if(StringUtils.isEmpty(param)){
             PageHelper.startPage(pageNum, PageSize);
-            return membersMapper.findAll();
+            List<MemberEntity> list = membersMapper.findAll();
+            return new PageInfo(list);
         }else {
             PageHelper.startPage(pageNum, PageSize);
-            return getMembersByCondition(param);
+            List<MemberEntity> list = getMembersByCondition(param);
+            return new PageInfo(list);
         }
     }
 
@@ -52,5 +55,15 @@ public class MembersServiceImpl implements MembersService {
     @Override
     public List<MemberEntity> getMembersByCondition(String param) {
        return  membersMapper.getMembersByCondition(param);
+    }
+
+    /**
+     * 根据条件查询分页
+     * @param param
+     * @return
+     */
+    @Override
+    public Integer getListCount(String param) {
+        return membersMapper.getListCount(param);
     }
 }

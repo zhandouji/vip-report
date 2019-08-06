@@ -5,8 +5,8 @@
 
 <jsp:include page="/static/jsp/body/common/lib.jsp"></jsp:include>
 <link rel="stylesheet" type="text/css" href="${base}/static/theme/css/history.css"/>
-<%--<input type="hidden" id="start" name="start" value="${condition.start}"/>--%>
-<%--<input type="hidden" name="pageSize" value="10"/>--%>
+<link rel="stylesheet" type="text/css" href="${base}/static/theme/css/page.css"/>
+<script src="${base}/static/js/page_js/MyPage.js"></script>
 <div class="form-box clear">
     <form class="form-horizontal" role="form">
         <div class="form-cell" style="width: 30%;">
@@ -20,19 +20,36 @@
     </form>
 </div>
 <div id="content" class="table-box">
-
 </div>
+<%--分页插件--%>
+<div class="page" id="Page"></div>
+
 <script type="text/javascript">
     $(function () {
-        queryDataList();
+        queryDataList(1);
+        setPage();
     })
 
-    function queryDataList() {
+    function setPage() {
+        P.initMathod({
+            params: {
+                elemId: '#Page',
+                total: $("#totalRow").val(),
+                pageIndex : $("#currentPage").val()
+            },
+            requestFunction: function() {
+                queryDataList(P.config.pageIndex);
+            }
+        });
+    }
+
+    function queryDataList(page) {
         $.ajax({
             url:BASESERVLET + "/gift/getGiftLis",
             type:"get",
-            data:{"name":$("#name").val()},
+            data:{"name":$("#name").val(), "pageNum": page},
             dataType: "html",
+            async:false,
             success:function(data){
                 $("#content").html(data);
             }

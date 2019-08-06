@@ -25,4 +25,7 @@ public interface MembersMapper {
 
     @Select("select * from member where member_name like CONCAT('%', #{param}, '%') or phone like CONCAT('%',#{param}, '%')")
     List<MemberEntity> getMembersByCondition(String param);
+
+    @Select("select count(*) as count from member where member_name like CONCAT('%', #{param}, '%') or phone like CONCAT('%',#{param}, '%')")
+    Integer getListCount(String param);
 }

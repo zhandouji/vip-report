@@ -5,7 +5,8 @@
 
 <jsp:include page="/static/jsp/body/common/lib.jsp"></jsp:include>
 <link rel="stylesheet" type="text/css" href="${base}/static/theme/css/history.css"/>
-
+<link rel="stylesheet" type="text/css" href="${base}/static/theme/css/page.css"/>
+<script src="${base}/static/js/page_js/MyPage.js"></script>
 <div class="form-box clear">
     <form class="form-horizontal" role="form">
         <div class="form-cell" style="width: 30%;">
@@ -23,21 +24,38 @@
     <!-- 会员列表 -->
 </div>
 
+<%--分页插件--%>
+<div class="page" id="Page"></div>
+
 <script type="text/javascript">
     $(function () {
         queryDataList(1);
+        setPage();
     })
 
+    function setPage() {
+        P.initMathod({
+            params: {
+                elemId: '#Page',
+                total: $("#totalRow").val(),
+                pageIndex : $("#currentPage").val()
+            },
+            requestFunction: function() {
+                queryDataList(P.config.pageIndex);
+            }
+        });
+    }
+
     function queryDataList(page) {
-        var search = $("#param").val();
         var params = {};
-        params.pageNum = 1;
-        params.param = search;
+        params.pageNum = page;
+        params.param = $("#param").val();
         $.ajax({
             url:BASESERVLET + "/member/getMembersList",
             type:"POST",
             data: params,
             dataType: "html",
+            async:false,
             success:function(data){
                 $("#content").html(data);
             }

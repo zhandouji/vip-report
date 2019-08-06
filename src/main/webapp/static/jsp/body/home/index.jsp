@@ -31,10 +31,8 @@
 		<span class="logo-text" id="tittle_text">会员管理系统</span>
 		<img class="right-img" src="${base}/static/theme/img/login/right.png"/>
 		<ul class="admin-box">
-			<%--<li id="logoutBtn"><i class="fa fa-power-off" aria-hidden="true"></i><span><a href="javascript:;">退出</a></span></li>--%>
-			<li id="logoutBtn"><i class="fa fa-power-off fa-fw" aria-hidden="true">&nbsp;&nbsp;</i><a href="javascript:;">退出</a></li>
-			<li id="changePassword"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><a href="javascript:;">修改密码</a></li>
-			<li><i class="fa fa-user" aria-hidden="true"></i><span>${sessionScope.usersession.name }</span></li>
+			<li id="logoutBtn"><i class="fa fa-power-off" aria-hidden="true"></i><span><a href="javascript:;">退出</a></span></li>
+			<li><i class="fa fa-user" aria-hidden="true"></i><span>${sessionScope.userName }</span></li>
 		</ul>
 	</div>
 	<!--头部结束-->
@@ -86,17 +84,6 @@
 
     $("#logoutBtn").click(function(){
         location.href = BASESERVLET+"/web/logout";
-    });
-
-    $("#changePassword").click(function(){
-        layer.open({
-            type:2,
-            title:'修改密码',
-            shadeClose:true,
-            shade:0.8,
-            area:['500px','300px'],
-            content:BASESERVLET+"/web/user/changePassword"
-        })
     });
 </script>
 </body>

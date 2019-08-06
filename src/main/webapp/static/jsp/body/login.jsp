@@ -30,8 +30,8 @@
 					<img src="${baseServlet}/static/theme/img/login/erweima02.png?time=20180427" />
 				</div>
 				<div class="inputs-box">
-					<form id="loginForm" action="${baseServlet}/web/login" method="POST">
-						<div id="msg_td" class="tsxx"  style="color:#FF0000;height: 10px;line-height: 10px;">${ret.error }</div>
+					<form id="loginForm" action="${baseServlet}/web/login" method="POST" >
+						<div id="msg_td" class="tsxx"  style="color:#FF0000;height: 10px;line-height: 10px;">${error }</div>
 						<div class="input-div">
 							<span class="icon-span"><i class="fa fa-user" aria-hidden="true"></i></span>
 							<input id="loginId" class="admin-text" type="text" name="userName" value="" placeholder="请输入用户名" />
@@ -41,7 +41,7 @@
 							<input id="password"  class="admin-text" type="password" name="password" value="" placeholder="请输入密码" />
 						</div>
 						<div class="button-div">
-							<input class="" type="button" onclick="javascript:submitForm()" value="确定"></input>
+							<input class="" type="button" onclick="javascript:submitForm()" value="确定"/>
 							<input type="reset" value="重置"></input>
 						</div>
 					</form>
@@ -51,6 +51,12 @@
 	</div>
 </div>
 <script type="text/javascript">
+	$(function () {
+		var error = $("#error").val();
+		if(error){
+            layer.msg(error);
+		}
+    });
 
     function submitForm() {
         if($.trim($('#loginId').val())==""){
