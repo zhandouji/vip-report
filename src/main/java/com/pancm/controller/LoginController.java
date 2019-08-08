@@ -26,7 +26,7 @@ public class LoginController {
     private String password;
 
     @RequestMapping(value = "/web/login")
-    public ModelAndView login(UserInfo userInfo, HttpServletRequest request){
+    public ModelAndView login(UserInfo userInfo, HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ModelAndView view = new ModelAndView();
         if(StringUtils.isBlank(userInfo.getUserName()) || StringUtils.isBlank(userInfo.getPassword())){
             view.setViewName("login");
@@ -42,11 +42,10 @@ public class LoginController {
         return view;
     }
 
-    @GetMapping("/web/logout")
+    @RequestMapping("/web/logout")
     public void webLogOut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getSession().invalidate();
-        request.logout();
-        request.getRequestDispatcher("login").forward(request, response);
+        response.sendRedirect("/report/web/login");
     }
 
 }

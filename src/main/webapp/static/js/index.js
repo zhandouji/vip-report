@@ -1,37 +1,6 @@
 $(document).ready(function() {
 
-	// //封装设置派警模块的宽
-	// function set_nearbyWidth(num) {
-    //
-	// 	if(num < 670) {
-    //
-	// 		$(".nearby-police").css({
-	// 			"width": '100%',
-	// 			"float": "none",
-	// 			"margin-right": "0"
-	// 		});
-    //
-	// 		$(".check-police").css({
-	// 			"width": '100%',
-	// 			"float": "none",
-	// 			"margin-top": "12px"
-	// 		});
-    //
-	// 	} else {
-    //
-	// 		$(".nearby-police").css({
-	// 			"width": (num - 42) / 2,
-	// 			"float": "left",
-	// 			"margin-right": "12px"
-	// 		});
-    //
-	// 		$(".check-police").css({
-	// 			"width": (num - 42) / 2,
-	// 			"float": "left",
-	// 			"margin-top": "0"
-	// 		});
-	// 	}
-	// }
+
 
 	clicknum = 1;
 
@@ -127,15 +96,7 @@ $(document).ready(function() {
 
 			var num2 = $(".nearby-police-box").width();
 
-			//当菜单展开的时候进行点击按钮样式调整
-			// $(".menu-hidden").mouseout(function() {
-            //
-			// 	if(clicknum == 0) {
-			// 		$(this).children("span").show();
-			// 		$(this).children("span").removeClass("hidden-li");
-			// 	}
-            //
-			// });
+
             $(this).children("span").removeClass("hidden-li");
 			clicknum = 0;
 		}
@@ -177,136 +138,7 @@ $(document).ready(function() {
 		$('.right-time').html(getTime)
 	}, 1000);
 
-	// //接警状态按钮样式变化
-	// function state() {
-	// 	$(".top-menu-box>ul>li>button").removeClass("check-button1");
-	// 	$(".top-menu-box>ul>li>button").removeClass("check-button2");
-	// 	$(".top-menu-box>ul>li>button").removeClass("check-button3");
-	// }
-	// //点击开始接警
-	// $(".state1").click(function() {
-	// 	state();
-	// 	$(this).addClass("check-button1");
-	// });
-	//
-	// //暂停接警
-	// $(".state2").click(function() {
-	// 	state();
-	// 	$(this).addClass("check-button2");
-	// });
-	//
-	// //停止接警
-	// $(".state3").click(function() {
-	// 	state();
-	// 	$(this).addClass("check-button3");
-	// });
-    //
-	// //在页面加载完成之后根据现在派警框的大小调整所队选择的宽度
-	// set_nearbyWidth(parseInt($(".nearby-police-box").css("width")));
-    //
-	// //监控浏览器的拖地事件，根据浏览器变化进行派警模块的宽度调整
-	// $(window).resize(function() {
-    //
-	// 	set_nearbyWidth(parseInt($(".nearby-police-box").css("width")));
-    //
-	// });
 
-    // //派警所队选择效果样式开始
-    // $(".teams1").click(function() {
-    //
-		// var text = $(this).text();
-		// $(this).css({
-		// 	"border-color": "#e5621b",
-		// 	"background-color": "#f2dbce",
-		// 	"color": "#e5621b",
-		// 	"pointer-events": "none"
-		// });
-    //
-		// $(".checked-teams").prepend("<div class='teams2'><span>" + text + "</span><button class='delete'></button></div>");
-    //
-    // });
-    //
-    // //点击x号按钮删除该选中所队
-    // $(".checked-teams").on("click", ".delete", function() {
-    //
-		// var text = $(this).parent().children("span").text();
-    //
-		// for(var i = 0; i < $(".police-team>div").length; i++) {
-    //
-		// 	if($(".police-team>div").eq(i).text() == text) {
-    //
-		// 		$(".police-team>div").eq(i).css({
-    //
-		// 			"border-color": "#dcdcdc",
-		// 			"background-color": "#fff",
-		// 			"color": "#333",
-		// 			"pointer-events": "auto"
-    //
-		// 		});
-		// 	}
-		// }
-    //
-		// $(this).parent().remove();
-    //
-    // });
-    //
-    // //重置按钮样式
-    // $(".clear-all").click(function() {
-    //
-		// $(".police-team>div").css({
-    //
-		// 	"border-color": "#dcdcdc",
-		// 	"background-color": "#fff",
-		// 	"color": "#333",
-		// 	"pointer-events": "auto"
-    //
-		// });
-    //
-		// $(".checked-teams").children().remove();
-    //
-    // });
-    //
-    // //派警所队选择效果样式结束
-    //
-    // var flag = false; // 默认flag为false，即未显示未完成报警列表，如果flag为true，即已经显示列表。
-    // //显示未完成列表
-    // function unfinish_list_show(){
-    //     $(".shipin-box").css({ "display" : "none" });
-    //     $(".chat-box").css({ "display" : "none" });
-    //     $(".paijing-box").css({ "display" : "none" });
-    //     $(".unfinish-warning-box").css({ "display" : "block" });
-    //
-    //
-    //     flag = true;
-    //     // alert("show ,flag = " + flag);
-    // }
-    // //隐藏未完成列表
-    // function unfinish_list_hied(){
-    //     $(".shipin-box").css({ "display" : "block" });
-    //     $(".chat-box").css({ "display" : "block" });
-    //     $(".paijing-box").css({ "display" : "block" });
-    //     $(".unfinish-warning-box").css({ "display" : "none" });
-    //
-    //     flag = false;
-    //     // alert("hide ,flag = " + flag);
-    // }
-    //
-    // $(".unfinish-button").click(function(){
-		// // alert("flag = " + flag);
-		// if (flag){
-    //         // alert("flag = " + flag);
-    //         unfinish_list_hied();
-    //
-		// } else {
-    //         // alert("flag = " + flag);
-    //         unfinish_list_show();
-		// }
-    //
-    // });
-    //
-    // $(".pack-up-list>button").click(function(){
-    //     unfinish_list_hied();
-    // });
 });
 
 function initIndex() {

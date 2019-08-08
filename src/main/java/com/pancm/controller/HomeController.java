@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.Objects;
 
 @RestController
@@ -19,10 +20,11 @@ public class HomeController {
      * 跳转到登陆的页
      * @return
      */
-    @GetMapping(value = "/index")
+    @GetMapping(value = {"/index", "/"})
     public ModelAndView loginPage(HttpServletRequest request){
         ModelAndView view = new ModelAndView();
-        if(Objects.isNull(request.getSession())){
+        HttpSession session = request.getSession();
+        if (session.getAttribute("userName") == null){
             view.setViewName("login");
             return view;
         }

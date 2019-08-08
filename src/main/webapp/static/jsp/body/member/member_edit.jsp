@@ -95,6 +95,13 @@
                 });
                 return;
             }
+            if(phone === person){
+                layer.msg('推荐人与联系方式一致', {
+                    icon: 2,
+                    time: 2000 //2秒关闭（如果不配置，默认是3秒）
+                });
+                return;
+            }
             var json = {
                 "memberName":memberName,
                 "email":email,

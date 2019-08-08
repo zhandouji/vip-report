@@ -24,4 +24,9 @@
     var BASEURL = '${baseUrl}';
     var BASE = '${base}';
     var BASESERVLET = '${baseServlet}';
+    document.onkeydown = function () {
+        if (window.event && window.event.keyCode == 13) {
+            window.event.returnValue = false;
+        }
+    }
 </script>

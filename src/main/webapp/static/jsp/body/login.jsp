@@ -9,9 +9,32 @@
 	<meta charset="utf-8">
 	<meta http-equiv="Cache-Control" content="no-cache" />
 	<link rel="stylesheet" type="text/css" href="${base}/static/plugins/font-awesome/css/font-awesome.min.css" />
-	<link type="text/css" rel="stylesheet" href="${base}/static/theme/css/index.css" />
+	<%--<link type="text/css" rel="stylesheet" href="${base}/static/theme/css/login.css" />--%>
 	<link rel="stylesheet" type="text/css" href="${base}/static/theme/css/login.css" />
 	<script src="${base}/static/js/jquery.2.1.4.min.js"></script>
+	<script type="text/javascript">
+        $(function () {
+            var error = $("#error").val();
+            if(error){
+                layer.msg(error);
+            }
+        });
+
+        function submitForm() {
+            if($.trim($('#loginId').val())==""){
+                $('#msg_td').empty().text('请输入用户名');
+                return;
+            }
+            if($.trim($('#password').val())==""){
+                $('#msg_td').empty().text('请输入密码');
+                return;
+            }
+            $('#loginForm').submit();
+            $.ajax({
+
+            })
+        }
+	</script>
 </head>
 <body>
 <div class="max-box">
@@ -50,25 +73,5 @@
 		</div>
 	</div>
 </div>
-<script type="text/javascript">
-	$(function () {
-		var error = $("#error").val();
-		if(error){
-            layer.msg(error);
-		}
-    });
-
-    function submitForm() {
-        if($.trim($('#loginId').val())==""){
-            $('#msg_td').empty().text('请输入用户名');
-            return;
-        }
-        if($.trim($('#password').val())==""){
-            $('#msg_td').empty().text('请输入密码');
-            return;
-        }
-         $('#loginForm').submit();
-    }
-</script>
 </body>
 </html>
